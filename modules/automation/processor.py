@@ -15,7 +15,7 @@ import os
 import asyncio
 import random
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Dict
 
 from loguru import logger
 

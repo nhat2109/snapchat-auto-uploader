@@ -103,7 +103,7 @@ class App(ctk.CTk):
         row_kw.pack(fill="x", pady=4)
         ctk.CTkLabel(row_kw, text="Từ khóa tìm kiếm:", width=160, anchor="w").pack(side="left")
         self._vars["scrape_keywords"] = ctk.CTkEntry(
-            row_kw, width=340, placeholder="sad edit, viral clip, anime edit (cách nhau bởi dấu phẩy)")
+            row_kw, width=340, placeholder_text="sad edit, viral clip, anime edit (cách nhau bởi dấu phẩy)")
         self._vars["scrape_keywords"].pack(side="left")
 
         row_src = ctk.CTkFrame(wrapper, fg_color="transparent")
@@ -117,21 +117,21 @@ class App(ctk.CTk):
         row_views = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_views.pack(fill="x", pady=4)
         ctk.CTkLabel(row_views, text="Views tối thiểu:", width=160, anchor="w").pack(side="left")
-        self._vars["scrape_min_views"] = ctk.CTkEntry(row_views, width=340, placeholder="10000")
+        self._vars["scrape_min_views"] = ctk.CTkEntry(row_views, width=340, placeholder_text="10000")
         self._vars["scrape_min_views"].insert(0, "10000")
         self._vars["scrape_min_views"].pack(side="left")
 
         row_dur = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_dur.pack(fill="x", pady=4)
         ctk.CTkLabel(row_dur, text="Thời lượng tối đa (s):", width=160, anchor="w").pack(side="left")
-        self._vars["scrape_max_duration"] = ctk.CTkEntry(row_dur, width=340, placeholder="60")
+        self._vars["scrape_max_duration"] = ctk.CTkEntry(row_dur, width=340, placeholder_text="60")
         self._vars["scrape_max_duration"].insert(0, "60")
         self._vars["scrape_max_duration"].pack(side="left")
 
         row_max = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_max.pack(fill="x", pady=4)
         ctk.CTkLabel(row_max, text="Tối đa/khóa:", width=160, anchor="w").pack(side="left")
-        self._vars["scrape_max_results"] = ctk.CTkEntry(row_max, width=340, placeholder="20")
+        self._vars["scrape_max_results"] = ctk.CTkEntry(row_max, width=340, placeholder_text="20")
         self._vars["scrape_max_results"].insert(0, "20")
         self._vars["scrape_max_results"].pack(side="left")
 
@@ -151,11 +151,11 @@ class App(ctk.CTk):
         wrapper = ctk.CTkFrame(f, fg_color="transparent")
         wrapper.pack(fill="x", padx=20, pady=5)
 
-        def file_row(label, var_key, placeholder=""):
+        def file_row(label, var_key, placeholder_text=""):
             row = ctk.CTkFrame(wrapper, fg_color="transparent")
             row.pack(fill="x", pady=4)
             ctk.CTkLabel(row, text=label, width=160, anchor="w").pack(side="left")
-            self._vars[var_key] = ctk.CTkEntry(row, width=240, placeholder=placeholder)
+            self._vars[var_key] = ctk.CTkEntry(row, width=240, placeholder_text=placeholder_text)
             self._vars[var_key].pack(side="left", padx=(0, 5))
             ctk.CTkButton(row, text="📂 Chọn", width=80,
                           command=lambda k=var_key: self._browse_file(k)).pack(side="left")
@@ -167,7 +167,7 @@ class App(ctk.CTk):
         row_out.pack(fill="x", pady=4)
         ctk.CTkLabel(row_out, text="Thư mục lưu:", width=160, anchor="w").pack(side="left")
         self._vars["download_output"] = ctk.CTkEntry(row_out, width=340,
-                                                      placeholder="uploads/video")
+                                                      placeholder_text="uploads/video")
         self._vars["download_output"].insert(0, "uploads/video")
         self._vars["download_output"].pack(side="left")
 
@@ -194,11 +194,11 @@ class App(ctk.CTk):
         wrapper = ctk.CTkFrame(f, fg_color="transparent")
         wrapper.pack(fill="x", padx=20, pady=5)
 
-        def file_row(label, var_key, placeholder=""):
+        def file_row(label, var_key, placeholder_text=""):
             row = ctk.CTkFrame(wrapper, fg_color="transparent")
             row.pack(fill="x", pady=4)
             ctk.CTkLabel(row, text=label, width=160, anchor="w").pack(side="left")
-            self._vars[var_key] = ctk.CTkEntry(row, width=240, placeholder=placeholder)
+            self._vars[var_key] = ctk.CTkEntry(row, width=240, placeholder_text=placeholder_text)
             self._vars[var_key].pack(side="left", padx=(0, 5))
             ctk.CTkButton(row, text="📂 Chọn", width=80,
                           command=lambda k=var_key: self._browse_file(k)).pack(side="left")
@@ -210,14 +210,14 @@ class App(ctk.CTk):
         row_dur = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_dur.pack(fill="x", pady=4)
         ctk.CTkLabel(row_dur, text="Cắt thời lượng (s):", width=160, anchor="w").pack(side="left")
-        self._vars["process_duration"] = ctk.CTkEntry(row_dur, width=340, placeholder="15")
+        self._vars["process_duration"] = ctk.CTkEntry(row_dur, width=340, placeholder_text="15")
         self._vars["process_duration"].insert(0, "15")
         self._vars["process_duration"].pack(side="left")
 
         row_text = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_text.pack(fill="x", pady=4)
         ctk.CTkLabel(row_text, text="Text overlay:", width=160, anchor="w").pack(side="left")
-        self._vars["process_text"] = ctk.CTkEntry(row_text, width=340, placeholder="Thêm text (tùy chọn)")
+        self._vars["process_text"] = ctk.CTkEntry(row_text, width=340, placeholder_text="Thêm text (tùy chọn)")
         self._vars["process_text"].pack(side="left")
 
         row_opts = ctk.CTkFrame(wrapper, fg_color="transparent")
@@ -292,19 +292,19 @@ class App(ctk.CTk):
         row_addr.pack(fill="x", pady=4)
         ctk.CTkLabel(row_addr, text="Địa chỉ proxy:", width=140, anchor="w").pack(side="left")
         self._vars["proxy_addr"] = ctk.CTkEntry(
-            row_addr, placeholder="Ví dụ: 123.45.67.89:8080 hoặc http://user:pass@ip:port", width=280)
+            row_addr, placeholder_text="Ví dụ: 123.45.67.89:8080 hoặc http://user:pass@ip:port", width=280)
         self._vars["proxy_addr"].pack(side="left")
 
         row_user = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_user.pack(fill="x", pady=4)
         ctk.CTkLabel(row_user, text="User proxy:", width=140, anchor="w").pack(side="left")
-        self._vars["proxy_user"] = ctk.CTkEntry(row_user, placeholder="Username (nếu có)", width=280)
+        self._vars["proxy_user"] = ctk.CTkEntry(row_user, placeholder_text="Username (nếu có)", width=280)
         self._vars["proxy_user"].pack(side="left")
 
         row_pass = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_pass.pack(fill="x", pady=4)
         ctk.CTkLabel(row_pass, text="Pass proxy:", width=140, anchor="w").pack(side="left")
-        self._vars["proxy_pass"] = ctk.CTkEntry(row_pass, placeholder="Password (nếu có)", width=280, show="●")
+        self._vars["proxy_pass"] = ctk.CTkEntry(row_pass, placeholder_text="Password (nếu có)", width=280, show="●")
         self._vars["proxy_pass"].pack(side="left")
 
         row_btns = ctk.CTkFrame(wrapper, fg_color="transparent")
@@ -338,7 +338,7 @@ class App(ctk.CTk):
         row_timeout = ctk.CTkFrame(wrapper2, fg_color="transparent")
         row_timeout.pack(fill="x", pady=4)
         ctk.CTkLabel(row_timeout, text="Timeout (s):", width=140, anchor="w").pack(side="left")
-        self._vars["proxy_timeout"] = ctk.CTkEntry(row_timeout, width=280, placeholder="10")
+        self._vars["proxy_timeout"] = ctk.CTkEntry(row_timeout, width=280, placeholder_text="10")
         self._vars["proxy_timeout"].insert(0, "10")
         self._vars["proxy_timeout"].pack(side="left")
 
@@ -426,7 +426,7 @@ class App(ctk.CTk):
         row_title = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_title.pack(fill="x", pady=4)
         ctk.CTkLabel(row_title, text="Tiêu đề video:", width=170, anchor="w").pack(side="left")
-        self._vars["video_title"] = ctk.CTkEntry(row_title, width=300, placeholder="Tên hiển thị trên Snapchat")
+        self._vars["video_title"] = ctk.CTkEntry(row_title, width=300, placeholder_text="Tên hiển thị trên Snapchat")
         self._vars["video_title"].pack(side="left")
 
         row_desc = ctk.CTkFrame(wrapper, fg_color="transparent")
@@ -438,7 +438,7 @@ class App(ctk.CTk):
         row_tags = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_tags.pack(fill="x", pady=4)
         ctk.CTkLabel(row_tags, text="Thẻ (tags):", width=170, anchor="w").pack(side="left")
-        self._vars["video_tags"] = ctk.CTkEntry(row_tags, width=300, placeholder="#music #cover #viral")
+        self._vars["video_tags"] = ctk.CTkEntry(row_tags, width=300, placeholder_text="#music #cover #viral")
         self._vars["video_tags"].pack(side="left")
 
         sep = ctk.CTkLabel(f, text="")
@@ -498,7 +498,7 @@ class App(ctk.CTk):
         row_wait = ctk.CTkFrame(wrapper, fg_color="transparent")
         row_wait.pack(fill="x", pady=4)
         ctk.CTkLabel(row_wait, text="Thời gian chờ (giây):", width=170, anchor="w").pack(side="left")
-        self._vars["snap_wait"] = ctk.CTkEntry(row_wait, width=300, placeholder="10")
+        self._vars["snap_wait"] = ctk.CTkEntry(row_wait, width=300, placeholder_text="10")
         self._vars["snap_wait"].insert(0, "10")
         self._vars["snap_wait"].pack(side="left")
 
@@ -585,10 +585,10 @@ class App(ctk.CTk):
 
         self.log_textbox.configure(state="normal")
         self.log_textbox.insert("end", line + "\n", (level,))
-        self.log_textbox.tag_config("INFO", foreground=("#1A1A2E", "#00FF99"))
-        self.log_textbox.tag_config("WARN", foreground=("#1A1A2E", "#FFD700"))
-        self.log_textbox.tag_config("ERROR", foreground=("#1A1A2E", "#FF4444"))
-        self.log_textbox.tag_config("STEP", foreground=("#1A1A2E", "#00D1FF"))
+        self.log_textbox.tag_config("INFO", foreground="#00FF99")
+        self.log_textbox.tag_config("WARN", foreground="#FFD700")
+        self.log_textbox.tag_config("ERROR", foreground="#FF4444")
+        self.log_textbox.tag_config("STEP", foreground="#00D1FF")
         self.log_textbox.see("end")
         self.log_textbox.configure(state="disabled")
 

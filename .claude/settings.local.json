@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip list:*)",
+      "Bash(findstr /i \"playwright greenlet sqlalchemy aiohttp lxml pillow customtkinter faker beautifulsoup4 httpx requests dotenv dateutil loguru\")"
+    ]
+  }
+}
