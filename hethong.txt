@@ -1,0 +1,337 @@
+PROJECT: SNAPCHAT AUTOMATION + VIRAL CONTENT SYSTEM
+
+GOAL:
+Build a fully automated system that:
+
+* Finds viral videos from platforms (YouTube, Douyin, TikTok...)
+* Downloads and processes them
+* Adds custom music
+* Uploads to Snapchat using automation
+* Tracks performance and scales winning content
+
+---
+
+1. SYSTEM OVERVIEW
+
+---
+
+Pipeline:
+
+[Fetch Viral Videos]
+↓
+[Download Video]
+↓
+[Edit + Add Music]
+↓
+[Upload Snapchat]
+↓
+[Track Performance]
+↓
+[Scale Winning Content]
+
+---
+
+2. CORE MODULES
+
+---
+
+2.1 VIRAL VIDEO SCRAPER
+
+Purpose:
+
+* Collect viral video links automatically
+
+Sources:
+
+* YouTube Shorts
+* Douyin / TikTok
+* Instagram Reels (optional)
+
+Functions:
+
+* Search by keyword (e.g. "sad edit", "viral clip", "anime edit")
+* Get video URLs
+* Filter by:
+
+  * views > threshold
+  * duration < 60s
+
+Tech:
+
+* YouTube: yt-dlp or unofficial scraping
+* TikTok/Douyin: API scraping or headless browser
+
+Output:
+
+* List of video URLs stored in DB
+
+---
+
+2.2 VIDEO DOWNLOADER
+
+Purpose:
+
+* Download videos from collected URLs
+
+Tech:
+
+* yt-dlp (recommended)
+
+Functions:
+
+* Download best quality
+* Save metadata (title, views)
+
+---
+
+2.3 VIDEO PROCESSING MODULE
+
+Purpose:
+
+* Transform content to avoid duplication detection
+
+Processing:
+
+* Cut clip (5–15s)
+* Resize (9:16)
+* Add subtitle/text overlay
+* Add zoom or blur effect
+* Add background music (your music)
+
+Tech:
+
+* ffmpeg (core)
+* moviepy (optional)
+
+---
+
+2.4 MUSIC MANAGEMENT
+
+Purpose:
+
+* Manage your music library
+
+Functions:
+
+* Store music files
+* Match music with video theme
+* Upload to distributor (Ditto)
+
+---
+
+2.5 SNAPCHAT AUTOMATION
+
+Purpose:
+
+* Upload processed videos
+
+Tech:
+
+* Playwright (async)
+
+Functions:
+
+* Login account
+* Upload video
+* Add music
+* Publish
+
+Rules:
+
+* 3–5 videos/account/day
+* Random delay (30s–120s)
+
+---
+
+2.6 PROXY ROTATION
+
+Purpose:
+
+* Avoid detection
+
+Rules:
+
+* 1 account = 1 proxy
+* Rotate proxy if failed
+
+---
+
+2.7 JOB QUEUE SYSTEM
+
+Purpose:
+
+* Manage workflow
+
+Jobs:
+
+* scrape_video
+* download_video
+* process_video
+* upload_video
+
+Features:
+
+* Retry (max 3 times)
+* Status tracking (pending, running, failed, done)
+
+---
+
+2.8 DATABASE (MySQL - phpMyAdmin)
+
+Tables:
+
+accounts:
+
+* id
+* username
+* password
+* proxy
+* status
+
+videos:
+
+* id
+* source_url
+* local_path
+* processed_path
+* views
+* status
+
+music:
+
+* id
+* name
+* file_path
+* distributor_status
+
+jobs:
+
+* id
+* type
+* related_id
+* status
+* retry_count
+
+analytics:
+
+* id
+* video_id
+* views
+* likes
+* created_at
+
+---
+
+2.9 ANALYTICS + SCALING
+
+Purpose:
+
+* Find winning content
+
+Logic:
+
+* If video > 10k views:
+  → mark as "winning"
+  → duplicate concept
+  → generate more similar videos
+
+---
+
+3. WORKFLOW
+
+---
+
+Step 1:
+
+* Scrape viral videos
+
+Step 2:
+
+* Download videos
+
+Step 3:
+
+* Process videos (cut + add music)
+
+Step 4:
+
+* Upload via automation
+
+Step 5:
+
+* Track performance
+
+Step 6:
+
+* Scale winning videos
+
+---
+
+4. ANTI-DETECTION RULES
+
+---
+
+* Random delay between actions
+* Use residential proxies
+* Avoid mass uploads
+* Simulate human behavior
+* Do NOT upload identical videos
+
+---
+
+5. SCALING STRATEGY
+
+---
+
+Level 1:
+
+* 5 accounts
+* 20 videos/day
+
+Level 2:
+
+* 20 accounts
+* 100 videos/day
+
+Level 3:
+
+* 50+ accounts
+* 300+ videos/day
+
+---
+
+6. SUCCESS FORMULA
+
+---
+
+(viral content source)
+×
+(content transformation)
+×
+(your music)
+×
+(scale)
+=======
+
+profit
+
+---
+
+IMPORTANT NOTES:
+
+* Always modify content before uploading
+* Avoid copyright violation risks
+* Focus on content quality, not just automation
+* Automation is only 30% of success
+
+END.
+
+
+
+| Thành phần                             | Góp ý bổ sung                                                                                                  | Lý do                                                                                                                                                |
+| :------------------------------------- | :------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Fingerprint Protection**             | Ngoài việc Fake IP, bạn cần sử dụng thêm các thư viện như `playwright-stealth` hoặc `undetected-chromedriver`. | Snapchat có hệ thống chống bot rất mạnh. Nếu chỉ Fake IP mà không giả lập vân tay trình duyệt (Canvas, WebGL, User-Agent), tài khoản rất dễ bị quét. |
+| **Cơ chế Retry & Delay**               | Cần thêm các khoảng nghỉ ngẫu nhiên (Random Sleep) giữa các thao tác.                                          | Thao tác quá nhanh và đều đặn là dấu hiệu đặc trưng của bot. Việc giả lập hành vi giống người dùng (human-like behavior) là bắt buộc.                |
+| **Quản lý Session/Cookie**             | Cần có module lưu trữ và tái sử dụng Cookie/Session sau khi đăng nhập thành công.                              | Tránh việc phải đăng nhập lại nhiều lần, điều này giúp giảm nguy cơ bị yêu cầu giải CAPTCHA hoặc xác minh danh tính.                                 |
+| **Xử lý CAPTCHA**                      | Hệ thống nên tích hợp thêm các dịch vụ giải CAPTCHA tự động (như 2Captcha hoặc Anti-Captcha).                  | Snapchat thường hiển thị CAPTCHA khi phát hiện hành vi bất thường hoặc IP lạ.                                                                        |
+| **Đồng bộ thời gian (Wait for Music)** | Như đã đề cập trước đó, nhạc trên Ditto cần thời gian để "về" kho nhạc Snapchat.                               | Hệ thống cần một cơ chế kiểm tra định kỳ (Polling) thay vì chạy liên tục một mạch từ bước upload nhạc sang đăng video.                               |

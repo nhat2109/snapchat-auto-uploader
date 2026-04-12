@@ -1,0 +1,184 @@
+Project Name: Snapchat Automation Platform
+
+Goal:
+Build a production-ready Python-based automation system that automates uploading videos with custom music to Snapchat using browser automation, with proxy rotation, multi-account support, job queue, and MySQL database integration via phpMyAdmin (Laragon environment).
+
+---
+
+1. TECH STACK
+
+---
+
+* Backend: Python 3.10+
+* Automation: Playwright (async)
+* Database: MySQL (phpMyAdmin via Laragon)
+* ORM/DB: pymysql or SQLAlchemy
+* UI (optional): PyQt6
+* Config: .env
+* Logging: logging or loguru
+
+---
+
+2. SYSTEM ARCHITECTURE
+
+---
+
+modules/
+├── core/
+│   ├── browser.py        (init playwright + proxy)
+│   ├── proxy_manager.py  (proxy rotation)
+│   ├── account_manager.py
+│   ├── job_manager.py    (queue + retry)
+│
+├── automation/
+│   ├── snapchat.py
+│   ├── ditto.py
+│
+├── database/
+│   ├── db.py
+│   ├── models.py
+│
+├── utils/
+│   ├── logger.py
+│   ├── retry.py
+│
+├── main.py
+
+---
+
+3. DATABASE DESIGN (MySQL)
+
+---
+
+Table: accounts
+
+* id
+* username
+* password
+* proxy
+* status
+
+Table: jobs
+
+* id
+* account_id
+* video_path
+* music_path
+* title
+* status (pending, running, failed, done)
+* retry_count
+* created_at
+
+Table: logs
+
+* id
+* job_id
+* message
+* level
+* created_at
+
+---
+
+4. CORE FEATURES
+
+---
+
+4.1 Proxy Rotation
+
+* Load proxy list from DB or file
+* Assign 1 proxy per account
+* Retry with new proxy if failed
+
+4.2 Account Management
+
+* Multi account support
+* Each account runs independently
+
+4.3 Job Queue System
+
+* Jobs stored in MySQL
+* Worker processes jobs sequentially or parallel
+* Retry max 3 times
+
+4.4 Snapchat Automation
+
+* Login via Playwright
+* Upload video
+* Add music
+* Publish content
+
+4.5 Ditto Automation
+
+* Login
+* Upload music
+* Wait for confirmation
+
+4.6 Logging System
+
+* Save logs to file + database
+* Screenshot on error
+
+---
+
+5. WORKFLOW
+
+---
+
+1. Load accounts + proxies from DB
+2. Load pending jobs
+3. For each job:
+
+   * Assign account + proxy
+   * Launch browser
+   * Upload music (Ditto)
+   * Upload video (Snapchat)
+   * Update job status
+4. If failed:
+
+   * Retry with new proxy
+
+---
+
+6. ANTI-DETECTION
+
+---
+
+* Random delay (2–5s)
+* Random user-agent
+* Disable webdriver flag
+* Human-like interaction
+
+---
+
+7. RUN ENVIRONMENT
+
+---
+
+* Use Laragon to run MySQL
+* Access DB via phpMyAdmin
+* Store config in .env
+
+---
+
+8. CLI COMMANDS
+
+---
+
+python main.py run
+python main.py add_job
+python main.py add_account
+
+---
+
+9. FUTURE IMPROVEMENTS
+
+---
+
+* GUI dashboard (PyQt)
+* Distributed workers
+* CAPTCHA solving integration
+
+---
+
+IMPORTANT:
+System must handle errors, retries, and logging robustly. Must be modular and scalable.

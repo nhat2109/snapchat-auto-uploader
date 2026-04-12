@@ -1,0 +1,205 @@
+# Đề xuất Xây dựng Công cụ Python Tự động hóa Quy trình Snapchat
+
+## 1. Bối cảnh và Mục tiêu
+
+Xây dựng một hệ thống automation hoàn chỉnh bằng Python, hoạt động trong môi trường Laragon (MySQL/phpMyAdmin), tự động hóa quy trình đăng tải video kèm nhạc tự sáng tác lên Snapchat với proxy rotation, multi-account, job queue, và logging đầy đủ.
+
+---
+
+## 2. Kiến trúc Hệ thống (System Architecture)
+
+```
+modules/
+├── core/
+│   ├── __init__.py
+│   ├── browser.py          # Khởi tạo Playwright + proxy + anti-detection
+│   ├── proxy_manager.py    # Proxy rotation từ DB hoặc file
+│   ├── account_manager.py  # Quản lý multi-account
+│   └── job_manager.py      # Job queue + retry logic
+│
+├── automation/
+│   ├── __init__.py
+│   ├── snapchat.py         # Tự động hóa Snapchat (login, upload, add music, publish)
+│   └── ditto.py            # Tự động hóa Ditto Music (login, upload music)
+│
+├── database/
+│   ├── __init__.py
+│   ├── db.py               # Kết nối MySQL + CRUD operations
+│   └── models.py           # ORM models (accounts, jobs, logs)
+│
+├── utils/
+│   ├── __init__.py
+│   ├── logger.py           # Logging: file + DB
+│   └── retry.py            # Retry decorator với exponential backoff
+│
+├── gui/
+│   └── gui.py              # Giao diện WinForm (CustomTkinter)
+│
+├── .env                    # Cấu hình môi trường (DB credentials, etc.)
+├── main.py                 # CLI entry point
+└── requirements.txt        # Dependencies
+```
+
+---
+
+## 3. Thiết kế Database (MySQL)
+
+### Table: `accounts`
+| Column | Type | Mô tả |
+|--------|------|--------|
+| `id` | INT AUTO_INCREMENT | Khóa chính |
+| `username` | VARCHAR(255) | Tài khoản Snapchat |
+| `password` | VARCHAR(255) | Mật khẩu (mã hóa khuyến nghị) |
+| `proxy` | VARCHAR(255) | Proxy gán cho tài khoản |
+| `status` | ENUM('active','banned','pending') | Trạng thái |
+| `created_at` | DATETIME | Ngày tạo |
+
+### Table: `jobs`
+| Column | Type | Mô tả |
+|--------|------|--------|
+| `id` | INT AUTO_INCREMENT | Khóa chính |
+| `account_id` | INT | FK → accounts |
+| `video_path` | VARCHAR(500) | Đường dẫn file video |
+| `music_path` | VARCHAR(500) | Đường dẫn file nhạc |
+| `title` | VARCHAR(255) | Tiêu đề video |
+| `music_title` | VARCHAR(255) | Tên bài hát |
+| `artist` | VARCHAR(255) | Tên nghệ sĩ |
+| `status` | ENUM('pending','running','failed','done') | Trạng thái |
+| `retry_count` | INT DEFAULT 0 | Số lần retry |
+| `error_message` | TEXT | Lỗi chi tiết nếu có |
+| `created_at` | DATETIME | Ngày tạo |
+| `updated_at` | DATETIME | Ngày cập nhật |
+
+### Table: `logs`
+| Column | Type | Mô tả |
+|--------|------|--------|
+| `id` | INT AUTO_INCREMENT | Khóa chính |
+| `job_id` | INT | FK → jobs (nullable) |
+| `account_id` | INT | FK → accounts (nullable) |
+| `message` | TEXT | Nội dung log |
+| `level` | ENUM('INFO','WARN','ERROR','STEP') | Mức độ |
+| `screenshot_path` | VARCHAR(500) | Đường dẫn ảnh chụp lỗi |
+| `created_at` | DATETIME | Ngày tạo |
+
+### Table: `proxies`
+| Column | Type | Mô tả |
+|--------|------|--------|
+| `id` | INT AUTO_INCREMENT | Khóa chính |
+| `host` | VARCHAR(255) | IP proxy |
+| `port` | INT | Port |
+| `username` | VARCHAR(255) | User (nullable) |
+| `password` | VARCHAR(255) | Pass (nullable) |
+| `type` | ENUM('http','socks5') | Loại proxy |
+| `country` | VARCHAR(50) | Quốc gia |
+| `status` | ENUM('active','dead') | Trạng thái |
+| `created_at` | DATETIME | Ngày tạo |
+
+---
+
+## 4. Các Chức năng Cốt lõi
+
+### 4.1 Proxy Rotation
+- Load proxy list từ DB hoặc file `.txt`
+- Gán 1 proxy cho 1 account
+- Thử proxy mới nếu thất bại
+- Kiểm tra proxy alive trước khi dùng
+
+### 4.2 Multi-Account Management
+- Nhiều tài khoản Snapchat chạy độc lập
+- Mỗi account có proxy riêng
+- Trạng thái: active / banned / pending
+
+### 4.3 Job Queue System
+- Jobs lưu trong MySQL
+- Worker xử lý tuần tự hoặc song song
+- Retry tối đa 3 lần
+- Auto-assign account + proxy
+
+### 4.4 Snapchat Automation
+1. Login bằng Playwright
+2. Upload video
+3. Thêm nhạc (tìm theo tên bài + nghệ sĩ)
+4. Publish content
+5. Chụp ảnh kết quả
+
+### 4.5 Ditto Music Automation
+1. Login Ditto
+2. Upload nhạc + metadata (tên bài, nghệ sĩ, ngôn ngữ)
+3. Đợi xác nhận thành công
+4. Log kết quả
+
+### 4.6 Logging System
+- Log ra file + DB
+- Chụp ảnh màn hình khi lỗi
+- Phân loại: INFO / WARN / ERROR / STEP
+
+---
+
+## 5. Workflow (Quy trình xử lý)
+
+```
+1. Load accounts + proxies từ DB
+2. Load jobs có status = 'pending'
+3. Với mỗi job:
+   ├── Assign account + proxy
+   ├── Launch browser (Playwright) với proxy
+   ├── Step 1: Upload nhạc lên Ditto Music
+   ├── Step 2: Upload video lên Snapchat
+   ├── Step 3: Tìm & thêm nhạc đã distribute
+   ├── Step 4: Publish video
+   ├── Update job status → 'done' hoặc 'failed'
+   └── Nếu failed → retry với proxy mới (max 3 lần)
+4. Screenshot + log kết quả
+```
+
+---
+
+## 6. Anti-Detection
+
+- Random delay 2–5s giữa các action
+- Random User-Agent
+- Disable webdriver flag
+- Di chuyển chuột tự nhiên (human-like)
+- Disable `navigator.webdriver`
+
+---
+
+## 7. Công nghệ Sử dụng
+
+| Layer | Công nghệ |
+|-------|-----------|
+| Backend | Python 3.10+ |
+| Automation | Playwright (async) |
+| Database | MySQL (Laragon phpMyAdmin) |
+| ORM/DB | SQLAlchemy |
+| GUI | CustomTkinter |
+| Config | `.env` (python-dotenv) |
+| Logging | loguru |
+| CLI | Click |
+
+---
+
+## 8. CLI Commands
+
+```bash
+# Chạy worker xử lý job queue
+python main.py run
+
+# Thêm job mới
+python main.py add_job --video "path/to/video.mp4" --music "path/to/music.mp3" --title "Tên bài"
+
+# Thêm tài khoản
+python main.py add_account --username "user" --password "pass" --proxy "ip:port:user:pass"
+
+# Khởi tạo database
+python main.py init-db
+
+# Chạy GUI
+python main.py gui
+```
+
+---
+
+## 9. Disclaimer
+
+Việc tự động hóa các nền tảng như Ditto Music và Snapchat có thể vi phạm Điều khoản Dịch vụ. Người dùng cần nhận thức rõ rủi ro, bao gồm khả năng tài khoản bị khóa vĩnh viễn. Tool chỉ nên dùng cho mục đích cá nhân, có trách nhiệm.
