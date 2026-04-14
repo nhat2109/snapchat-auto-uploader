@@ -57,7 +57,9 @@ class Database:
             pool_pre_ping=True,
             echo=False,
         )
-        self.SessionFactory = sessionmaker(bind=self.engine)
+        # Keep ORM attributes available after commit so returned objects
+        # (e.g. from create_account/create_job) can be safely read by callers.
+        self.SessionFactory = sessionmaker(bind=self.engine, expire_on_commit=False)
 
     # ─────────────────────────────────────────────────────────────────────
     #  Session management

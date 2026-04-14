@@ -47,6 +47,7 @@ class VideoProcessor:
     async def process(self,
                        video_path: str,
                        music_path: Optional[str] = None,
+                       avatar_path: Optional[str] = None,
                        output_name: Optional[str] = None,
                        start_sec: float = 0.0,
                        duration_sec: float = 15.0,
@@ -103,6 +104,7 @@ class VideoProcessor:
                 add_text, text_position, font_size, font_color,
                 add_blur, add_zoom, zoom_factor,
                 music_path,
+                avatar_path,
             )
 
             if cmd is None:
@@ -154,7 +156,8 @@ class VideoProcessor:
                                   add_blur: bool,
                                   add_zoom: bool,
                                   zoom_factor: float,
-                                  music_path: Optional[str]) -> Optional[List[str]]:
+                                  music_path: Optional[str],
+                                  avatar_path: Optional[str]) -> Optional[List[str]]:
 
         # Check ffmpeg available
         import shutil
@@ -166,9 +169,16 @@ class VideoProcessor:
         # Input video
         cmd += ["-i", video_path]
 
+        has_music = bool(music_path and os.path.exists(music_path))
+        has_avatar = bool(avatar_path and os.path.exists(avatar_path))
+
         # Input music
-        if music_path and os.path.exists(music_path):
+        if has_music:
             cmd += ["-i", music_path]
+
+        # Input avatar image
+        if has_avatar:
+            cmd += ["-i", avatar_path]
 
         # ── Video filter chain ───────────────────────────────────────────
         filters = []
@@ -210,15 +220,23 @@ class VideoProcessor:
             )
             filters.append(text_filter)
 
-        # Áp filter
-        cmd += ["-vf", ",".join(filters)]
+        base_chain = ",".join(filters)
 
         # ── Audio ────────────────────────────────────────────────────────
-        if music_path and os.path.exists(music_path):
-            cmd += ["-map", "0:v", "-map", "1:a"]
-            cmd += ["-shortest"]
+        if has_avatar:
+            # Avatar được scale nhỏ rồi overlay góc phải dưới.
+            avatar_idx = 2 if has_music else 1
+            filter_complex = (
+                f"[0:v]{base_chain}[vbase];"
+                f"[{avatar_idx}:v]scale=140:140[av];"
+                f"[vbase][av]overlay=W-w-24:H-h-24[vout]"
+            )
+            cmd += ["-filter_complex", filter_complex, "-map", "[vout]"]
         else:
-            cmd += ["-map", "0:v"]
+            cmd += ["-vf", base_chain, "-map", "0:v"]
+
+        if has_music:
+            cmd += ["-map", "1:a", "-shortest"]
 
         # Output
         cmd += [

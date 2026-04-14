@@ -18,7 +18,7 @@ except ImportError:
     PLAYWRIGHT_AVAILABLE = False
 
 from modules.utils.logger import get_logger
-from modules.utils.retry import retry_on_failure, random_delay
+from modules.utils.retry import retry_on_failure, async_random_delay
 
 
 # ─── User-Agent pool ────────────────────────────────────────────────────
@@ -165,7 +165,7 @@ class BrowserManager:
         """Navigate an toàn, retry nếu timeout."""
         try:
             await page.goto(url, wait_until=wait_until, timeout=timeout)
-            await random_delay(1.5, 3.0)
+            await async_random_delay(1.5, 3.0)
             return True
         except Exception as e:
             self._log.error(f"Goto failed: {url} — {e}")
@@ -178,7 +178,7 @@ class BrowserManager:
         """Click an toàn, đợi element có thể click được."""
         try:
             await page.wait_for_selector(selector, state="visible", timeout=timeout)
-            await random_delay(delay, delay + 1.0)
+            await async_random_delay(delay, delay + 1.0)
             await page.click(selector)
             return True
         except Exception as e:
@@ -192,7 +192,7 @@ class BrowserManager:
         """Điền text an toàn."""
         try:
             await page.wait_for_selector(selector, state="visible", timeout=10000)
-            await random_delay(delay, delay + 0.5)
+            await async_random_delay(delay, delay + 0.5)
             await page.fill(selector, value)
             return True
         except Exception as e:

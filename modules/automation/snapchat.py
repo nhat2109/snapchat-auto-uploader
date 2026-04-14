@@ -126,62 +126,118 @@ class SnapchatAutomation:
         try:
             # Điều hướng đến trang đăng nhập
             login_url = f"{self.BASE_URL}/login"
-            await self.browser.safe_goto(self._page, login_url)
+            ok = await self.browser.safe_goto(self._page, login_url)
+            if not ok:
+                return False
             await asyncio.sleep(3)
 
-            # Điền username (có thể là username hoặc email)
+            # Step 1: Điền username/email
             user_selectors = [
+                '[class*="SignInForm"] input[class*="SignInForm_input"]',
+                'form input[class*="SignInForm_input"]',
                 'input[name="username"]',
                 'input[id="username"]',
+                'input[placeholder*="username" i]',
+                'input[placeholder*="email" i]',
                 'input[placeholder*="user" i]',
                 'input[autocomplete="username"]',
+                'input[type="text"]:not([class*="SearchInput"])',
                 '#username_field',
             ]
-            filled = await self._try_fill_selectors(user_selectors, username)
-            if not filled:
-                self._log.warn("Username field không tìm thấy, thử lại sau...")
-                await asyncio.sleep(2)
+            user_ok = await self._try_fill_selectors(user_selectors, username)
+            if not user_ok:
+                self._log.warn("Không tìm thấy ô username/email")
+                await self._save_error_screenshot("snapchat_login_username_missing")
+                return False
+
+            # Submit bước username để chuyển sang bước password
+            username_submit = [
+                'button[type="submit"]',
+                'input[type="submit"]',
+                'button:has-text("Đăng nhập")',
+                'button:has-text("Đăng Nhập")',
+                'button:has-text("Log in")',
+                'button:has-text("Log In")',
+                'button:has-text("Next")',
+                'button:has-text("Continue")',
+                '[data-testid="login-btn"]',
+                '.login-btn',
+            ]
+            await self._try_click_selectors(username_submit)
 
             await async_random_delay(0.5, 1.5)
 
-            # Điền password
+            # Step 2: Điền password (trang 2 bước của Snapchat)
             pass_selectors = [
+                '[class*="SignInForm"] input[type="password"]',
+                'form input[type="password"]',
                 'input[name="password"]',
                 'input[id="password"]',
                 'input[type="password"]',
                 'input[autocomplete="current-password"]',
+                '[class*="SignInForm"] input[class*="SignInForm_input"]',
             ]
-            await self._try_fill_selectors(pass_selectors, password)
+
+            pass_ok = False
+            for _ in range(5):
+                pass_ok = await self._try_fill_selectors(pass_selectors, password)
+                if pass_ok:
+                    break
+                checkpoint = await self._detect_login_checkpoint()
+                if checkpoint:
+                    self._log.warn(f"Checkpoint phát hiện sau bước username: {checkpoint}")
+                    await self._save_error_screenshot("snapchat_login_checkpoint")
+                    return False
+                await asyncio.sleep(1)
+
+            if not pass_ok:
+                self._log.warn("Không tìm thấy ô password sau bước username")
+                await self._save_error_screenshot("snapchat_login_password_missing")
+                return False
+
             await async_random_delay(0.3, 0.8)
 
-            # Click login button
-            login_btn_selectors = [
+            # Submit bước password
+            password_submit = [
                 'button[type="submit"]',
                 'input[type="submit"]',
+                'button:has-text("Đăng nhập")',
+                'button:has-text("Đăng Nhập")',
                 'button:has-text("Log In")',
                 'button:has-text("Sign In")',
+                'button:has-text("Continue")',
                 '[data-testid="login-btn"]',
                 '.login-btn',
             ]
-            for sel in login_btn_selectors:
-                try:
-                    await self._page.wait_for_selector(sel, state="visible", timeout=3000)
-                    await self._page.click(sel)
-                    break
-                except Exception:
-                    continue
+            await self._try_click_selectors(password_submit)
 
             # Đợi redirect sau login
             await asyncio.sleep(5)
             current_url = self._page.url
             self._log.info(f"URL sau login: {current_url}")
 
-            if "login" not in current_url.lower():
+            checkpoint = await self._detect_login_checkpoint()
+            if checkpoint:
+                self._log.warn(f"Checkpoint đăng nhập: {checkpoint}")
+                await self._save_error_screenshot("snapchat_login_checkpoint")
+                return False
+
+            still_has_password = await self._is_any_selector_visible(pass_selectors, timeout=1500)
+            still_has_username = await self._is_any_selector_visible(user_selectors, timeout=1500)
+
+            if "login" not in current_url.lower() and not still_has_password:
                 self._log.info("✅ Đăng nhập Snapchat thành công")
                 return True
-            else:
-                self._log.warn("⚠️ Có thể chưa đăng nhập thành công")
-                return True  # Vẫn tiếp tục thử
+
+            if still_has_username or still_has_password:
+                self._log.warn("⚠️ Vẫn còn form đăng nhập, login chưa hoàn tất")
+                await self._save_error_screenshot("snapchat_login_failed")
+                return False
+
+            # Một số case URL vẫn chứa login nhưng thực tế đã auth bằng redirect token.
+            self._log.warn("⚠️ Trạng thái login chưa rõ ràng, tạm coi là thất bại")
+            await self._save_error_screenshot("snapchat_login_unclear")
+            return False
 
         except Exception as e:
             self._log.error(f"Login Snapchat failed: {e}")
@@ -434,13 +490,99 @@ class SnapchatAutomation:
         for sel in selectors:
             sel = sel.strip()
             try:
-                el = await self._page.wait_for_selector(sel, state="visible", timeout=3000)
+                loc = self._page.locator(sel).first
+                await loc.wait_for(state="visible", timeout=3000)
+                await loc.click(timeout=2000)
+                await loc.fill(value, timeout=3000)
+                return True
+            except Exception:
+                # Fallback JS set value cho các input khó fill bằng Playwright bình thường.
+                try:
+                    set_ok = await self._page.evaluate(
+                        """
+                        ([selector, text]) => {
+                          const el = document.querySelector(selector);
+                          if (!el) return false;
+                          el.focus();
+                          el.value = text;
+                          el.dispatchEvent(new Event('input', { bubbles: true }));
+                          el.dispatchEvent(new Event('change', { bubbles: true }));
+                          return true;
+                        }
+                        """,
+                        [sel, value],
+                    )
+                    if set_ok:
+                        return True
+                except Exception:
+                    pass
+            try:
+                el = await self._page.wait_for_selector(sel, state="attached", timeout=1500)
                 if el:
                     await el.fill(value)
                     return True
             except Exception:
                 continue
         return False
+
+    async def _try_click_selectors(self, selectors, timeout: int = 3000) -> bool:
+        """Thử click với nhiều selector alternative."""
+        for sel in selectors:
+            sel = sel.strip()
+            try:
+                await self._page.wait_for_selector(sel, state="visible", timeout=timeout)
+                await self._page.click(sel, no_wait_after=True)
+                return True
+            except Exception:
+                continue
+        return False
+
+    async def _is_any_selector_visible(self, selectors, timeout: int = 1000) -> bool:
+        for sel in selectors:
+            try:
+                await self._page.wait_for_selector(sel, state="visible", timeout=timeout)
+                return True
+            except Exception:
+                continue
+        return False
+
+    async def _detect_login_checkpoint(self) -> Optional[str]:
+        """Phát hiện các checkpoint như captcha, 2FA, verify challenge."""
+        try:
+            from urllib.parse import urlparse
+
+            raw_url = self._page.url
+            parsed = urlparse(raw_url)
+            path = parsed.path.lower()
+
+            # Chỉ xét theo path để tránh false positive từ chuỗi mã hóa query (vd: %2F).
+            checkpoint_paths = [
+                "captcha",
+                "challenge",
+                "/verify",
+                "/two_factor",
+                "/2fa",
+            ]
+            if any(k in path for k in checkpoint_paths):
+                return f"checkpoint_url:{raw_url.lower()}"
+
+            text = (await self._page.evaluate("() => document.body ? document.body.innerText : ''")).lower()
+            checkpoint_keywords = [
+                "captcha",
+                "i'm not a robot",
+                "verify",
+                "verification code",
+                "two-factor",
+                "2fa",
+                "security check",
+                "suspicious",
+            ]
+            for kw in checkpoint_keywords:
+                if kw in text:
+                    return kw
+        except Exception:
+            return None
+        return None
 
     async def _save_error_screenshot(self, name: str):
         if self._page:

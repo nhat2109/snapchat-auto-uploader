@@ -25,7 +25,13 @@ from loguru import logger
 
 from modules.database import Database
 from modules.core import BrowserManager, ProxyManager, AccountManager, JobManager
-from modules.automation import DittoAutomation, SnapchatAutomation
+from modules.automation import (
+    DittoAutomation,
+    SnapchatAutomation,
+    ViralVideoScraper,
+    VideoDownloader,
+    VideoProcessor,
+)
 from modules.utils.logger import setup_logging, PipelineLogger
 from modules.utils.retry import async_random_delay
 
@@ -341,6 +347,146 @@ def cmd_run_queue(args):
     asyncio.run(_run_queue_async(pipeline, args))
 
 
+def cmd_viral_post(args):
+    """Chạy full flow không GUI: scrape -> download -> process -> upload Snapchat."""
+    print(DISCLAIMER)
+    print("⏳ Khởi động luồng viral-post...")
+    asyncio.run(_run_viral_post_async(args))
+
+
+async def _run_viral_post_async(args):
+    # ── Resolve config từ args + .env ──────────────────────────────────
+    snap_user = args.snap_user or os.getenv("SNAPCHAT_USERNAME", "")
+    snap_pass = args.snap_pass or os.getenv("SNAPCHAT_PASSWORD", "")
+    music_path = args.music or os.getenv("MUSIC_FILE", "")
+    artist = args.artist or os.getenv("DEFAULT_ARTIST_NAME", "Unknown Artist")
+    music_title = args.music_title or os.getenv("DEFAULT_MUSIC_TITLE", "Viral Mix")
+
+    run_with_proxy = args.with_proxy or os.getenv("RUN_WITH_PROXY", "false").lower() == "true"
+    proxy_url = args.proxy_url or os.getenv("PROXY_URL", "")
+    if not run_with_proxy:
+        proxy_url = ""
+
+    if not snap_user or not snap_pass:
+        print("❌ Thiếu SNAPCHAT_USERNAME hoặc SNAPCHAT_PASSWORD (.env hoặc --snap-user/--snap-pass)")
+        return
+    if not music_path or not os.path.exists(music_path):
+        print("❌ Thiếu file nhạc. Hãy truyền --music hoặc đặt MUSIC_FILE trong .env")
+        return
+
+    keywords = [k.strip() for k in args.keyword.split(",") if k.strip()]
+    if not keywords:
+        print("❌ Thiếu keyword. Ví dụ: --keyword \"sad edit,anime\"")
+        return
+
+    plog = PipelineLogger(job_id=None, account_id=None, db=None)
+    plog.section("VIRAL-POST PIPELINE (NO GUI)")
+    plog.info(f"Keywords: {', '.join(keywords)}")
+
+    # ── Step 1: Scrape videos ──────────────────────────────────────────
+    scraper = ViralVideoScraper()
+    source_list = [s.strip().lower() for s in args.sources.split(",") if s.strip()]
+
+    videos = await scraper.scrape(
+        keywords=keywords,
+        min_views=args.min_views,
+        max_duration_sec=args.max_duration,
+        max_results=args.max_results,
+        sources=source_list,
+        pipeline_logger=plog,
+    )
+
+    # Fallback khi nguồn như TikTok không lấy được views
+    if not videos:
+        plog.warn("Không có video đạt ngưỡng views, thử lại với min_views=0...")
+        videos = await scraper.scrape(
+            keywords=keywords,
+            min_views=0,
+            max_duration_sec=args.max_duration,
+            max_results=args.max_results,
+            sources=source_list,
+            pipeline_logger=plog,
+        )
+
+    if not videos:
+        plog.error("Không tìm được video phù hợp từ nguồn đã chọn.")
+        return
+
+    # Ưu tiên video views cao
+    videos = sorted(videos, key=lambda x: x.get("views", 0), reverse=True)
+    candidates = videos[: max(1, args.candidates)]
+    plog.info(f"Đã chọn {len(candidates)} candidate để tải về")
+
+    # ── Step 2: Download best candidate ────────────────────────────────
+    downloader = VideoDownloader(output_dir=args.download_dir)
+    picked = None
+
+    for idx, item in enumerate(candidates, start=1):
+        plog.step(f"DOWNLOAD CANDIDATE #{idx}: {item.get('source_url', '')}")
+        dl = await downloader.download(
+            url=item.get("source_url", ""),
+            pipeline_logger=plog,
+            proxy_url=proxy_url or None,
+        )
+        if dl.get("success") and dl.get("local_path") and os.path.exists(dl["local_path"]):
+            picked = {**item, **dl}
+            break
+
+    if not picked:
+        plog.error("Không tải được candidate nào.")
+        return
+
+    plog.info(f"✅ Picked video: {picked.get('title')}")
+
+    # ── Step 3: Process video + add music (+ avatar overlay optional) ─
+    processor = VideoProcessor(output_dir=args.processed_dir)
+    proc = await processor.process(
+        video_path=picked["local_path"],
+        music_path=music_path,
+        duration_sec=float(args.clip_duration),
+        add_text=args.overlay_text,
+        add_blur=not args.no_blur,
+        add_zoom=args.add_zoom,
+        zoom_factor=float(args.zoom_factor),
+        avatar_path=args.avatar_file,
+        pipeline_logger=plog,
+    )
+
+    if not proc.get("success"):
+        plog.error(f"Xử lý video thất bại: {proc.get('error')}")
+        return
+
+    processed_video = proc["output_path"]
+    plog.info(f"✅ Processed video: {processed_video}")
+
+    # ── Step 4: Upload Snapchat ────────────────────────────────────────
+    browser = BrowserManager(headless=args.headless, screenshots_dir="screenshots")
+    await browser.start()
+    try:
+        snap = SnapchatAutomation(browser, plog)
+        snap_res = await snap.run(
+            username=snap_user,
+            password=snap_pass,
+            video_path=processed_video,
+            music_title=music_title,
+            artist=artist,
+            title=args.post_title or picked.get("title", "Viral Upload"),
+            description=args.post_desc,
+            tags=args.post_tags,
+            account_id=None,
+            headless=args.headless,
+        )
+
+        if snap_res.get("success"):
+            print("\n🎉 Hoàn tất viral-post: đã đăng Snapchat thành công")
+            print(f"   Video nguồn: {picked.get('source_url')}")
+            print(f"   Video upload: {processed_video}")
+        else:
+            print(f"\n❌ Upload Snapchat thất bại: {snap_res.get('message')}")
+    finally:
+        await browser.stop()
+
+
 async def _run_queue_async(pipeline: AutomationPipeline, args):
     await pipeline.initialize()
     browser = pipeline.browser
@@ -424,6 +570,7 @@ Ví dụ:
   python main.py add-job --video "video.mp4" --music "song.mp3" --title "My Video"
   python main.py list --type stats
   python main.py run
+    python main.py viral-post --keyword "sad edit" --music "uploads/music/song.mp3"
   python main.py gui
         """,
     )
@@ -465,6 +612,57 @@ Ví dụ:
     # gui
     subparsers.add_parser("gui", help="Chạy giao diện GUI")
 
+    # viral-post (no GUI)
+    viral_parser = subparsers.add_parser(
+        "viral-post",
+        help="No GUI flow: scrape hot video -> process -> upload Snapchat",
+    )
+    viral_parser.add_argument("--keyword", required=True,
+                              help="Từ khóa tìm video (có thể nhiều, cách nhau bởi dấu phẩy)")
+    viral_parser.add_argument("--sources", default="youtube,tiktok",
+                              help="Nguồn scrape: youtube,tiktok,douyin")
+    viral_parser.add_argument("--min-views", type=int, default=10000,
+                              help="Ngưỡng views tối thiểu")
+    viral_parser.add_argument("--max-duration", type=int, default=60,
+                              help="Thời lượng video tối đa (giây)")
+    viral_parser.add_argument("--max-results", type=int, default=15,
+                              help="Số lượng kết quả tối đa mỗi keyword")
+    viral_parser.add_argument("--candidates", type=int, default=5,
+                              help="Số candidate tải thử")
+
+    viral_parser.add_argument("--music", required=False,
+                              help="Đường dẫn file nhạc để ghép")
+    viral_parser.add_argument("--music-title", default=None,
+                              help="Tên bài hát để search khi đăng Snapchat")
+    viral_parser.add_argument("--artist", default=None,
+                              help="Tên nghệ sĩ")
+    viral_parser.add_argument("--avatar-file", default=None,
+                              help="Ảnh avatar chèn lên video (png/jpg)")
+    viral_parser.add_argument("--overlay-text", default=None,
+                              help="Text overlay trên video")
+    viral_parser.add_argument("--clip-duration", type=float, default=15,
+                              help="Thời lượng clip sau xử lý")
+    viral_parser.add_argument("--add-zoom", action="store_true",
+                              help="Bật hiệu ứng zoom")
+    viral_parser.add_argument("--zoom-factor", type=float, default=1.05,
+                              help="Hệ số zoom")
+    viral_parser.add_argument("--no-blur", action="store_true",
+                              help="Tắt blur effect")
+
+    viral_parser.add_argument("--post-title", default=None, help="Tiêu đề post Snapchat")
+    viral_parser.add_argument("--post-desc", default=None, help="Mô tả post")
+    viral_parser.add_argument("--post-tags", default=None, help="Tags post")
+    viral_parser.add_argument("--download-dir", default="uploads/video", help="Thư mục video tải về")
+    viral_parser.add_argument("--processed-dir", default="uploads/processed", help="Thư mục video xử lý")
+
+    viral_parser.add_argument("--snap-user", default=None, help="Override Snapchat username")
+    viral_parser.add_argument("--snap-pass", default=None, help="Override Snapchat password")
+    viral_parser.add_argument("--with-proxy", action="store_true", help="Bật proxy khi scrape/download")
+    viral_parser.add_argument("--proxy-url", default=None, help="Override proxy URL")
+    viral_parser.add_argument("--headless", action="store_true", default=True, help="Chạy headless")
+    viral_parser.add_argument("--visible", action="store_false", dest="headless",
+                              help="Hiển thị trình duyệt")
+
     args = parser.parse_args()
 
     # ── Dispatch commands ─────────────────────────────────────────────────
@@ -488,6 +686,9 @@ Ví dụ:
         from gui import App
         app = App()
         app.mainloop()
+
+    elif args.command == "viral-post":
+        cmd_viral_post(args)
 
 
 if __name__ == "__main__":
