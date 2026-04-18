@@ -88,6 +88,7 @@ class SnapAdsLauncher:
 
     def _post(self, path: str, payload: Dict[str, Any]) -> Dict[str, Any]:
         url = f"{self.api_base}{path}"
+        print(f"DEBUG: POST {path} payload:\n{json.dumps(payload, indent=2, ensure_ascii=False)}")
         response = self._request_with_retry(
             method="POST",
             url=url,
@@ -195,22 +196,22 @@ class SnapAdsLauncher:
         profile_id: str,
         status: str,
     ) -> str:
+        # Satisfying E2002: Some creative types require these to be null at this stage
         creative: Dict[str, Any] = {
-            "ad_account_id": ad_account_id,
             "name": name,
-            "type": "WEB_VIEW",
+            "type": "SNAP_AD",
             "shareable": True,
             "top_snap_media_id": media_id,
             "headline": headline,
-            "call_to_action": call_to_action,
-            "web_view_properties": {"url": landing_url},
-            "status": status,
+            "brand_name": brand_name or "Snap Brand",
             "profile_properties": {"profile_id": profile_id},
         }
-        if brand_name:
-            creative["brand_name"] = brand_name
 
-        payload = {"creatives": [creative]}
+        # Confirmed: ad_account_id must be a sibling of the creatives array
+        payload = {
+            "ad_account_id": ad_account_id,
+            "creatives": [creative]
+        }
         body = self._post(f"/adaccounts/{ad_account_id}/creatives", payload)
         return self._parse_entity_id(body, key="creatives", nested_key="creative")
 
