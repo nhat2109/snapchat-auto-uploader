@@ -11,6 +11,7 @@ env/
 
 # Local environment config
 .env
+sessions/snap_ads_oauth.json
 
 # Logs and runtime artifacts
 logs/

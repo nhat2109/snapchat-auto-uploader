@@ -282,11 +282,17 @@ Trinh tu bat buoc:
 ## 13) CLI de xuat de van hanh
 
 ```bash
+# 0) Chay local callback server (de nhan code khi redirect)
+python scripts/snap_ads_callback_server.py --port 8787 --path /callback --exchange
+
 # 1) Tao authorization URL
-python scripts/run_ads_pipeline.py auth-url
+python scripts/run_ads_auth.py auth-url
 
 # 2) Exchange code lay token
-python scripts/run_ads_pipeline.py exchange-code --code "<AUTH_CODE>"
+python scripts/run_ads_auth.py exchange-code --code "<AUTH_CODE>"
+
+# 2.1) Verify token va quyen
+python scripts/run_ads_auth.py verify
 
 # 3) Tao full ad stack
 python scripts/run_ads_pipeline.py create-ad --config configs/ad_job_001.json
@@ -310,3 +316,8 @@ python scripts/run_measurement_loop.py --apply=true
 - Rule engine nang cao theo objective tung campaign.
 - Alerting qua Slack/Email khi vuot spend threshold.
 
+
+
+https://github.com/Sunilv1605/Snapchat-API
+
+https://developers.snap.com/api/marketing-api/Ads-API/announcements
