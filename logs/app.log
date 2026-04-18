@@ -64,3 +64,37 @@
 2026-04-13 01:38:03 | INFO     | 🇨🇳 Douyin: Tìm 'gái xinh'...
 2026-04-13 01:38:03 | INFO     |   → Douyin: 0 video(s) tìm thấy
 2026-04-13 01:38:07 | INFO     | ✅ Tìm thấy 0 video viral đạt chuẩn
+2026-04-18 15:00:13 | INFO     | Browser started: chromium, headless=False
+2026-04-18 15:00:13 | INFO     | ============================================================
+2026-04-18 15:00:13 | INFO     |   SNAPCHAT VIDEO UPLOAD
+2026-04-18 15:00:13 | INFO     | ============================================================
+2026-04-18 15:00:13 | INFO     | User: m_lecong26 | Video: E2E Upload Test
+2026-04-18 15:00:13 | INFO     | Using saved session state: sessions\snapchat_state.json
+2026-04-18 15:00:23 | INFO     | ✅ Session đăng nhập còn hiệu lực, bỏ qua bước login
+2026-04-18 15:00:23 | INFO     | 🎬 Đang mở Content Studio...
+2026-04-18 15:00:30 | INFO     | ✅ Content Studio: https://www.snapchat.com/content
+2026-04-18 15:00:30 | INFO     | 📤 Đang upload video: snap_1.mp4
+2026-04-18 15:01:17 | ERROR    | Không tìm thấy file input/file chooser để upload
+2026-04-18 15:01:18 | INFO     | 📸 Screenshot saved: screenshots\snapchat_upload_input_missing_20260418_150117.png
+2026-04-18 15:01:18 | INFO     | 📸 Screenshot saved: screenshots\snapchat_upload_failed_20260418_150118.png
+2026-04-18 15:01:18 | INFO     | Browser stopped.
+2026-04-18 15:03:21 | INFO     | Browser started: chromium, headless=False
+2026-04-18 15:03:21 | INFO     | ============================================================
+2026-04-18 15:03:21 | INFO     |   SNAPCHAT VIDEO UPLOAD
+2026-04-18 15:03:21 | INFO     | ============================================================
+2026-04-18 15:03:21 | INFO     | User: m_lecong26 | Video: E2E Upload Test
+2026-04-18 15:03:21 | INFO     | Using saved session state: sessions\snapchat_state.json
+2026-04-18 15:03:31 | INFO     | ✅ Session đăng nhập còn hiệu lực, bỏ qua bước login
+2026-04-18 15:03:31 | INFO     | 🎬 Đang mở Content Studio...
+2026-04-18 15:03:37 | INFO     | ✅ Content Studio: https://www.snapchat.com/content-studio
+2026-04-18 15:03:37 | INFO     | 📤 Đang upload video: snap_1.mp4
+2026-04-18 15:04:22 | INFO     | Browser stopped.
+2026-04-18 15:11:29 | INFO     | Browser started: chromium, headless=False
+2026-04-18 15:11:29 | INFO     | ============================================================
+2026-04-18 15:11:29 | INFO     |   SNAPCHAT VIDEO UPLOAD
+2026-04-18 15:11:29 | INFO     | ============================================================
+2026-04-18 15:11:29 | INFO     | User: m_lecong26 | Video: E2E Upload Test
+2026-04-18 15:11:29 | INFO     | Using saved session state: sessions\snapchat_state.json
+2026-04-18 15:11:38 | INFO     | ⚠️ Session-only mode: session không hợp lệ, không thử login lại
+2026-04-18 15:11:39 | INFO     | 📸 Screenshot saved: screenshots\snapchat_session_invalid_20260418_151138.png
+2026-04-18 15:11:39 | INFO     | Browser stopped.
