@@ -15,19 +15,23 @@ echo  4. [QUANG CAO] Chay chien dich (Campaign/Ad)
 echo  5. [STORY] Dang Public Story (Noi dung Profile)
 echo  6. [SPOTLIGHT] Tu dong dang Spotlight (TRINH DUYET)
 echo  7. [AUTO-PILOT] Robot tu dong theo doi thu muc va dang bai
-echo  8. [THOAT] Thoat chuong trinh
+echo  9. [VIRAL MACHINE] Bat dau san, tai va edit video AI
+echo  11. [ADS-LOOKUP] Xem danh sach Media ID da tai len
+echo  10. [THOAT] Thoat chuong trinh
 echo ======================================================
-set /p opt="Chon chuc nang (0-8): "
+set /p choice="Chon chuc nang (1-11): "
 
-if "%opt%"=="0" goto opt0
-if "%opt%"=="1" goto opt1
-if "%opt%"=="2" goto opt2
-if "%opt%"=="3" goto opt3
-if "%opt%"=="4" goto opt4
-if "%opt%"=="5" goto opt5
-if "%opt%"=="6" goto opt6
-if "%opt%"=="7" goto opt7
-if "%opt%"=="8" goto opt8
+if "%choice%"=="0" goto opt0
+if "%choice%"=="1" goto opt1
+if "%choice%"=="2" goto opt2
+if "%choice%"=="3" goto opt3
+if "%choice%"=="4" goto opt4
+if "%choice%"=="5" goto opt5
+if "%choice%"=="6" goto opt6
+if "%choice%"=="7" goto opt7
+if "%choice%"=="9" goto VIRAL
+if "%choice%"=="11" goto opt11
+if "%choice%"=="10" goto opt8
 
 echo [WARNING] Lua chon khong hop le!
 pause
@@ -94,16 +98,67 @@ goto menu
 :opt3
 cls
 echo ======================================================
-echo  [HUONG DAN] TAI VIDEO LEN THU VIEN
+echo  [THU VIEN VIDEO] CHON VIDEO DE TAI LEN
 echo ======================================================
-echo  - Muc dich: Day file video tu may tinh len Snapchat.
-echo  - Ket qua: Ban se nhan duoc mot 'Media ID'.
-echo    Hay copy Media ID nay de dung cho Buoc 4 hoac 5.
+echo  Robot dang quet thu muc: uploads\video va uploads\processed...
+echo.
+
+set count=0
+:: Quet thu muc processed truoc (vi day la nhung video chuan nhat)
+for %%f in (uploads\processed\*.mp4 uploads\processed\*.mov) do (
+    set /a count+=1
+    set "file_!count!=%%f"
+    echo  [!count!] [SAN SANG] %%~nxf
+)
+
+:: Quet thu muc video goc
+for %%f in (uploads\video\*.mp4 uploads\video\*.mov) do (
+    set /a count+=1
+    set "file_!count!=%%f"
+    echo  [!count!] [GOC] %%~nxf
+)
+
+if %count%==0 (
+    echo [INFO] Khong tim thay video nao trong thu muc uploads\video.
+)
+
+echo  [0] Nhap duong dan thu cong (hoac Keo tha file khac)
 echo ======================================================
-set /p vfile="Nhap duong dan video (mac dinh: uploads/video/snap_1.mp4): "
-if "!vfile!"=="" set vfile=uploads/video/snap_1.mp4
-echo [INFO] Dang tai len file: !vfile!
-python scripts/run_ads_media_upload.py --file !vfile! --poll
+set /p gchoice="Chon so thu tu video: "
+
+if "%gchoice%"=="0" (
+    set /p vfile="Keo tha file .mp4 vao day: "
+) else (
+    if defined file_%gchoice% (
+        set vfile=!file_%gchoice%!
+    ) else (
+        echo [WARNING] Lua chon khong hop le!
+        pause
+        goto opt3
+    )
+)
+
+:: Go bo dau nhay neu co
+if defined vfile set vfile=%vfile:"=%
+if defined vfile set vfile=%vfile:'=%
+
+echo [INFO] Dang kiem tra file: "%vfile%"
+if not exist "%vfile%" (
+    echo [ERROR] Khong tim thay file!
+    pause
+    goto menu
+)
+
+python scripts/run_ads_media_upload.py --file "%vfile%" --poll
+pause
+goto menu
+
+:opt11
+cls
+echo ======================================================
+echo  [TRA CUU] DANH SACH MEDIA ID DA TAI LEN
+echo ======================================================
+python scripts/run_ads_media_lookup.py
 pause
 goto menu
 
@@ -175,6 +230,24 @@ echo ======================================================
 pause
 echo [INFO] Dang kich hoat Robot Auto-Pilot...
 python scripts/spotlight_watcher.py
+pause
+goto menu
+
+:VIRAL
+cls
+echo ======================================================
+echo           VIRAL MACHINE - AUTONOMOUS PIPELINE
+echo ======================================================
+echo Chuc nang nay se:
+echo 1. Tu dong san video trending tu YouTube/TikTok
+echo 2. Tu dong tai ve va xu ly AI (Chong duplicate)
+echo 3. Luu vao thu muc uploads/processed/ de dang Story/Spotlight
+echo.
+echo Nhan phim bat ky de KICH HOAT Robot...
+pause > nul
+python scripts/run_viral_collect.py
+echo.
+echo Quy trinh hoan tat. Video moi da San sang!
 pause
 goto menu
 

@@ -98,3 +98,1046 @@
 2026-04-18 15:11:38 | INFO     | ⚠️ Session-only mode: session không hợp lệ, không thử login lại
 2026-04-18 15:11:39 | INFO     | 📸 Screenshot saved: screenshots\snapchat_session_invalid_20260418_151138.png
 2026-04-18 15:11:39 | INFO     | Browser stopped.
+2026-04-18 17:26:45 | INFO     | ============================================================
+2026-04-18 17:26:45 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:26:45 | INFO     | ============================================================
+2026-04-18 17:26:45 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:26:45 | INFO     | ============================================================
+2026-04-18 17:26:45 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:26:45 | INFO     | ============================================================
+2026-04-18 17:26:45 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:26:45 | INFO     | 📺 YouTube: Tìm 'funny cats'...
+2026-04-18 17:26:47 | INFO     |   → YouTube: 0 video(s) tìm thấy
+2026-04-18 17:26:48 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:26:48 | INFO     | 📺 YouTube: Tìm 'satisfying videos'...
+2026-04-18 17:26:49 | INFO     |   → YouTube: 0 video(s) tìm thấy
+2026-04-18 17:26:51 | INFO     | ✅ Tìm thấy 0 video viral đạt chuẩn
+2026-04-18 17:26:51 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:29:06 | INFO     | ============================================================
+2026-04-18 17:29:06 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:29:06 | INFO     | ============================================================
+2026-04-18 17:29:06 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:29:06 | INFO     | ============================================================
+2026-04-18 17:29:06 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:29:06 | INFO     | ============================================================
+2026-04-18 17:29:06 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:29:06 | INFO     | 📺 YouTube: Tìm 'funny cats'...
+2026-04-18 17:29:08 | INFO     |   → YouTube: 0 video(s) tìm thấy
+2026-04-18 17:29:09 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:29:09 | INFO     | 📺 YouTube: Tìm 'satisfying videos'...
+2026-04-18 17:29:12 | INFO     |   → YouTube: 0 video(s) tìm thấy
+2026-04-18 17:29:13 | INFO     | ✅ Tìm thấy 0 video viral đạt chuẩn
+2026-04-18 17:29:13 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:29:54 | INFO     | ============================================================
+2026-04-18 17:29:54 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:29:54 | INFO     | ============================================================
+2026-04-18 17:29:54 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:29:54 | INFO     | ============================================================
+2026-04-18 17:29:54 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:29:54 | INFO     | ============================================================
+2026-04-18 17:29:54 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:29:54 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:29:56 | INFO     |   → YouTube: 2 video(s) tim thay
+2026-04-18 17:29:56 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:29:56 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:29:58 | INFO     |   → YouTube: 2 video(s) tim thay
+2026-04-18 17:29:58 | INFO     | ✅ Tìm thấy 0 video viral đạt chuẩn
+2026-04-18 17:29:58 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:30:40 | INFO     | ============================================================
+2026-04-18 17:30:40 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:30:40 | INFO     | ============================================================
+2026-04-18 17:30:40 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:30:40 | INFO     | ============================================================
+2026-04-18 17:30:40 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:30:40 | INFO     | ============================================================
+2026-04-18 17:30:40 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:30:40 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:30:42 | INFO     |   → YouTube: 2 video(s) tim thay
+2026-04-18 17:30:42 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:30:42 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:30:44 | INFO     |   → YouTube: 2 video(s) tim thay
+2026-04-18 17:30:44 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:30:44 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:31:29 | INFO     | ============================================================
+2026-04-18 17:31:29 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:31:29 | INFO     | ============================================================
+2026-04-18 17:31:29 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:31:29 | INFO     | ============================================================
+2026-04-18 17:31:29 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:31:29 | INFO     | ============================================================
+2026-04-18 17:31:29 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:31:29 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:31:31 | INFO     |   → YouTube: 2 video(s) tim thay
+2026-04-18 17:31:31 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:31:31 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:31:32 | INFO     |   → YouTube: 2 video(s) tim thay
+2026-04-18 17:31:32 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 14430 | Duration: 916.0s
+2026-04-18 17:31:32 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:31:32 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31040146 | Duration: 1211.0s
+2026-04-18 17:31:32 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:31:32 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 994111 | Duration: 481.0s
+2026-04-18 17:31:32 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:31:32 | INFO     |    📊 Kiem tra: 'The Most Satisfying Videos On ...' | Views: 1683062 | Duration: 1283.0s
+2026-04-18 17:31:32 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:31:32 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:31:32 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:31:59 | INFO     | ============================================================
+2026-04-18 17:31:59 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:31:59 | INFO     | ============================================================
+2026-04-18 17:31:59 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:31:59 | INFO     | ============================================================
+2026-04-18 17:31:59 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:31:59 | INFO     | ============================================================
+2026-04-18 17:31:59 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:31:59 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:32:01 | INFO     |   → YouTube: 4 video(s) tim thay
+2026-04-18 17:32:01 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:32:01 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:32:03 | INFO     |   → YouTube: 4 video(s) tim thay
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'Funny Cats...' | Views: 80516870 | Duration: 166.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31040146 | Duration: 1211.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 951969 | Duration: 2210.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1496464 | Duration: 1200.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 994111 | Duration: 481.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 858209 | Duration: 1043.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4107582 | Duration: 917.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     |    📊 Kiem tra: 'The Most Satisfying Videos On ...' | Views: 1683062 | Duration: 1283.0s
+2026-04-18 17:32:03 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:32:03 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:32:03 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:33:52 | INFO     | ============================================================
+2026-04-18 17:33:52 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:33:52 | INFO     | ============================================================
+2026-04-18 17:33:52 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:33:52 | INFO     | ============================================================
+2026-04-18 17:33:52 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:33:52 | INFO     | ============================================================
+2026-04-18 17:33:52 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:33:52 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:33:54 | INFO     |   → YouTube: 8 video(s) tim thay
+2026-04-18 17:33:54 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:33:54 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:33:55 | INFO     |   → YouTube: 8 video(s) tim thay
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 14430 | Duration: 916.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31040146 | Duration: 1211.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'CAT MEMES FAMILY ROAD TRIP STO...' | Views: 8194686 | Duration: 497.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9237953 | Duration: 3617.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: '277 Hilarious Cats and Dogs Mo...' | Views: 8254026 | Duration: 1805.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253635 | Duration: 740.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'you'll get a cat after watchin...' | Views: 5540294 | Duration: 1275.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Silliest CATS on Earth Act Lik...' | Views: 170793 | Duration: 1843.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: '(No Music) Oddly Satisfying Vi...' | Views: 2398716 | Duration: 631.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'The MOST Satisfying Minecraft ...' | Views: 4358940 | Duration: 745.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Very Satisfying and Relaxing C...' | Views: 5899908 | Duration: 543.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Oddly Satisfying Video With Re...' | Views: 1240470 | Duration: 3604.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Which Crazy Staircase Would Yo...' | Views: 5993535 | Duration: 486.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Which Crazy Bed Would You Choo...' | Views: 39531983 | Duration: 487.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'Most Satisfying Videos Of Work...' | Views: 717106 | Duration: 1112.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 3163238 | Duration: 501.0s
+2026-04-18 17:33:55 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:33:55 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:33:55 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:34:40 | INFO     | ============================================================
+2026-04-18 17:34:40 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:34:40 | INFO     | ============================================================
+2026-04-18 17:34:40 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:34:40 | INFO     | ============================================================
+2026-04-18 17:34:40 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:34:40 | INFO     | ============================================================
+2026-04-18 17:34:40 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:34:40 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:34:49 | INFO     |   → YouTube: 6 video(s) tim thay
+2026-04-18 17:34:49 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:34:49 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:34:58 | INFO     |   → YouTube: 6 video(s) tim thay
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9237953 | Duration: 3617s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 909006 | Duration: 1078s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 951969 | Duration: 2210s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1496476 | Duration: 1200s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 144417 | Duration: 1086s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253635 | Duration: 739s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'Satisfying Winter Moments Caug...' | Views: 1723812 | Duration: 1766s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 994107 | Duration: 481s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'The Most Satisfying Videos On ...' | Views: 1683069 | Duration: 1283s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'Try Not To Say WOW Challenge! ...' | Views: 13003443 | Duration: 915s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 858209 | Duration: 1042s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     |    📊 Kiem tra: 'Very Satisfying and Relaxing C...' | Views: 1205052 | Duration: 638s
+2026-04-18 17:34:58 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:34:58 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:34:58 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:35:29 | INFO     | ============================================================
+2026-04-18 17:35:29 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:35:29 | INFO     | ============================================================
+2026-04-18 17:35:29 | INFO     | 🔍 Dang tim kiem video cho tu khoa: ['funny cats', 'satisfying videos']
+2026-04-18 17:35:29 | INFO     | ============================================================
+2026-04-18 17:35:29 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:35:29 | INFO     | ============================================================
+2026-04-18 17:35:29 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:35:29 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:35:39 | INFO     |   → YouTube: 6 video(s) tim thay
+2026-04-18 17:35:39 | INFO     | 🔍 Tìm kiếm: 'satisfying videos'
+2026-04-18 17:35:39 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying videos' bang yt-dlp...
+2026-04-18 17:35:47 | INFO     |   → YouTube: 6 video(s) tim thay
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'Funny Cats...' | Views: 80516870 | Duration: 165s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 909006 | Duration: 1078s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 951969 | Duration: 2210s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 14444 | Duration: 915s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'COMPILATION of the FUNNIEST AN...' | Views: 727154 | Duration: 5437s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253635 | Duration: 739s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 858209 | Duration: 1042s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'The Most Satisfying Videos On ...' | Views: 1683069 | Duration: 1283s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'World’s *MOST* Oddly Satisfyin...' | Views: 2009263 | Duration: 894s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'Satisfying Winter Moments Caug...' | Views: 1723812 | Duration: 1766s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 3163238 | Duration: 501s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 994107 | Duration: 481s
+2026-04-18 17:35:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:35:47 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:35:47 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:36:36 | INFO     | ============================================================
+2026-04-18 17:36:36 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:36:36 | INFO     | ============================================================
+2026-04-18 17:36:36 | INFO     | ============================================================
+2026-04-18 17:36:36 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:36:36 | INFO     | ============================================================
+2026-04-18 17:36:36 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:36:36 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:36:38 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 17:36:38 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:36:49 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 17:36:49 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 17:36:49 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 17:36:50 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 17:36:50 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 17:37:01 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 17:37:01 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 17:37:01 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 17:37:02 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 17:37:02 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 17:37:14 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31040157 | Duration: 1210s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 909006 | Duration: 1078s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 951970 | Duration: 2210s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1496476 | Duration: 1200s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 14444 | Duration: 915s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253636 | Duration: 739s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 144417 | Duration: 1086s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9237966 | Duration: 3617s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Silliest CATS on Earth Act Lik...' | Views: 170800 | Duration: 1843s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 858209 | Duration: 1042s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 661867 | Duration: 2194s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 882422 | Duration: 112s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2676445 | Duration: 9680s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Which Crazy Staircase Would Yo...' | Views: 5993545 | Duration: 485s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'The Most Satisfying Chocolate ...' | Views: 125957458 | Duration: 65s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'ASMR Satisfying Eating Emoji F...' | Views: 1551507 | Duration: 538s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Super Soft Gachi Dirt Water Cr...' | Views: 557 | Duration: 18s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Views < 10000
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Which ocean would you swim in?...' | Views: 5351495 | Duration: 488s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 289896 | Duration: 1155s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554761 | Duration: 3838s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'AWESOME SCHOOL HACKS & DIYS EV...' | Views: 20352241 | Duration: 917s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'BECOME A COOL PARENT WITH THES...' | Views: 41995600 | Duration: 3874s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41449123 | Duration: 3640s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: '22 AWESOME HACKS AND DIYs YOU ...' | Views: 14751837 | Duration: 788s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884198 | Duration: 1744s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284129 | Duration: 2060s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     |    📊 Kiem tra: '15 Clever Ways to Upcycle Ever...' | Views: 69100509 | Duration: 794s
+2026-04-18 17:37:14 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:37:14 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 17:37:14 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 17:39:10 | INFO     | ============================================================
+2026-04-18 17:39:10 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 17:39:10 | INFO     | ============================================================
+2026-04-18 17:39:10 | INFO     | ============================================================
+2026-04-18 17:39:10 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 17:39:10 | INFO     | ============================================================
+2026-04-18 17:39:10 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 17:39:10 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:39:12 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 17:39:12 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 17:39:24 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 17:39:24 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 17:39:24 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 17:39:25 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 17:39:25 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 17:39:35 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 17:39:35 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 17:39:35 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 17:39:36 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 17:39:36 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 17:39:47 | ERROR    | YouTube yt-dlp search failed: [0;31mERROR:[0m [youtube] 8_D9wHSbKKw: This video is not available
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 14444 | Duration: 915s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31040157 | Duration: 1210s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 951970 | Duration: 2210s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9237966 | Duration: 3617s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1496479 | Duration: 1200s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'CAT MEMES FAMILY ROAD TRIP STO...' | Views: 8194686 | Duration: 496s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 909008 | Duration: 1078s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253636 | Duration: 739s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 144422 | Duration: 1086s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 858213 | Duration: 1042s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'ASMR chocolate challenge gummy...' | Views: 935593 | Duration: 6s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4107583 | Duration: 917s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 882425 | Duration: 112s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2676453 | Duration: 9680s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 661867 | Duration: 2194s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'AMAZING Pattern Revealed At Th...' | Views: 854958 | Duration: 295s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'The Most Satisfying Chocolate ...' | Views: 125957523 | Duration: 65s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     |    📊 Kiem tra: 'ASMR Makeup & Skincare tutoria...' | Views: 2568048 | Duration: 360s
+2026-04-18 17:39:47 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 17:39:47 | INFO     | ✅ Tim thay 1 video viral dat chuan
+2026-04-18 17:39:47 | INFO     | ✅ Tim thay 1 video. Bat dau tai ve...
+2026-04-18 17:39:47 | INFO     | VIDEO #1: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr
+2026-04-18 17:39:47 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=WFzzCNBjRnY
+2026-04-18 17:39:51 | INFO     | ✅ Downloaded: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr → uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 17:39:54 | INFO     |    🎭 Dang 'Hoa than' video (AI Edit)...
+2026-04-18 17:39:54 | INFO     | ============================================================
+2026-04-18 17:39:54 | INFO     |   VIDEO PROCESSING
+2026-04-18 17:39:54 | INFO     | ============================================================
+2026-04-18 17:39:54 | INFO     | 📹 Source: uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 17:39:54 | INFO     | ⏱  Trim: 0.0s → 10.0s
+2026-04-18 17:39:54 | INFO     | 📐 Target: 9:16 vertical
+2026-04-18 17:39:55 | INFO     | ✅ Video processed: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_4309.mp4
+2026-04-18 17:39:57 | INFO     |    ✅ HOAN TAT: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_4309.mp4
+2026-04-18 17:39:57 | INFO     | ============================================================
+2026-04-18 17:39:57 | INFO     |   DA XU LY XONG TOAN BO
+2026-04-18 17:39:57 | INFO     | ============================================================
+2026-04-18 22:18:44 | INFO     | ============================================================
+2026-04-18 22:18:44 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:18:44 | INFO     | ============================================================
+2026-04-18 22:18:44 | INFO     | ============================================================
+2026-04-18 22:18:44 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:18:44 | INFO     | ============================================================
+2026-04-18 22:18:44 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:18:44 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:18:46 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:18:46 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:18:58 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:18:58 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:18:58 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:18:59 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:18:59 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:19:09 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:19:09 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:19:09 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:19:10 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:19:10 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:19:22 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31045322 | Duration: 1210s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244118 | Duration: 3617s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1497539 | Duration: 1200s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952331 | Duration: 2210s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910397 | Duration: 1078s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 17946 | Duration: 915s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253852 | Duration: 739s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145535 | Duration: 1086s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Hilarious Cats Seeing Crazy Pu...' | Views: 187268 | Duration: 636s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859410 | Duration: 1042s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '💧rating my fidget board asmr, ...' | Views: 251 | Duration: 251s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'ASMR chocolate challenge gummy...' | Views: 935606 | Duration: 6s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662219 | Duration: 2194s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883430 | Duration: 112s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '1 HOUR COMPILATION Satisfying ...' | Views: 6262635 | Duration: 3602s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 1169323 | Duration: 481s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108001 | Duration: 917s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '3 Minutes Satisfying Video | M...' | Views: 1353 | Duration: 59s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Views < 10000
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554853 | Duration: 3838s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884279 | Duration: 1744s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451139 | Duration: 3640s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'AWESOME SCHOOL HACKS & DIYS EV...' | Views: 20353128 | Duration: 917s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Genius Home Hacks For Any Occa...' | Views: 10241937 | Duration: 3718s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '22 AWESOME HACKS AND DIYs YOU ...' | Views: 14753934 | Duration: 788s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294270 | Duration: 1155s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: '15 Clever Ways to Upcycle Ever...' | Views: 69101195 | Duration: 794s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284322 | Duration: 2060s
+2026-04-18 22:19:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:19:22 | INFO     | ✅ Tim thay 1 video viral dat chuan
+2026-04-18 22:19:22 | INFO     | ✅ Tim thay 1 video. Bat dau tai ve...
+2026-04-18 22:19:22 | INFO     | VIDEO #1: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr
+2026-04-18 22:19:22 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=WFzzCNBjRnY
+2026-04-18 22:19:24 | INFO     | ✅ Downloaded: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr → uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:19:26 | INFO     |    🎭 Dang 'Hoa than' video (AI Edit)...
+2026-04-18 22:19:26 | INFO     | ============================================================
+2026-04-18 22:19:26 | INFO     |   VIDEO PROCESSING
+2026-04-18 22:19:26 | INFO     | ============================================================
+2026-04-18 22:19:26 | INFO     | 📹 Source: uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:19:26 | INFO     | ⏱  Trim: 0.0s → 10.0s
+2026-04-18 22:19:26 | INFO     | 📐 Target: 9:16 vertical
+2026-04-18 22:19:28 | INFO     | ✅ Video processed: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_1783.mp4
+2026-04-18 22:19:29 | INFO     |    ✅ HOAN TAT: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_1783.mp4
+2026-04-18 22:19:29 | INFO     | ============================================================
+2026-04-18 22:19:29 | INFO     |   DA XU LY XONG TOAN BO
+2026-04-18 22:19:29 | INFO     | ============================================================
+2026-04-18 22:23:14 | INFO     | ============================================================
+2026-04-18 22:23:14 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:23:14 | INFO     | ============================================================
+2026-04-18 22:23:14 | INFO     | ============================================================
+2026-04-18 22:23:14 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:23:14 | INFO     | ============================================================
+2026-04-18 22:23:14 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:23:14 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:23:16 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:23:16 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:23:28 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:23:28 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:23:28 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:23:29 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:23:29 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:23:39 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:23:39 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:23:39 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:23:40 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:23:40 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:23:53 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31045496 | Duration: 1210s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244264 | Duration: 3617s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952342 | Duration: 2210s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1497577 | Duration: 1200s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910423 | Duration: 1078s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253860 | Duration: 739s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145564 | Duration: 1086s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 18042 | Duration: 915s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Hilarious Cats Seeing Crazy Pu...' | Views: 187702 | Duration: 636s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '💧rating my fidget board asmr, ...' | Views: 269 | Duration: 251s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859450 | Duration: 1042s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662223 | Duration: 2194s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108014 | Duration: 917s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680115 | Duration: 9680s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883462 | Duration: 112s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '1 HOUR COMPILATION Satisfying ...' | Views: 6262665 | Duration: 3602s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '3 Minutes Satisfying Video | M...' | Views: 2484 | Duration: 59s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Views < 10000
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Which ocean would you swim in?...' | Views: 5353297 | Duration: 488s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554853 | Duration: 3838s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884279 | Duration: 1744s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '22 AWESOME HACKS AND DIYs YOU ...' | Views: 14753982 | Duration: 788s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294367 | Duration: 1155s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Dumb Life Hacks I Learned on Y...' | Views: 341573 | Duration: 840s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451188 | Duration: 3640s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: '15 Clever Ways to Upcycle Ever...' | Views: 69101208 | Duration: 794s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284320 | Duration: 2060s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     |    📊 Kiem tra: 'AWESOME SCHOOL HACKS & DIYS EV...' | Views: 20353151 | Duration: 917s
+2026-04-18 22:23:53 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:23:53 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 22:23:53 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 22:26:03 | INFO     | ============================================================
+2026-04-18 22:26:03 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:26:03 | INFO     | ============================================================
+2026-04-18 22:26:03 | INFO     | ============================================================
+2026-04-18 22:26:03 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:26:03 | INFO     | ============================================================
+2026-04-18 22:26:03 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:26:03 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:26:05 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:26:05 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:26:16 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:26:16 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:26:16 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:26:18 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:26:18 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:26:28 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:26:28 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:26:28 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:26:29 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:26:29 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:26:41 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31045631 | Duration: 1210s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244264 | Duration: 3617s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952342 | Duration: 2210s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1497577 | Duration: 1200s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910460 | Duration: 1078s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253865 | Duration: 739s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145593 | Duration: 1086s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 18129 | Duration: 915s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'You Laugh You Lose 😅 Best Funn...' | Views: 23014711 | Duration: 2188s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859434 | Duration: 1042s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '💧rating my fidget board asmr, ...' | Views: 277 | Duration: 251s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'ASMR chocolate challenge gummy...' | Views: 935606 | Duration: 6s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680115 | Duration: 9680s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662238 | Duration: 2194s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108031 | Duration: 917s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883462 | Duration: 112s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '1 HOUR COMPILATION Satisfying ...' | Views: 6262665 | Duration: 3602s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '3 Minutes Satisfying Video | M...' | Views: 3050 | Duration: 59s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Views < 10000
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294367 | Duration: 1155s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554917 | Duration: 3838s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884279 | Duration: 1744s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451246 | Duration: 3640s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'AWESOME SCHOOL HACKS & DIYS EV...' | Views: 20353172 | Duration: 917s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: 'Genius Home Hacks For Any Occa...' | Views: 10241954 | Duration: 3718s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '🧊 COOL KITCHEN GADGETS ✨ Hacks...' | Views: 955520 | Duration: 6319s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '22 AWESOME HACKS AND DIYs YOU ...' | Views: 14753982 | Duration: 788s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     |    📊 Kiem tra: '15 Clever Ways to Upcycle Ever...' | Views: 69101232 | Duration: 794s
+2026-04-18 22:26:41 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:26:41 | INFO     | ✅ Tim thay 1 video viral dat chuan
+2026-04-18 22:26:41 | INFO     | ✅ Tim thay 1 video. Bat dau tai ve...
+2026-04-18 22:26:41 | INFO     | VIDEO #1: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr
+2026-04-18 22:26:41 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=WFzzCNBjRnY
+2026-04-18 22:26:43 | INFO     | ✅ Downloaded: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr → uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:26:47 | INFO     |    🎭 Dang 'Hoa than' video (AI Edit)...
+2026-04-18 22:26:47 | INFO     | ============================================================
+2026-04-18 22:26:47 | INFO     |   VIDEO PROCESSING
+2026-04-18 22:26:47 | INFO     | ============================================================
+2026-04-18 22:26:47 | INFO     | 📹 Source: uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:26:47 | INFO     | ⏱  Trim: 0.0s → 10.0s
+2026-04-18 22:26:47 | INFO     | 📐 Target: 9:16 vertical
+2026-04-18 22:26:48 | INFO     | ✅ Video processed: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_2959.mp4
+2026-04-18 22:26:49 | INFO     |    ✅ HOAN TAT: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_2959.mp4
+2026-04-18 22:26:49 | INFO     | ============================================================
+2026-04-18 22:26:49 | INFO     |   DA XU LY XONG TOAN BO
+2026-04-18 22:26:49 | INFO     | ============================================================
+2026-04-18 22:32:52 | INFO     | ============================================================
+2026-04-18 22:32:52 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:32:52 | INFO     | ============================================================
+2026-04-18 22:32:52 | INFO     | ============================================================
+2026-04-18 22:32:52 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:32:52 | INFO     | ============================================================
+2026-04-18 22:32:52 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:32:52 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:32:53 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:32:53 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:33:06 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:33:06 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:33:06 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:33:07 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:33:07 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:33:18 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:33:18 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:33:18 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:33:18 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:33:18 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:33:23 | ERROR    | YouTube yt-dlp search failed: [0;31mERROR:[0m [youtube] 8_D9wHSbKKw: This video is not available
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244590 | Duration: 3617s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31045733 | Duration: 1210s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952354 | Duration: 2210s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1497604 | Duration: 1200s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253865 | Duration: 739s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Hilarious Cats Seeing Crazy Pu...' | Views: 188018 | Duration: 636s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 18168 | Duration: 915s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145615 | Duration: 1086s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910494 | Duration: 1078s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: '💧rating my fidget board asmr, ...' | Views: 310 | Duration: 251s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859484 | Duration: 1042s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662244 | Duration: 2194s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108036 | Duration: 917s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 1169509 | Duration: 481s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680224 | Duration: 9680s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: '1 HOUR COMPILATION Satisfying ...' | Views: 6262756 | Duration: 3602s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883503 | Duration: 112s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:33:23 | INFO     |    📊 Kiem tra: '3 Minutes Satisfying Video | M...' | Views: 5014 | Duration: 59s
+2026-04-18 22:33:23 | INFO     |    ❌ Loai: Views < 10000
+2026-04-18 22:33:23 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 22:33:23 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 22:34:47 | INFO     | ============================================================
+2026-04-18 22:34:47 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:34:47 | INFO     | ============================================================
+2026-04-18 22:34:47 | INFO     | ============================================================
+2026-04-18 22:34:47 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:34:47 | INFO     | ============================================================
+2026-04-18 22:34:47 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:34:47 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:34:48 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:34:48 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:35:01 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:35:01 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:35:01 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:35:01 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:35:01 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:35:12 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:35:12 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:35:12 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:35:13 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:35:13 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:35:25 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 18200 | Duration: 915s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31045733 | Duration: 1210s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952354 | Duration: 2210s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1497626 | Duration: 1200s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244590 | Duration: 3617s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '277 Hilarious Cats and Dogs Mo...' | Views: 8264041 | Duration: 1804s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253865 | Duration: 739s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910494 | Duration: 1078s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145635 | Duration: 1086s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '💧rating my fidget board asmr, ...' | Views: 317 | Duration: 251s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859484 | Duration: 1042s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108036 | Duration: 917s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '1 HOUR COMPILATION Satisfying ...' | Views: 6262756 | Duration: 3602s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Super Soft Gachi Dirt Water Cr...' | Views: 1223 | Duration: 18s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Views < 10000
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662244 | Duration: 2194s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680260 | Duration: 9680s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883504 | Duration: 112s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Packing School Lunch with 🍊 Or...' | Views: 6514 | Duration: 182s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554853 | Duration: 3838s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '🧊 COOL KITCHEN GADGETS ✨ Hacks...' | Views: 955558 | Duration: 6319s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451281 | Duration: 3640s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Genius Home Hacks For Any Occa...' | Views: 10241964 | Duration: 3718s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884279 | Duration: 1744s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'GENIUS HOME HACKS 🏡 CLEANING &...' | Views: 917366 | Duration: 3991s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294594 | Duration: 1155s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284324 | Duration: 2060s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     |    📊 Kiem tra: 'Dumb Life Hacks I Learned on Y...' | Views: 341585 | Duration: 840s
+2026-04-18 22:35:25 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:35:25 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 22:35:25 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 22:36:45 | INFO     | ============================================================
+2026-04-18 22:36:45 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:36:45 | INFO     | ============================================================
+2026-04-18 22:36:45 | INFO     | ============================================================
+2026-04-18 22:36:45 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:36:45 | INFO     | ============================================================
+2026-04-18 22:36:45 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:36:45 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:36:47 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:36:47 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:36:59 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:36:59 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:36:59 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:37:00 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:37:00 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:37:10 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:37:10 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:37:10 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:37:11 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:37:11 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:37:23 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244692 | Duration: 3617s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253871 | Duration: 739s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 18252 | Duration: 915s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952360 | Duration: 2210s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'When Cats Are Being Total Litt...' | Views: 2067985 | Duration: 685s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910507 | Duration: 1078s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145635 | Duration: 1086s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31045864 | Duration: 1210s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Silliest CATS on Earth Act Lik...' | Views: 170838 | Duration: 1843s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859508 | Duration: 1042s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '💧rating my fidget board asmr, ...' | Views: 322 | Duration: 251s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'ASMR chocolate challenge gummy...' | Views: 935606 | Duration: 6s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680260 | Duration: 9680s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108048 | Duration: 917s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662250 | Duration: 2194s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 1169509 | Duration: 481s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883504 | Duration: 112s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'AMAZING Pattern Revealed At Th...' | Views: 854974 | Duration: 295s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554917 | Duration: 3838s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294683 | Duration: 1155s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884279 | Duration: 1744s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451314 | Duration: 3640s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '🧊 COOL KITCHEN GADGETS ✨ Hacks...' | Views: 955565 | Duration: 6319s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'GENIUS HOME HACKS 🏡 CLEANING &...' | Views: 917366 | Duration: 3991s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Genius Home Hacks For Any Occa...' | Views: 10241969 | Duration: 3718s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284327 | Duration: 2060s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     |    📊 Kiem tra: '22 AWESOME HACKS AND DIYs YOU ...' | Views: 14754053 | Duration: 788s
+2026-04-18 22:37:23 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:37:23 | INFO     | ✅ Tim thay 1 video viral dat chuan
+2026-04-18 22:37:23 | INFO     | ✅ Tim thay 1 video. Bat dau tai ve...
+2026-04-18 22:37:23 | INFO     | VIDEO #1: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr
+2026-04-18 22:37:23 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=WFzzCNBjRnY
+2026-04-18 22:37:25 | INFO     | ✅ Downloaded: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr → uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:37:29 | INFO     |    🎭 Dang 'Hoa than' video (AI Edit)...
+2026-04-18 22:37:29 | INFO     | ============================================================
+2026-04-18 22:37:29 | INFO     |   VIDEO PROCESSING
+2026-04-18 22:37:29 | INFO     | ============================================================
+2026-04-18 22:37:29 | INFO     | 📹 Source: uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:37:29 | INFO     | ⏱  Trim: 0.0s → 10.0s
+2026-04-18 22:37:29 | INFO     | 📐 Target: 9:16 vertical
+2026-04-18 22:37:30 | INFO     | ✅ Video processed: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_7770.mp4
+2026-04-18 22:37:32 | INFO     |    ✅ HOAN TAT: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_7770.mp4
+2026-04-18 22:37:32 | INFO     | ============================================================
+2026-04-18 22:37:32 | INFO     |   DA XU LY XONG TOAN BO
+2026-04-18 22:37:32 | INFO     | ============================================================
+2026-04-18 22:43:44 | INFO     | ============================================================
+2026-04-18 22:43:44 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:43:44 | INFO     | ============================================================
+2026-04-18 22:43:44 | INFO     | ============================================================
+2026-04-18 22:43:44 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:43:44 | INFO     | ============================================================
+2026-04-18 22:43:44 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:43:44 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:43:45 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:43:45 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:43:58 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:43:58 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:43:58 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:43:58 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:43:58 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:44:09 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:44:09 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:44:09 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:44:10 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:44:10 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:44:22 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244904 | Duration: 3617s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31046033 | Duration: 1210s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Silliest CATS on Earth Act Lik...' | Views: 170838 | Duration: 1843s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Funny cats with 4% braincell...' | Views: 100 | Duration: 669s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145647 | Duration: 1086s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910544 | Duration: 1078s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253877 | Duration: 739s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'The FUNNIEST Cat Clips on the ...' | Views: 8228 | Duration: 754s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'You Won’t Believe What These S...' | Views: 586995 | Duration: 608s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859545 | Duration: 1042s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883567 | Duration: 112s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680468 | Duration: 9680s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108056 | Duration: 917s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662261 | Duration: 2194s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'ASMR Makeup & Skincare tutoria...' | Views: 2569011 | Duration: 360s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'ASMR Satisfying Eating Emoji F...' | Views: 1553178 | Duration: 538s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'ASMR | Bubble gum (nugget, tap...' | Views: 4444225 | Duration: 63s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '1 HOUR COMPILATION Satisfying ...' | Views: 6262824 | Duration: 3602s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554917 | Duration: 3838s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '🧊 COOL KITCHEN GADGETS ✨ Hacks...' | Views: 955574 | Duration: 6319s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451343 | Duration: 3640s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294789 | Duration: 1155s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Genius Home Hacks For Any Occa...' | Views: 10241973 | Duration: 3718s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'GENIUS HOME HACKS 🏡 CLEANING &...' | Views: 917374 | Duration: 3991s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884279 | Duration: 1744s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284331 | Duration: 2060s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     |    📊 Kiem tra: '22 AWESOME HACKS AND DIYs YOU ...' | Views: 14754117 | Duration: 788s
+2026-04-18 22:44:22 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:44:22 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 22:44:22 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 22:45:39 | INFO     | ============================================================
+2026-04-18 22:45:39 | INFO     |   VIRAL MACHINE - COLLECTOR & PROCESSOR
+2026-04-18 22:45:39 | INFO     | ============================================================
+2026-04-18 22:45:39 | INFO     | ============================================================
+2026-04-18 22:45:39 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 22:45:39 | INFO     | ============================================================
+2026-04-18 22:45:39 | INFO     | 🔍 Tìm kiếm: 'funny cats'
+2026-04-18 22:45:39 | INFO     | 📱 TikTok: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:45:41 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:45:41 | INFO     | 📺 YouTube: Dang tim kiem 'funny cats' bang yt-dlp...
+2026-04-18 22:45:58 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:45:58 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 22:45:58 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:45:59 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:45:59 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 22:46:11 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:46:11 | INFO     | 🔍 Tìm kiếm: 'life hacks'
+2026-04-18 22:46:11 | INFO     | 📱 TikTok: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:46:12 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 22:46:12 | INFO     | 📺 YouTube: Dang tim kiem 'life hacks' bang yt-dlp...
+2026-04-18 22:46:24 | INFO     |   → YouTube: 9 video(s) tim thay
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'The Funniest Cat Videos Ever...' | Views: 31046212 | Duration: 1210s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'These CATS are too FUNNY! 🤣 | ...' | Views: 9244904 | Duration: 3617s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 910595 | Duration: 1078s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'cats are malfunctioning...' | Views: 1497695 | Duration: 1200s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Try Not To Laugh 😅 Best Funny ...' | Views: 952366 | Duration: 2210s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'When 'BRAVE' cats suddenly rea...' | Views: 253883 | Duration: 739s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Funniest Cats and Dogs Clips 2...' | Views: 145667 | Duration: 1086s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Impossible Not to Laugh 🤣😹 Fun...' | Views: 18470 | Duration: 915s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Funny cats with 4% braincell...' | Views: 102 | Duration: 669s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Views < 10000, Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'asmr restocks 🎀 🤍 | satisfying...' | Views: 859545 | Duration: 1042s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Satisfying Relaxing Video|Egg ...' | Views: 662276 | Duration: 2194s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'ASMR Relaxing & Satisfying Vid...' | Views: 1169509 | Duration: 481s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: '🙊try no to Say WoW 😌| satisfyi...' | Views: 4108072 | Duration: 917s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Satisfying AI ASMR Planet Spre...' | Views: 883567 | Duration: 112s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: '💖rating my best fidget boards ...' | Views: 2680468 | Duration: 9680s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'ASMR | Bubble gum (nugget, tap...' | Views: 4444225 | Duration: 63s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'ASMR chocolate challenge gummy...' | Views: 935606 | Duration: 6s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'ASMR Makeup & Skincare tutoria...' | Views: 2569011 | Duration: 360s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: '100 BEST LIFE HACKS OF ALL TIM...' | Views: 32554917 | Duration: 3838s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: '🧊 COOL KITCHEN GADGETS ✨ Hacks...' | Views: 955520 | Duration: 6319s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'BRILLIANT LIFE HACKS FOR ANY S...' | Views: 41451399 | Duration: 3640s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 294789 | Duration: 1155s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Genius Home Hacks For Any Occa...' | Views: 10241983 | Duration: 3718s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'GENIUS HOME HACKS 🏡 CLEANING &...' | Views: 917374 | Duration: 3991s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: '+50 Cool Life Hacks That Are W...' | Views: 1884301 | Duration: 1744s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Genius Life Hacks That Work Ex...' | Views: 2397478 | Duration: 1193s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     |    📊 Kiem tra: 'Testing Viral Life Hacks...' | Views: 2284342 | Duration: 2060s
+2026-04-18 22:46:24 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 22:46:24 | INFO     | ✅ Tim thay 1 video viral dat chuan
+2026-04-18 22:46:24 | INFO     | ✅ Tim thay 1 video. Bat dau tai ve...
+2026-04-18 22:46:24 | INFO     | VIDEO #1: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr
+2026-04-18 22:46:24 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=WFzzCNBjRnY
+2026-04-18 22:46:26 | INFO     | ✅ Downloaded: ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr → uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:46:29 | INFO     |    🎭 Dang 'Hoa than' video (AI Edit)...
+2026-04-18 22:46:29 | INFO     | ============================================================
+2026-04-18 22:46:29 | INFO     |   VIDEO PROCESSING
+2026-04-18 22:46:29 | INFO     | ============================================================
+2026-04-18 22:46:29 | INFO     | 📹 Source: uploads\video\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY.mp4
+2026-04-18 22:46:29 | INFO     | ⏱  Trim: 0.0s → 10.0s
+2026-04-18 22:46:29 | INFO     | 📐 Target: 9:16 vertical
+2026-04-18 22:46:30 | INFO     | ✅ Video processed: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_4008.mp4
+2026-04-18 22:46:32 | INFO     |    ✅ HOAN TAT: uploads\processed\ASMR chocolate challenge gummy candy lollipops satisfying opening video #shrenachocolateasmr-WFzzCNBjRnY_processed_4008.mp4
+2026-04-18 22:46:32 | INFO     | ============================================================
+2026-04-18 22:46:32 | INFO     |   DA XU LY XONG TOAN BO
+2026-04-18 22:46:32 | INFO     | ============================================================

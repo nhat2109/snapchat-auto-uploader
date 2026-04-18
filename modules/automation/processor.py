@@ -190,19 +190,27 @@ class VideoProcessor:
         filters.append("scale=720:1280:force_original_aspect_ratio=decrease")
         filters.append("pad=720:1280:(ow-iw)/2:(oh-ih)/2:black")
 
-        # 3. Zoom effect (tùy chọn)
+        # 3. Advanced AI Unique-ing Filters
+        # Flip video (Lật ngang)
+        filters.append("hflip")
+        # Color & Contrast (Chỉnh màu tươi hơn)
+        filters.append("eq=saturation=1.1:contrast=1.05:brightness=0.02")
+        # Speed up 1.02x (Tăng tốc nhẹ)
+        filters.append("setpts=0.98*PTS")
+
+        # 4. Zoom effect (tùy chọn)
         if add_zoom:
             zoom_cmd = (
-                f"zoompan=z='min(zoom+{zoom_factor/10}, {zoom_factor})'"
+                f"zoompan=z='min(zoom+{zoom_factor/100}, {zoom_factor})'"
                 f":d=1:s=720x1280"
             )
             filters.append(zoom_cmd)
 
-        # 4. Blur edges (tùy chọn)
+        # 5. Blur edges / Sharpen
         if add_blur:
             filters.append("unsharp=5:5:0.8:3:3:0.5")
 
-        # 5. Text overlay
+        # 6. Text overlay
         if add_text:
             pos_y = {
                 "center": "(h-text_h)/2",
@@ -210,10 +218,11 @@ class VideoProcessor:
                 "top":    "20",
             }.get(text_position, "(h-text_h)/2")
             pos_x = "(w-text_w)/2"
-            fontfile = "C\\:/Windows/Tasks/SegoeUI.ttf"  # Windows path, fallback nếu thiếu
-
+            
+            # Escape text for ffmpeg
+            safe_text = add_text.replace("'", "").replace(":", "")
             text_filter = (
-                f"drawtext=text='{add_text}':"
+                f"drawtext=text='{safe_text}':"
                 f"fontsize={font_size}:"
                 f"fontcolor={font_color}:"
                 f"x={pos_x}:y={pos_y}"
@@ -223,6 +232,15 @@ class VideoProcessor:
         base_chain = ",".join(filters)
 
         # ── Audio ────────────────────────────────────────────────────────
+        if has_music:
+            # Dung nhac moi, tang toc audio tuong ung 1.02x
+            cmd += ["-af", "atempo=1.02"]
+            cmd += ["-map", "1:a", "-shortest"]
+        else:
+            # Dung audio goc nhung phai tang toc cho khop video
+            cmd += ["-af", "atempo=1.02"]
+            cmd += ["-map", "0:a"]
+            
         if has_avatar:
             # Avatar được scale nhỏ rồi overlay góc phải dưới.
             avatar_idx = 2 if has_music else 1
@@ -234,9 +252,6 @@ class VideoProcessor:
             cmd += ["-filter_complex", filter_complex, "-map", "[vout]"]
         else:
             cmd += ["-vf", base_chain, "-map", "0:v"]
-
-        if has_music:
-            cmd += ["-map", "1:a", "-shortest"]
 
         # Output
         cmd += [

@@ -28,24 +28,37 @@ def get_caption(video_path: Path, default_tags: str) -> str:
 def main():
     parser = argparse.ArgumentParser(description="Tự động đăng Spotlight Snapchat.")
     parser.add_argument("--dir", default="uploads/video", help="Thư mục chứa video (.mp4)")
+    parser.add_argument("--file", default=None, help="Đường dẫn trực tiếp đến 1 file video cụ thể")
     parser.add_argument("--tags", default="#trending #spotlight #viral", help="Hashtags mặc định")
     parser.add_argument("--headless", action="store_true", help="Chạy ẩn danh trình duyệt")
     parser.add_argument("--save-session", action="store_true", default=True, help="Lưu phiên đăng nhập")
     args = parser.parse_args()
 
-    # Đường dẫn thư mục video
     PROJECT_ROOT = Path(__file__).resolve().parents[1]
-    video_dir = PROJECT_ROOT / args.dir
-    completed_dir = video_dir / "completed"
-    completed_dir.mkdir(exist_ok=True)
-    
-    if not video_dir.exists():
-        print(f"[ERROR] Không tìm thấy thư mục: {video_dir}")
-        return 1
 
-    videos = [v for v in video_dir.glob("*.mp4") if v.parent == video_dir]
+    if args.file:
+        video_path = Path(args.file)
+        if not video_path.exists():
+            print(f"[ERROR] Không tìm thấy file: {args.file}")
+            return 1
+        videos = [video_path]
+        # Đặt lại video_dir để completed_dir đúng chỗ
+        video_dir = video_path.parent
+        completed_dir = video_dir / "completed"
+        completed_dir.mkdir(exist_ok=True)
+    else:
+        # Đường dẫn thư mục video
+        video_dir = PROJECT_ROOT / args.dir
+        completed_dir = video_dir / "completed"
+        completed_dir.mkdir(exist_ok=True)
+        
+        if not video_dir.exists():
+            print(f"[ERROR] Không tìm thấy thư mục: {video_dir}")
+            return 1
+        videos = [v for v in video_dir.glob("*.mp4") if v.parent == video_dir]
+    
     if not videos:
-        print(f"[INFO] Không tìm thấy video mới nào trong {video_dir}")
+        print(f"[INFO] Không tìm thấy video mới nào.")
         return 0
 
     print(f"\n======================================================")
@@ -59,10 +72,11 @@ def main():
         session_dir = PROJECT_ROOT / "sessions" / "browser_session"
         session_dir.mkdir(parents=True, exist_ok=True)
 
-        print(f"[INFO] Đang khởi động trình duyệt...")
+        print(f"[INFO] Dang khoi dong trinh duyet...")
         context = browser_type.launch_persistent_context(
             str(session_dir),
             headless=args.headless,
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
             args=["--start-maximized"] if not args.headless else [],
             no_viewport=True if not args.headless else False
         )
@@ -73,18 +87,28 @@ def main():
         # Nhận diện đăng nhập
         login_detected = False
         start_time = time.time()
-        max_wait = 300 if not args.headless else 45 # Nếu ẩn danh thì đợi ít hơn vì giả định đã có session
+        # Tang thoi gian doi cho headless len 90s cho chac chan
+        max_wait = 300 if not args.headless else 90 
 
         if not args.headless:
             print("\n" + "!" * 60)
-            print(" CHÚ Ý: VUI LÒNG ĐĂNG NHẬP TRÊN CỬA SỔ TRÌNH DUYỆT (Nếu cần).")
+            print(" CHU AY: VUI LONG DANG NHAP TREN CUA SO TRINH DUYET (Neu can).")
             print("!" * 60 + "\n")
 
         while time.time() - start_time < max_wait:
-            if "/web-uploader" in page.url or page.query_selector("input[type='file']"):
+            curr_url = page.url
+            # Kiem tra URL uploader hoac su hien dien cua nut Upload/Avatar
+            if "/web-uploader" in curr_url or page.query_selector("input[type='file']") or page.query_selector("button:has-text('Upload')") or page.query_selector(".profile-info"):
                 login_detected = True
                 break
-            time.sleep(2)
+            
+            # Neu thay nut Login hoac URL chua /login thi chac chan chua login
+            if "/login" in curr_url or page.query_selector("button[type='submit']") and "Log In" in page.content():
+                if args.headless:
+                    print("[WARNING] Robot phat hien trang Dang nhap. Session da het han hoac chua co.")
+                    break
+            
+            time.sleep(3)
 
         if not login_detected:
             print("[ERROR] Không nhận diện được trạng thái đăng nhập. Vui lòng chạy ở chế độ UI trước.")
@@ -150,11 +174,8 @@ def main():
     return 0
 
 if __name__ == "__main__":
-    sys.exit(main())
-
-if __name__ == "__main__":
     try:
-        main()
+        sys.exit(main())
     except KeyboardInterrupt:
-        print("\n[INFO] Đã dừng script theo yêu cầu người dùng.")
+        print("\n[INFO] Da dung script theo yeu cau.")
         sys.exit(0)
