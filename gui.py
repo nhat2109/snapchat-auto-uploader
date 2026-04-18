@@ -505,7 +505,15 @@ class App(ctk.CTk):
         note = ctk.CTkLabel(f,
             text="📌 Chế độ \"Không hiển thị\" dùng để debug nếu bị lỗi.",
             font=ctk.CTkFont(size=11), text_color=("gray40", "#AAAAAA"))
-        note.pack(pady=(10, 15))
+        note.pack(pady=(5, 5))
+
+        # Nút Đăng nhập thủ công
+        self.btn_manual_login = ctk.CTkButton(
+            f, text="🔐 ĐĂNG NHẬP THỦ CÔNG",
+            font=ctk.CTkFont(size=13, weight="bold"),
+            fg_color="#F77737", hover_color="#E1306C",
+            command=self._manual_snapchat_login)
+        self.btn_manual_login.pack(pady=(5, 15))
 
     # ── TAB NHẬT KÝ ───────────────────────────────────────────────────────
     def _build_log_tab(self):
@@ -1052,6 +1060,64 @@ class App(ctk.CTk):
             self.after(0, lambda: self.btn_stop.configure(state="disabled"))
             self.after(0, lambda: self._vars["status_label"].configure(
                 text="Trạng thái: Sẵn sàng"))
+
+    def _manual_snapchat_login(self):
+        """Kích hoạt luồng đăng nhập thủ công."""
+        if self.is_running:
+            messagebox.showwarning("Đang bận", "Quy trình khác đang chạy, vui lòng đợi.")
+            return
+
+        self._log("🔐 Bắt đầu quy trình đăng nhập thủ công...", "STEP")
+        self.is_running = True
+        self.btn_manual_login.configure(state="disabled")
+        threading.Thread(target=self._manual_login_bg, daemon=True).start()
+
+    def _manual_login_bg(self):
+        import asyncio
+        import time
+        from threading import Event
+        try:
+            from main import run_manual_snapchat_login
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+
+            # Lấy session path từ GUI hoặc .env hoặc mặc định
+            session_path = self._get_var("snap_session_path")
+            if not session_path:
+                session_path = os.getenv("SNAPCHAT_SESSION_STATE", "sessions/snapchat_state.json").strip()
+            
+            ok, browser, ctx, page = loop.run_until_complete(run_manual_snapchat_login(session_path))
+
+            if ok:
+                login_done = Event()
+
+                def on_confirm():
+                    messagebox.showinfo(
+                        "Đăng nhập thủ công",
+                        "Trình duyệt đã mở.\n1. Hãy đăng nhập Snapchat trên trình duyệt.\n2. Sau khi đăng nhập xong, nhấn OK tại thông báo này để lưu session.")
+                    login_done.set()
+
+                self.after(0, on_confirm)
+
+                # Đợi người dùng nhấn OK trên messagebox
+                while not login_done.is_set() and self.is_running:
+                    time.sleep(0.5)
+
+                if login_done.is_set():
+                    # Sau khi nhấn OK, lưu state
+                    loop.run_until_complete(ctx.storage_state(path=session_path))
+                    self.after(0, lambda: self._log(f"✅ Đã lưu session: {session_path}", "INFO"))
+                
+                loop.run_until_complete(browser.stop())
+            else:
+                self.after(0, lambda: self._log("❌ Lỗi khởi tạo trình duyệt đăng nhập.", "ERROR"))
+
+            loop.close()
+        except Exception as e:
+            self.after(0, lambda: self._log(f"❌ Lỗi đăng nhập thủ công: {e}", "ERROR"))
+        finally:
+            self.is_running = False
+            self.after(0, lambda: self.btn_manual_login.configure(state="normal"))
 
     # ─────────────────────────────────────────────────────────────────────
     #  ĐÓNG ỨNG DỤNG

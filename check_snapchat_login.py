@@ -46,8 +46,10 @@ async def run_check() -> int:
         login_btn_selectors = [
             'button[type="submit"]',
             'input[type="submit"]',
+            'button.ColoredButton_blueButton__IeoF4',
             'button:has-text("Log In")',
             'button:has-text("Sign In")',
+            'button:has-text("Đăng nhập")',
         ]
 
         async def try_fill(selectors, value):

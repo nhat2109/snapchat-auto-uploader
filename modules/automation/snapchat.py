@@ -5,6 +5,7 @@ Snapchat Automation - Upload video + thêm nhạc
 
 import os
 import asyncio
+from pathlib import Path
 from typing import Optional, Dict, Any
 
 from loguru import logger
@@ -35,6 +36,7 @@ class SnapchatAutomation:
         self._log         = logger or PipelineLogger()
         self._page        = None
         self._account_id: Optional[int] = None
+        self._session_state_path: Optional[str] = None
 
     # ─────────────────────────────────────────────────────────────────────
     #  Main flow
@@ -49,11 +51,18 @@ class SnapchatAutomation:
                   description: Optional[str] = None,
                   tags: Optional[str] = None,
                   account_id: Optional[int] = None,
-                  headless: bool = True) -> Dict[str, Any]:
+                  headless: bool = True,
+                  session_state_path: Optional[str] = None,
+                  force_login: bool = False,
+                  session_only: bool = False) -> Dict[str, Any]:
         """
         Chạy toàn bộ quy trình upload video lên Snapchat.
         """
         self._account_id = account_id
+        self._session_state_path = (session_state_path or os.getenv(
+            "SNAPCHAT_SESSION_STATE",
+            "sessions/snapchat_state.json",
+        )).strip() or None
         result = {"success": False, "message": "", "post_url": None}
 
         try:
@@ -61,15 +70,33 @@ class SnapchatAutomation:
             self._log.info(f"User: {username} | Video: {title or os.path.basename(video_path)}")
 
             # Tạo context
-            ctx = await self.browser.new_context(account_id=self._account_id or 0)
+            storage_state = None
+            if self._session_state_path and not force_login:
+                session_file = Path(self._session_state_path)
+                if session_file.exists():
+                    storage_state = str(session_file)
+
+            ctx = await self.browser.new_context(
+                account_id=self._account_id or 0,
+                storage_state=storage_state,
+            )
             self._page = await ctx.new_page()
 
             # Step 1: Login
-            login_ok = await self._login(username, password)
-            if not login_ok:
-                result["message"] = "Đăng nhập Snapchat thất bại"
-                await self._save_error_screenshot("snapchat_login_failed")
-                return result
+            if not force_login and await self._is_session_logged_in():
+                self._log.info("✅ Session đăng nhập còn hiệu lực, bỏ qua bước login")
+            else:
+                if session_only:
+                    self._log.warn("⚠️ Session-only mode: session không hợp lệ, không thử login lại")
+                    result["message"] = "Session Snapchat không hợp lệ (session-only mode)"
+                    await self._save_error_screenshot("snapchat_session_invalid")
+                    return result
+
+                login_ok = await self._login(username, password)
+                if not login_ok:
+                    result["message"] = "Đăng nhập Snapchat thất bại"
+                    await self._save_error_screenshot("snapchat_login_failed")
+                    return result
 
             # Step 2: Navigate to creator/content studio
             studio_ok = await self._navigate_to_studio()
@@ -144,7 +171,27 @@ class SnapchatAutomation:
                 'input[type="text"]:not([class*="SearchInput"])',
                 '#username_field',
             ]
+            login_cta_selectors = [
+                'button:has-text("Log In")',
+                'a:has-text("Log In")',
+                'button:has-text("Login")',
+                'a:has-text("Login")',
+                'a[href*="/login"]',
+                '[data-testid="login-button"]',
+            ]
+
             user_ok = await self._try_fill_selectors(user_selectors, username)
+            if not user_ok:
+                self._log.info("Không thấy form login, thử mở popup Log In...")
+                await self._try_click_selectors(login_cta_selectors, timeout=4000)
+                await asyncio.sleep(1.5)
+                user_ok = await self._try_fill_selectors(user_selectors, username)
+
+            if not user_ok:
+                await self._try_click_selectors(login_cta_selectors, timeout=4000)
+                await asyncio.sleep(2.0)
+                user_ok = await self._try_fill_selectors(user_selectors, username)
+
             if not user_ok:
                 self._log.warn("Không tìm thấy ô username/email")
                 await self._save_error_screenshot("snapchat_login_username_missing")
@@ -154,6 +201,7 @@ class SnapchatAutomation:
             username_submit = [
                 'button[type="submit"]',
                 'input[type="submit"]',
+                'button.ColoredButton_blueButton__IeoF4',
                 'button:has-text("Đăng nhập")',
                 'button:has-text("Đăng Nhập")',
                 'button:has-text("Log in")',
@@ -187,6 +235,8 @@ class SnapchatAutomation:
                 if checkpoint:
                     self._log.warn(f"Checkpoint phát hiện sau bước username: {checkpoint}")
                     await self._save_error_screenshot("snapchat_login_checkpoint")
+                    if await self._wait_for_manual_checkpoint_resolution(checkpoint):
+                        return True
                     return False
                 await asyncio.sleep(1)
 
@@ -201,6 +251,7 @@ class SnapchatAutomation:
             password_submit = [
                 'button[type="submit"]',
                 'input[type="submit"]',
+                'button.ColoredButton_blueButton__IeoF4',
                 'button:has-text("Đăng nhập")',
                 'button:has-text("Đăng Nhập")',
                 'button:has-text("Log In")',
@@ -220,13 +271,20 @@ class SnapchatAutomation:
             if checkpoint:
                 self._log.warn(f"Checkpoint đăng nhập: {checkpoint}")
                 await self._save_error_screenshot("snapchat_login_checkpoint")
+                if await self._wait_for_manual_checkpoint_resolution(checkpoint):
+                    return True
                 return False
 
             still_has_password = await self._is_any_selector_visible(pass_selectors, timeout=1500)
             still_has_username = await self._is_any_selector_visible(user_selectors, timeout=1500)
 
-            if "login" not in current_url.lower() and not still_has_password:
+            if (
+                "accounts.snapchat.com" not in current_url.lower()
+                and "login" not in current_url.lower()
+                and not still_has_password
+            ):
                 self._log.info("✅ Đăng nhập Snapchat thành công")
+                await self._save_session_state()
                 return True
 
             if still_has_username or still_has_password:
@@ -241,6 +299,96 @@ class SnapchatAutomation:
 
         except Exception as e:
             self._log.error(f"Login Snapchat failed: {e}")
+            return False
+
+    async def _wait_for_manual_checkpoint_resolution(self, checkpoint_reason: str) -> bool:
+        """Cho phép user xử lý checkpoint/2FA thủ công rồi tiếp tục flow."""
+        allow_manual = os.getenv("SNAPCHAT_ALLOW_MANUAL_CHECKPOINT", "false").strip().lower() == "true"
+        if not allow_manual:
+            return False
+
+        if not self._page:
+            return False
+
+        wait_timeout = int(os.getenv("SNAPCHAT_MANUAL_WAIT_TIMEOUT", "300"))
+        self._log.warn("🔒 Bật chế độ manual-checkpoint")
+        self._log.warn(f"   Lý do: {checkpoint_reason}")
+        self._log.warn("   Hãy hoàn tất xác minh trên trình duyệt đang mở (2FA/captcha/checkpoint).")
+        self._log.warn(f"   Sau khi hoàn tất, nhấn Enter tại terminal trong {wait_timeout}s để tiếp tục...")
+
+        try:
+            await asyncio.wait_for(asyncio.to_thread(input), timeout=wait_timeout)
+        except asyncio.TimeoutError:
+            self._log.warn("⏰ Hết thời gian chờ manual-checkpoint")
+            return False
+        except Exception as e:
+            self._log.warn(f"Không đọc được xác nhận manual-checkpoint: {e}")
+            return False
+
+        ok = await self.browser.safe_goto(self._page, f"{self.BASE_URL}/web?ref=sign_in_sidebar")
+        if not ok:
+            return False
+
+        await asyncio.sleep(2)
+
+        checkpoint_after_manual = await self._detect_login_checkpoint()
+        if checkpoint_after_manual:
+            self._log.warn(f"Checkpoint vẫn còn sau manual-step: {checkpoint_after_manual}")
+            await self._save_error_screenshot("snapchat_checkpoint_still_present")
+            return False
+
+        current_url = self._page.url.lower()
+        if "accounts.snapchat.com" in current_url or "/login" in current_url:
+            self._log.warn("Vẫn ở trang login/accounts sau manual-step")
+            return False
+
+        login_indicators = [
+            'input[name="username"]',
+            'input[type="password"]',
+            'button:has-text("Log In")',
+            'a:has-text("Log In")',
+        ]
+        if await self._is_any_selector_visible(login_indicators, timeout=1200):
+            self._log.warn("Vẫn thấy form login sau manual-step")
+            return False
+
+        self._log.info("✅ Manual-checkpoint hoàn tất, tiếp tục upload flow")
+        await self._save_session_state()
+        return True
+
+    async def _is_session_logged_in(self) -> bool:
+        """Kiểm tra session hiện tại còn đăng nhập hay không."""
+        if not self._page:
+            return False
+
+        try:
+            ok = await self.browser.safe_goto(
+                self._page,
+                f"{self.BASE_URL}/web?ref=sign_in_sidebar",
+            )
+            if not ok:
+                return False
+
+            await asyncio.sleep(2)
+            current_url = self._page.url.lower()
+            if "accounts.snapchat.com" in current_url or "/login" in current_url:
+                return False
+
+            login_indicators = [
+                'input[name="username"]',
+                'input[type="password"]',
+                'button:has-text("Log In")',
+                'a:has-text("Log In")',
+            ]
+            if await self._is_any_selector_visible(login_indicators, timeout=1200):
+                return False
+
+            checkpoint = await self._detect_login_checkpoint()
+            if checkpoint:
+                return False
+
+            return True
+        except Exception:
             return False
 
     # ─────────────────────────────────────────────────────────────────────
@@ -263,8 +411,9 @@ class SnapchatAutomation:
                 self._log.info(f"✅ Content Studio: {url}")
                 return True
 
-        self._log.warn("Content Studio URLs không hoạt động, thử click menu...")
-        return True  # Vẫn tiếp tục
+        self._log.warn("❌ Không thể mở bất kỳ URL Content Studio nào")
+        await self._save_error_screenshot("snapchat_studio_unreachable")
+        return False
 
     # ─────────────────────────────────────────────────────────────────────
     #  Step 3: Upload video
@@ -278,35 +427,60 @@ class SnapchatAutomation:
         self._log.info(f"📤 Đang upload video: {filename}")
 
         try:
-            # Tìm upload button hoặc dropzone
-            upload_selectors = [
+            upload_input_selectors = [
                 'input[type="file"]',
                 'input[accept*="video"]',
-                '[data-testid="upload-button"]',
-                '[class*="upload"]',
-                '[class*="dropzone"]',
-                'button:has-text("Upload")',
+                'input[accept*="video/mp4"]',
+                'input[id*="upload" i]',
+                'input[name*="upload" i]',
+                '[data-testid*="upload"] input[type="file"]',
             ]
 
-            file_input = None
-            for sel in upload_selectors:
+            upload_trigger_selectors = [
+                'button:has-text("Upload")',
+                'button:has-text("Upload Video")',
+                'button:has-text("Add Video")',
+                'button:has-text("Create")',
+                'button:has-text("New Post")',
+                '[role="button"][aria-label*="upload" i]',
+                '[data-testid*="upload"]',
+                '[class*="dropzone"]',
+                '[class*="upload"] button',
+            ]
+
+            file_set = False
+
+            # Ưu tiên set file trực tiếp qua input (kể cả hidden input miễn attached).
+            for sel in upload_input_selectors:
                 try:
-                    el = await self._page.wait_for_selector(sel, state="visible", timeout=3000)
+                    el = await self._page.wait_for_selector(sel, state="attached", timeout=2500)
                     if el:
-                        file_input = el
+                        await el.set_input_files(filepath)
+                        self._log.info(f"✅ Video file input đã set qua selector: {sel}")
+                        file_set = True
                         break
                 except Exception:
                     continue
 
-            if file_input:
-                await file_input.set_input_files(filepath)
-                self._log.info("✅ Video file input đã set")
-                await async_random_delay(3.0, 6.0)
-            else:
-                # Fallback: click button rồi upload
-                await self._click_upload_button()
-                await asyncio.sleep(1)
-                await self._page.set_input_files('input[type="file"]', filepath)
+            # Nếu không có input trực tiếp, thử click nút tạo file chooser.
+            if not file_set:
+                file_set = await self._set_file_via_chooser(filepath, upload_trigger_selectors)
+
+            # Fallback cuối cùng dùng locator generic.
+            if not file_set:
+                try:
+                    await self._page.locator('input[type="file"]').first.set_input_files(filepath, timeout=5000)
+                    self._log.info("✅ Video file input đã set qua fallback locator")
+                    file_set = True
+                except Exception:
+                    file_set = False
+
+            if not file_set:
+                self._log.error("Không tìm thấy file input/file chooser để upload")
+                await self._save_error_screenshot("snapchat_upload_input_missing")
+                return False
+
+            await async_random_delay(3.0, 6.0)
 
             # Đợi video processing
             self._log.info("⏳ Đợi video processing...")
@@ -318,6 +492,21 @@ class SnapchatAutomation:
         except Exception as e:
             self._log.error(f"Upload video failed: {e}")
             return False
+
+    async def _set_file_via_chooser(self, filepath: str, trigger_selectors) -> bool:
+        """Set file qua file chooser nếu UI không render input[type=file] trực tiếp."""
+        for sel in trigger_selectors:
+            sel = sel.strip()
+            try:
+                async with self._page.expect_file_chooser(timeout=3000) as fc_info:
+                    await self._page.click(sel, timeout=3000)
+                chooser = await fc_info.value
+                await chooser.set_files(filepath)
+                self._log.info(f"✅ Đã set file qua file chooser: {sel}")
+                return True
+            except Exception:
+                continue
+        return False
 
     async def _click_upload_button(self):
         """Click nút upload nếu không tìm thấy input[type=file]."""
@@ -562,6 +751,7 @@ class SnapchatAutomation:
                 "/verify",
                 "/two_factor",
                 "/2fa",
+                "/tfa",
             ]
             if any(k in path for k in checkpoint_paths):
                 return f"checkpoint_url:{raw_url.lower()}"
@@ -572,6 +762,9 @@ class SnapchatAutomation:
                 "i'm not a robot",
                 "verify",
                 "verification code",
+                "confirm it's you",
+                "input the code sent",
+                "temporarily disabled",
                 "two-factor",
                 "2fa",
                 "security check",
@@ -583,6 +776,17 @@ class SnapchatAutomation:
         except Exception:
             return None
         return None
+
+    async def _save_session_state(self):
+        if not self._page or not self._session_state_path:
+            return
+        try:
+            state_path = Path(self._session_state_path)
+            state_path.parent.mkdir(parents=True, exist_ok=True)
+            await self._page.context.storage_state(path=str(state_path))
+            self._log.info(f"💾 Session state saved: {state_path}")
+        except Exception as e:
+            self._log.warn(f"Không lưu được session state: {e}")
 
     async def _save_error_screenshot(self, name: str):
         if self._page:

@@ -95,7 +95,8 @@ class BrowserManager:
     # ─────────────────────────────────────────────────────────────────────
     async def new_context(self, account_id: int,
                            proxy: Optional[Dict[str, Any]] = None,
-                           locale: str = "en-US") -> BrowserContext:
+                           locale: str = "en-US",
+                           storage_state: Optional[str] = None) -> BrowserContext:
         """Tạo trình duyệt context mới cho 1 account."""
 
         # Build playwright proxy dict
@@ -107,12 +108,24 @@ class BrowserManager:
                 pw["password"]  = proxy.get("password", "")
             playwright_proxy = pw
 
+        context_kwargs = {
+            "locale": locale,
+            "viewport": {"width": 1280, "height": 800},
+            "user_agent": self.user_agent,
+            "proxy": playwright_proxy,
+            "accept_downloads": True,
+        }
+
+        if storage_state:
+            storage_state_path = Path(storage_state)
+            if storage_state_path.exists():
+                context_kwargs["storage_state"] = str(storage_state_path)
+                self._log.info(f"Using saved session state: {storage_state_path}")
+            else:
+                self._log.warning(f"Session state not found: {storage_state_path}")
+
         ctx = await self._browser.new_context(
-            locale=locale,
-            viewport={"width": 1280, "height": 800},
-            user_agent=self.user_agent,
-            proxy=playwright_proxy,
-            accept_downloads=True,
+            **context_kwargs,
         )
 
         # Anti-detection: disable webdriver flag

@@ -235,6 +235,28 @@ async def run_pipeline_from_gui(gui_ref) -> dict:
         await pipeline.shutdown()
 
 
+async def run_manual_snapchat_login(session_path: str = "sessions/snapchat_state.json") -> bool:
+    """
+    Mở trình duyệt cho người dùng đăng nhập thủ công và lưu session.
+    """
+    from modules.core.browser import BrowserManager
+    browser = BrowserManager(headless=False, screenshots_dir="screenshots")
+    await browser.start()
+    try:
+        ctx = await browser.new_context(account_id=9901)
+        page = await ctx.new_page()
+
+        login_url = "https://www.snapchat.com/login"
+        await page.goto(login_url, wait_until="domcontentloaded", timeout=60000)
+
+        # Trả về browser context để GUI có thể đợi
+        return True, browser, ctx, page
+    except Exception as e:
+        logger.error(f"Manual login initialization failed: {e}")
+        await browser.stop()
+        return False, None, None, None
+
+
 # ═══════════════════════════════════════════════════════════════════════════
 #  CLI COMMANDS
 # ═══════════════════════════════════════════════════════════════════════════
