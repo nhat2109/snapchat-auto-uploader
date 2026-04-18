@@ -1,0 +1,46 @@
+Traceback (most recent call last):
+  File "D:\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Lib\asyncio\base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\AI\snapchat-auto-uploader\check_snapchat_visible.py", line 26, in main
+    await browser.start()
+  File "D:\AI\snapchat-auto-uploader\modules\core\browser.py", line 72, in start
+    self._playwright = await async_playwright().start()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Roaming\Python\Python311\site-packages\playwright\async_api\_context_manager.py", line 40, in __aenter__
+    done, _ = await asyncio.wait(
+              ^^^^^^^^^^^^^^^^^^^
+  File "D:\Lib\asyncio\tasks.py", line 428, in wait
+    return await _wait(fs, timeout, return_when, loop)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Lib\asyncio\tasks.py", line 535, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\AI\snapchat-auto-uploader\check_snapchat_visible.py", line 66, in <module>
+    raise SystemExit(asyncio.run(main()))
+                     ^^^^^^^^^^^^^^^^^^^
+  File "D:\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "D:\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x00000254082E5A80>
+Traceback (most recent call last):
+  File "D:\Lib\asyncio\base_subprocess.py", line 126, in __del__
+  File "D:\Lib\asyncio\base_subprocess.py", line 104, in close
+  File "D:\Lib\asyncio\proactor_events.py", line 109, in close
+  File "D:\Lib\asyncio\base_events.py", line 762, in call_soon
+  File "D:\Lib\asyncio\base_events.py", line 520, in _check_closed
+RuntimeError: Event loop is closed
+^C

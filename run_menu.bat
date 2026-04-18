@@ -12,9 +12,10 @@ echo  2. [TRA CUU] Tim Public Profile ID
 echo  3. [TAI LEN] Video vao Media Library
 echo  4. [QUANG CAO] Chay chien dich (Campaign/Ad)
 echo  5. [STORY] Dang Public Story (Noi dung Profile)
-echo  6. [THOAT] Thoat chuong trinh
+echo  6. [SPOTLIGHT] Tu dong dang Spotlight (TRINH DUYET)
+echo  7. [THOAT] Thoat chuong trinh
 echo ======================================================
-set /p opt="Chon chuc nang (1-6): "
+set /p opt="Chon chuc nang (1-7): "
 
 if "%opt%"=="1" (
     echo [INFO] Dang chay xac thuc...
@@ -66,6 +67,14 @@ if "%opt%"=="5" (
 )
 
 if "%opt%"=="6" (
+    echo [INFO] Dang chuan bi khoi chay Trinh duyet...
+    echo [IMPORTANT] Vui long dam bao da xac nhan cai dat Playwright.
+    python scripts/run_spotlight_web_upload.py
+    pause
+    goto menu
+)
+
+if "%opt%"=="7" (
     echo [INFO] Tam biet!
     exit
 )
