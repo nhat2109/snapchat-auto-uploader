@@ -128,6 +128,8 @@ class ViralVideoScraper:
                         "title": entry.get("title", "YouTube Viral"),
                         "source": "youtube",
                         "views": entry.get("view_count", random.randint(100000, 500000)),
+                        "likes": entry.get("like_count", 0),
+                        "shares": entry.get("repost_count", 0),  # yt-dlp might not have shares easily
                         "duration": entry.get("duration", 59),
                         "keyword": keyword,
                     })
@@ -159,6 +161,12 @@ class ViralVideoScraper:
                 
                 await page.goto(search_url, wait_until="networkidle", timeout=60000)
                 await page.wait_for_timeout(3000)
+                
+                # Cuộn trang để lấy thêm kết quả (Mở rộng quy mô sắn lùng)
+                self._log.info(f"   📜 Dang cuon trang de lay them video viral...")
+                for i in range(3): # Cuộn 3 lần
+                    await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                    await page.wait_for_timeout(2000)
                 
                 title = await page.title()
                 self._log.info(f"   📄 Tieu de trang: '{title}'")
@@ -199,26 +207,36 @@ class ViralVideoScraper:
                         
                         v_title = f"{keyword} {idx+1}"
                         v_views = "0"
+                        v_likes = "0"
+                        v_shares = "0"
                         
                         if card:
                             card_el = card.as_element()
-                            # Tim nhieu loai selector cho Views
+                            # Tim nhieu loai selector cho Metrics
                             views_el = await card_el.query_selector("strong[data-e2e*='views'], [class*='Views'], [class*='StrongCount']")
+                            likes_el = await card_el.query_selector("strong[data-e2e*='like-count'], [class*='LikeCount']")
+                            shares_el = await card_el.query_selector("strong[data-e2e*='share-count'], [class*='ShareCount']")
                             title_el = await card_el.query_selector("[class*='Caption'], [class*='Title'], [data-e2e*='caption']")
                             
                             if views_el: v_views = await views_el.inner_text()
+                            if likes_el: v_likes = await likes_el.inner_text()
+                            if shares_el: v_shares = await shares_el.inner_text()
                             if title_el: v_title = await title_el.inner_text()
 
                         parsed_views = self._parse_views(v_views)
+                        parsed_likes = self._parse_views(v_likes)
+                        parsed_shares = self._parse_views(v_shares)
                         
                         # LOG DEBUG: Cho nay Rat quan trong
-                        self._log.info(f"   📊 Card #{idx+1}: Views extracted: '{v_views}' -> Parsed: {parsed_views}")
+                        self._log.info(f"   📊 Card #{idx+1}: Views: {parsed_views} | Likes: {parsed_likes} | Shares: {parsed_shares}")
 
                         videos.append({
                             "source_url": url,
                             "title": v_title,
                             "source": "tiktok",
                             "views": parsed_views,
+                            "likes": parsed_likes,
+                            "shares": parsed_shares,
                             "duration": 15,
                             "keyword": keyword
                         })
@@ -259,6 +277,8 @@ class ViralVideoScraper:
                             "title": f"Facebook Reel: {keyword}",
                             "source": "facebook",
                             "views": random.randint(10000, 50000),
+                            "likes": 0,
+                            "shares": 0,
                             "duration": 30,
                             "keyword": keyword
                         })
@@ -294,15 +314,31 @@ class ViralVideoScraper:
             self._log.error(f"Douyin scrape failed: {e}"); return []
 
     def _parse_views(self, text: str) -> int:
-        text = text.lower().replace(",", "").replace(" ", "")
+        if not text: return 0
+        text = text.lower().replace(",", "").replace(" ", "").strip()
+        
+        # Handle decimal point with K/M
+        # e.g. "1.5K" -> 1500
+        multiplier = 1
         if "k" in text:
-            try: return int(float(text.replace("k", "").replace("views", "")) * 1000)
-            except: return 0
-        if "m" in text:
-            try: return int(float(text.replace("m", "").replace("views", "")) * 1_000_000)
-            except: return 0
-        try: return int(re.sub(r"[^\d]", "", text))
-        except: return 0
+            multiplier = 1000
+            text = text.replace("k", "")
+        elif "m" in text:
+            multiplier = 1_000_000
+            text = text.replace("m", "")
+        elif "b" in text:
+            multiplier = 1_000_000_000
+            text = text.replace("b", "")
+        
+        # Remove any remaining non-numeric characters except decimal point
+        text = re.sub(r"[^\d.]", "", text)
+        
+        try:
+            if not text: return 0
+            val = float(text)
+            return int(val * multiplier)
+        except:
+            return 0
 
     def save_to_db(self, videos: List[Dict[str, Any]], db) -> int:
         count = 0

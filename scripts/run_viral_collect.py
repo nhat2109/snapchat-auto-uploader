@@ -31,7 +31,22 @@ async def main():
     
     keywords = [query]
 
-    # 2. Chon nguon
+    # 2. Nhap so luong
+    target_count_str = input("\n[?] Ban muon tai ve bao nhieu video?: ").strip()
+    try:
+        target_count = int(target_count_str) if target_count_str else 3
+    except:
+        target_count = 3
+        print(f"[INFO] So luong khong hop le, mac dinh lay: {target_count}")
+
+    # 3. Nhap nguong view
+    min_views_str = input("[?] Nguong view toi thieu (mac dinh 1000): ").strip()
+    try:
+        min_views = int(min_views_str) if min_views_str else 1000
+    except:
+        min_views = 1000
+
+    # 4. Chon nguon
     print("\n------------------------------------------------------")
     print(" CHON NGUON VIDEO:")
     print(" [1] TikTok")
@@ -47,56 +62,62 @@ async def main():
     if "3" in s_choice: sources.append("facebook")
     if "4" in s_choice or not sources: sources = ["tiktok", "youtube", "facebook"]
 
-    # 3. Chon che do
+    # 5. Chon che do
     print("\n------------------------------------------------------")
     print(" CHON CHE DO VAN HANH:")
-    print(" [1] TU DONG (Robot tu chon video nhieu view nhat)")
+    print(" [1] TU DONG (Robot tu chon video nhieu Engagement nhat)")
     print(" [2] THU CONG (Ban tu chon tu danh sach)")
     print("------------------------------------------------------")
     mode = input("Chon (1/2): ").strip() or "1"
     
-    max_to_scrape = 15
+    # Pool size: Scrape gap 5 lan so luong can (tang ty le tim thay video viral)
+    max_to_scrape = max(30, target_count * 5)
     music_file = os.getenv("MUSIC_FILE", "uploads/music/default.mp3")
     
-    # 3. Khoi tao Scraper
+    # 6. Khoi tao Scraper
     scraper = ViralVideoScraper()
     
     print(f"\n[INFO] Dang săn lùng video viral cho: '{query}'...")
-    videos = await scraper.scrape(keywords=keywords, max_results=max_to_scrape, min_views=1000, sources=sources)
+    videos = await scraper.scrape(keywords=keywords, max_results=max_to_scrape, min_views=min_views, sources=sources)
     
     if not videos:
         plog.error("❌ Khong tim thay video nao dat chuẩn viral.")
         return
 
-    # 4. Sap xep theo View (Giam dan)
-    videos.sort(key=lambda x: x.get("views", 0), reverse=True)
+    # 6. Sap xep theo Engagement (Views + Likes*5 + Shares*10) - Giam dan
+    def get_engagement(v):
+        return v.get("views", 0) + (v.get("likes", 0) * 5) + (v.get("shares", 0) * 10)
+
+    videos.sort(key=get_engagement, reverse=True)
 
     selected_videos = []
     if mode == "2":
         # Hien thi bang danh sach
-        print("\n" + "="*80)
-        print(f"{'STT':<5} | {'VIEW':<10} | {'NGUON':<8} | {'TEN VIDEO'}")
-        print("-" * 80)
+        print("\n" + "="*110)
+        print(f"{'STT':<5} | {'VIEW':<10} | {'LIKE':<8} | {'SHARE':<8} | {'NGUON':<8} | {'TEN VIDEO'}")
+        print("-" * 110)
         for i, v in enumerate(videos):
-            view_str = f"{v['views']:,}" if v['views'] else "N/A"
-            print(f"[{i+1:<3}] | {view_str:<10} | {v['source'].upper():<8} | {v['title'][:45]}...")
-        print("="*80)
+            view_str = f"{v['views']:,}" if v.get('views') else "0"
+            like_str = f"{v['likes']:,}" if v.get('likes') else "0"
+            share_str = f"{v['shares']:,}" if v.get('shares') else "0"
+            print(f"[{i+1:<3}] | {view_str:<10} | {like_str:<8} | {share_str:<8} | {v['source'].upper():<8} | {v['title'][:45]}...")
+        print("="*110)
         
-        choices = input("\n[?] Nhap STT cac video ban muon lay (cach nhau dau phay, vi du: 1,3,5) \nHoac Go 'ALL' de lay het: ").strip().upper()
+        choices = input(f"\n[?] Nhap STT cac video ban muon lay (ví dụ: 1,3,5) \nHoac Go 'ALL' de lay top {target_count}: ").strip().upper()
         
         if choices == "ALL":
-            selected_videos = videos[:5] # Mac dinh lay top 5 neu lay het
+            selected_videos = videos[:target_count]
         else:
             try:
                 indices = [int(x.strip()) - 1 for x in choices.split(",") if x.strip().isdigit()]
                 selected_videos = [videos[i] for i in indices if 0 <= i < len(videos)]
             except:
-                print("[ERROR] Lua chon khong hop le. Lay video top 1.")
+                print(f"[ERROR] Lua chon khong hop le. Lay top {target_count}.")
                 selected_videos = [videos[0]]
     else:
-        # Che do tu dong: Lay top 3
-        selected_videos = videos[:3]
-        print(f"[INFO] Da tu dong chon {len(selected_videos)} video hot nhat.")
+        # Che do tu dong: Lay dung so luong yeu cau
+        selected_videos = videos[:target_count]
+        print(f"[INFO] Da tu dong chon {len(selected_videos)} video co engagement cao nhat.")
 
     if not selected_videos:
         print("[INFO] Khong co video nao duoc chon.")

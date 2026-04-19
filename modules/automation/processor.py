@@ -85,7 +85,7 @@ class VideoProcessor:
 
         # Kiem tra định dạng file hop le (Tranh file .image tu TikTok hoac anh tinh)
         valid_extensions = ('.mp4', '.mkv', '.mov', '.avi', '.webm', '.ts', '.flv')
-        if not video_path.lower().endswith(valid_extensions):
+        if not str(video_path).lower().endswith(valid_extensions):
             self._log.warn(f"   ⏩ Bo qua tep khong phai video: {video_path}")
             return {"success": False, "error": "Not a video file"}
 
