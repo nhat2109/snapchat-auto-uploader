@@ -14,6 +14,10 @@ import sys
 from pathlib import Path
 from typing import Any, Dict, Optional, Tuple
 
+if sys.platform == "win32":
+    sys.stdin.reconfigure(encoding="utf-8")
+    sys.stdout.reconfigure(encoding="utf-8")
+
 import requests
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -111,6 +115,11 @@ def get_parser() -> argparse.ArgumentParser:
         type=int,
         default=5,
         help="Polling interval in seconds when --poll is enabled.",
+    )
+    parser.add_argument(
+        "--cleanup",
+        action="store_true",
+        help="Delete the video file after successful READY status.",
     )
     return parser
 
@@ -269,6 +278,12 @@ def main() -> int:
 
         if latest == "READY":
             print("Media READY.")
+            if args.cleanup:
+                try:
+                    video_path.unlink()
+                    print(f"[INFO] Da xoa file gốc de tiet kiem dung luong: {video_path.name}")
+                except Exception as e:
+                    print(f"[WARNING] Khong the xoa file: {e}")
             return 0
 
         print("Polling timeout before READY.")

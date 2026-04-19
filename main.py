@@ -576,26 +576,102 @@ async def _run_queue_async(pipeline: AutomationPipeline, args):
 
 
 # ═══════════════════════════════════════════════════════════════════════════
+#  INTERACTIVE DASHBOARD MENU
+# ═══════════════════════════════════════════════════════════════════════════
+
+def show_banner():
+    """Hien thi banner Dashboard."""
+    print("\033[94m" + "="*60)
+    print("           SNAPCHAT AUTO-UPLOADER DASHBOARD")
+    print("="*60 + "\033[0m")
+
+def interactive_menu():
+    """Vong lap Menu tuong tac chính."""
+    import subprocess
+    
+    while True:
+        os.system('cls' if os.name == 'nt' else 'clear')
+        show_banner()
+        print("\n \033[92m[1] HE THONG & THIET LAP (SYSTEM & SETUP)\033[0m")
+        print("  1. Xac thuc OAuth (Access Token)")
+        print("  2. Tra cuu Public Profile ID")
+        print(" 11. Xem danh sach Media ID da tai len")
+        
+        print("\n \033[93m[2] CO MAY VIRAL (CONTENT MACHINE - AI)\033[0m")
+        print("  9. \033[91m> VIRAL MACHINE (San, Tai, Edit AI) <  [HOT]\033[0m")
+        
+        print("\n \033[96m[3] DANG BAI & VAN HANH (PUBLISHING & OPS)\033[0m")
+        print("  3. Tai Video vao Media Library (Ads)")
+        print("  5. Dang Public Story (Profile)")
+        print("  6. Dang Spotlight (Trinh duyet - UI)")
+        print("  7. ROBOT AUTO-PILOT (Cua so ngam)")
+        
+        print("\n \033[95m[4] QUANG CAO (PAID ADS)\033[0m")
+        print("  4. Chay chien dich Quang cao (Campaign)")
+        
+        print("\n \033[90m[5] KHAC (OTHERS)\033[0m")
+        print("  0. Huong dan su dung chi tiet")
+        print(" 10. Thoat chuong trinh")
+        print("\033[94m" + "="*60 + "\033[0m")
+        
+        choice = input("\033[92m👉 Chon chuc nang (1-11): \033[0m").strip()
+        
+        if choice == "10":
+            print("\n👋 Tam biet!")
+            break
+        elif choice == "0":
+            # Hien thi huong dan (Copy tu run_menu.bat)
+            print("\n" + "="*60)
+            print("             HUONG DAN SU DUNG CHI TIET")
+            print("="*60)
+            print(" 1. Chay so 1 de lay Token, so 2 de lay Profile ID.")
+            print(" 2. Dung so 9 de săn video Trending va tu dong Edit AI.")
+            print(" 3. Dung so 6/7 de dang Spotlight tu dong.")
+            print("="*60)
+            input("\nNhan Enter de quay lai...")
+        elif choice == "1":
+            subprocess.run([sys.executable, "scripts/run_ads_auth.py"])
+        elif choice == "2":
+            subprocess.run([sys.executable, "scripts/run_ads_profile_lookup.py"])
+        elif choice == "3":
+            # Chuc nang tai file co chon file (Logic tu bat)
+            print("\n[INFO] Dang mo trinh tai media...")
+            subprocess.run([sys.executable, "scripts/run_ads_media_upload.py"])
+        elif choice == "4":
+            mid = input("\n👉 Nhap Media ID: ").strip()
+            if mid: subprocess.run([sys.executable, "scripts/run_ads_launch.py", "--media-id", mid])
+        elif choice == "5":
+            mid = input("\n👉 Nhap Media ID cho Story: ").strip()
+            if mid: subprocess.run([sys.executable, "scripts/run_ads_story_post.py", "--media-id", mid])
+        elif choice == "6":
+            subprocess.run([sys.executable, "scripts/run_spotlight_web_upload.py"])
+        elif choice == "7":
+            subprocess.run([sys.executable, "scripts/spotlight_watcher.py", "--cleanup"])
+        elif choice == "9":
+            subprocess.run([sys.executable, "scripts/run_viral_collect.py"])
+        elif choice == "11":
+            subprocess.run([sys.executable, "scripts/run_ads_media_lookup.py"])
+        else:
+            print("\n❌ Lua chon khong hop le!")
+            input("Nhan Enter de tiep tuc...")
+
+# ═══════════════════════════════════════════════════════════════════════════
 #  MAIN ENTRY POINT
 # ═══════════════════════════════════════════════════════════════════════════
 
 def main():
     setup_logging()
 
+    # Neu khong co tham so truyen vao, mo Interactive Menu
+    if len(sys.argv) == 1:
+        interactive_menu()
+        return
+
     parser = argparse.ArgumentParser(
         description="Snapchat Automation Platform",
         formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Ví dụ:
-  python main.py init-db
-  python main.py add-account --username user --password pass --proxy "ip:port"
-  python main.py add-job --video "video.mp4" --music "song.mp3" --title "My Video"
-  python main.py list --type stats
-  python main.py run
-    python main.py viral-post --keyword "sad edit" --music "uploads/music/song.mp3"
-  python main.py gui
-        """,
     )
+    # ... (giu nguyen cac parser hien co cua ban o duoi)
 
     subparsers = parser.add_subparsers(dest="command", required=True)
 

@@ -11,6 +11,9 @@ VIDEO_DIR = PROJECT_ROOT / "uploads" / "video"
 PROCESSED_DIR = PROJECT_ROOT / "uploads" / "processed"
 
 class SpotlightHandler(FileSystemEventHandler):
+    def __init__(self, cleanup=False):
+        self.cleanup = cleanup
+
     def on_created(self, event):
         if event.is_directory:
             return
@@ -35,17 +38,27 @@ class SpotlightHandler(FileSystemEventHandler):
                     "--headless",
                     "--file", str(file_path.absolute())
                 ]
+                
+                # Global access to args (defined in main)
+                if hasattr(self, 'cleanup') and self.cleanup:
+                    cmd.append("--cleanup")
+                    
                 subprocess.run(cmd, check=True)
                 print(f"[SUCCESS] Robot da xu ly xong file {file_path.name}")
             except subprocess.CalledProcessError as e:
                 print(f"[ERROR] Robot gap loi khi xu ly {file_path.name}")
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Robot tu dong dang Spotlight.")
+    parser.add_argument("--cleanup", action="store_true", help="Xoa file sau khi dang thanh cong")
+    args = parser.parse_args()
+
     for d in [VIDEO_DIR, PROCESSED_DIR]:
         if not d.exists():
             d.mkdir(parents=True, exist_ok=True)
 
-    event_handler = SpotlightHandler()
+    event_handler = SpotlightHandler(cleanup=args.cleanup)
     observer = Observer()
     
     # Giam sat ca 2 thu muc

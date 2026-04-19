@@ -1,23 +1,36 @@
 @echo off
+chcp 65001 >nul
+title SNAPCHAT AUTO-UPLOADER DASHBOARD
 setlocal enabledelayedexpansion
 title SNAPCHAT AUTO UPLOADER - MENU
 
 :menu
 cls
 echo ======================================================
-echo           SNAPCHAT AUTO UPLOADER DASHBOARD
+echo           SNAPCHAT AUTO-UPLOADER DASHBOARD
 echo ======================================================
-echo  0. [HUONG DAN] Xem huong dan su dung
-echo  1. [KHOI TAO] Xac thuc OAuth (Lay Access Token)
-echo  2. [TRA CUU] Tim Public Profile ID
-echo  3. [TAI LEN] Video vao Media Library
-echo  4. [QUANG CAO] Chay chien dich (Campaign/Ad)
-echo  5. [STORY] Dang Public Story (Noi dung Profile)
-echo  6. [SPOTLIGHT] Tu dong dang Spotlight (TRINH DUYET)
-echo  7. [AUTO-PILOT] Robot tu dong theo doi thu muc va dang bai
-echo  9. [VIRAL MACHINE] Bat dau san, tai va edit video AI
-echo  11. [ADS-LOOKUP] Xem danh sach Media ID da tai len
-echo  10. [THOAT] Thoat chuong trinh
+echo.
+echo  [1] HE THONG ^& THIET LAP (SYSTEM ^& SETUP)
+echo   1. Xac thuc OAuth (Access Token)
+echo   2. Tra cuu Public Profile ID
+echo  11. Xem danh sach Media ID da tai len
+echo.
+echo  [2] CO MAY VIRAL (CONTENT MACHINE - AI)
+echo   9. ^> VIRAL MACHINE (San, Tai, Edit AI) ^<  [HOT]
+echo.
+echo  [3] DANG BAI ^& VAN HANH (PUBLISHING ^& OPS)
+echo   3. Tai Video vao Media Library (Ads)
+echo   5. Dang Public Story (Profile)
+echo   6. Dang Spotlight (Trinh duyet - UI)
+echo   7. ROBOT AUTO-PILOT (Cua so ngam)
+echo.
+echo  [4] QUANG CAO (PAID ADS)
+echo   4. Chay chien dich Quang cao (Campaign)
+echo.
+echo  [5] KHAC (OTHERS)
+echo   0. Huong dan su dung chi tiet
+echo  10. Thoat chuong trinh
+echo.
 echo ======================================================
 set /p choice="Chon chuc nang (1-11): "
 
@@ -149,7 +162,7 @@ if not exist "%vfile%" (
     goto menu
 )
 
-python scripts/run_ads_media_upload.py --file "%vfile%" --poll
+python scripts/run_ads_media_upload.py --file "%vfile%" --poll --cleanup
 pause
 goto menu
 
@@ -229,7 +242,7 @@ echo  - Yeu cau: Phai da chay Buoc 6 it nhat 1 lan.
 echo ======================================================
 pause
 echo [INFO] Dang kich hoat Robot Auto-Pilot...
-python scripts/spotlight_watcher.py
+python scripts/spotlight_watcher.py --cleanup
 pause
 goto menu
 

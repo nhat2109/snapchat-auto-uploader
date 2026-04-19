@@ -63,11 +63,27 @@ class VideoDownloader:
 
             ydl_opts = {
                 "outtmpl": save_path,
-                "format": self.quality,
+                # Chon format thong minh hon: Uu tien MP4 720p, neu khong co thi lay cai tot nhat
+                "format": "bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
                 "noplaylist": True,
                 "quiet": False,
                 "no_color": True,
                 "extract_flat": False,
+                "nocheckcertificate": True,
+                "ignoreerrors": True,
+                # Them cac tham so dac biet cho TikTok
+                "extractor_args": {
+                    "tiktok": {
+                        "impersonate": "chrome:110"
+                    }
+                },
+                # Gia lap trinh duyet
+                "http_headers": {
+                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "*/*",
+                    "Accept-Language": "en-US,en;q=0.5",
+                    "Referer": "https://www.tiktok.com/",
+                }
             }
 
             if proxy_url:

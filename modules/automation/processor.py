@@ -83,6 +83,12 @@ class VideoProcessor:
             self._log.error(f"Video không tồn tại: {video_path}")
             return {"success": False, "error": "Video file not found"}
 
+        # Kiem tra định dạng file hop le (Tranh file .image tu TikTok hoac anh tinh)
+        valid_extensions = ('.mp4', '.mkv', '.mov', '.avi', '.webm', '.ts', '.flv')
+        if not video_path.lower().endswith(valid_extensions):
+            self._log.warn(f"   ⏩ Bo qua tep khong phai video: {video_path}")
+            return {"success": False, "error": "Not a video file"}
+
         if output_name is None:
             ts      = random.randint(1000, 9999)
             name    = Path(video_path).stem
@@ -232,14 +238,15 @@ class VideoProcessor:
         base_chain = ",".join(filters)
 
         # ── Audio ────────────────────────────────────────────────────────
+        # Them dau '?' vao sau index (0:a?) de FFmpeg khong bao loi neu file khong co am thanh
         if has_music:
             # Dung nhac moi, tang toc audio tuong ung 1.02x
             cmd += ["-af", "atempo=1.02"]
             cmd += ["-map", "1:a", "-shortest"]
         else:
-            # Dung audio goc nhung phai tang toc cho khop video
+            # Dung audio goc (neu co)
             cmd += ["-af", "atempo=1.02"]
-            cmd += ["-map", "0:a"]
+            cmd += ["-map", "0:a?"]
             
         if has_avatar:
             # Avatar được scale nhỏ rồi overlay góc phải dưới.

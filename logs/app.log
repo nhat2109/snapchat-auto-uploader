@@ -1141,3 +1141,1089 @@
 2026-04-18 22:46:32 | INFO     | ============================================================
 2026-04-18 22:46:32 | INFO     |   DA XU LY XONG TOAN BO
 2026-04-18 22:46:32 | INFO     | ============================================================
+2026-04-18 23:45:01 | INFO     | ============================================================
+2026-04-18 23:45:01 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-18 23:45:01 | INFO     | ============================================================
+2026-04-18 23:45:08 | INFO     | ============================================================
+2026-04-18 23:45:08 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 23:45:08 | INFO     | ============================================================
+2026-04-18 23:45:08 | INFO     | 🔍 Tìm kiếm: 'satisfying asmr'
+2026-04-18 23:45:08 | INFO     | 📱 TikTok: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 23:45:09 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 23:45:09 | INFO     | 📺 YouTube: Dang tim kiem 'satisfying asmr' bang yt-dlp...
+2026-04-18 23:46:34 | INFO     | ============================================================
+2026-04-18 23:46:34 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-18 23:46:34 | INFO     | ============================================================
+2026-04-18 23:47:03 | INFO     | ============================================================
+2026-04-18 23:47:03 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 23:47:03 | INFO     | ============================================================
+2026-04-18 23:47:03 | INFO     | 🔍 Tìm kiếm: 'War'
+2026-04-18 23:47:03 | INFO     | 📱 TikTok: Dang tim kiem 'War' bang yt-dlp...
+2026-04-18 23:47:06 | ERROR    | TikTok yt-dlp search failed: [0;31mERROR:[0m Unsupported URL: https://www.tiktok.com/search?q=War
+2026-04-18 23:47:06 | INFO     | 📺 YouTube: Dang tim kiem 'War' bang yt-dlp...
+2026-04-18 23:47:30 | ERROR    | YouTube yt-dlp search failed: [0;31mERROR:[0m [youtube] zRD4-cl9_OU: This video is not available
+2026-04-18 23:47:30 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 23:47:30 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-18 23:49:46 | INFO     | ============================================================
+2026-04-18 23:49:46 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-18 23:49:46 | INFO     | ============================================================
+2026-04-18 23:50:07 | INFO     | ============================================================
+2026-04-18 23:50:07 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-18 23:50:07 | INFO     | ============================================================
+2026-04-18 23:50:07 | INFO     | 🔍 Tìm kiếm: 'Chiến tranh'
+2026-04-18 23:50:07 | INFO     | 📱 TikTok: Dang tim kiem 'Chiến tranh' bang yt-dlp...
+2026-04-18 23:50:09 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-18 23:50:09 | INFO     | 📺 YouTube: Dang tim kiem 'Chiến tranh' bang yt-dlp...
+2026-04-18 23:50:49 | INFO     |   → YouTube: 45 video(s) tim thay
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'hết chiến chanh anh sẽ về với ...' | Views: 0 | Duration: 24s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'thông tin chảo lửa trung đông,...' | Views: 0 | Duration: 55s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Bom CBU-55   hủy diệt khủng kh...' | Views: 203 | Duration: 64s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Đội Lốt Dê Để Thoát Nạn | Phim...' | Views: 5 | Duration: 112s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Màn cận chiến giữa lính Nga và...' | Views: 1119 | Duration: 118s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Chiến Tranh Quân Bộ Vs 10000 C...' | Views: 12 | Duration: 37s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'không chiến tranh #shorts...' | Views: 516 | Duration: 68s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Biển Đỏ rực lửa: Mỹ đánh nhau ...' | Views: 64 | Duration: 79s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'review phim: cuộc chiến trân c...' | Views: 7 | Duration: 313s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Đại chiến Midway: Trận hải chi...' | Views: 25 | Duration: 84s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Cuộc chiến tranh giành bánh Qu...' | Views: 144 | Duration: 36s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: '( #Shorts ) Vì Chiến Tranh Mà ...' | Views: 4 | Duration: 26s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Cuộc Chiến Việt Minh với Pháp(...' | Views: 0 | Duration: 102s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: '#shorts #tailieu #hochiminh #v...' | Views: 873 | Duration: 59s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'kể chuyện chiến tranh bảo vệ b...' | Views: 252 | Duration: 80s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'CHIẾN SỰ UKCAINE - NGA #russia...' | Views: 1 | Duration: 27s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Kể chuyện chiến tranh biên giớ...' | Views: 315 | Duration: 57s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Quốc gia duy nhất không có quâ...' | Views: 160 | Duration: 60s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Những Biện Pháp Cứu Mạng Người...' | Views: 14 | Duration: 58s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: '#shorts #gachaclub - "Chiến Tr...' | Views: 14 | Duration: 39s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Khi động vật châm ngòi chiến t...' | Views: 411479 | Duration: 446s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Phim ngắn chiến tranh: HOÀ BÌN...' | Views: 172804 | Duration: 879s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Youtobe Shorts kỳ 16#shorts...' | Views: 369 | Duration: 78s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Russian-Ukrainian War #shorts...' | Views: 5 | Duration: 45s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Thanh niên Mỹ đốt thẻ quân dịc...' | Views: 18459 | Duration: 223s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Chiến Tranh Để Làm Gì Khi hoà ...' | Views: 238077 | Duration: 604s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: '60 giây:   Mark Levin: việc tr...' | Views: 421 | Duration: 60s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Nga và Tajikistan đang diễn tậ...' | Views: 1 | Duration: 63s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Cựu binh Mỹ trong Chiến tranh ...' | Views: 26707 | Duration: 109s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: '#shorts : Đợt tập trận mô phỏn...' | Views: 426 | Duration: 60s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Người ủng hộ Putin: “Đã đến lú...' | Views: 7098 | Duration: 119s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Phim Chiến tranh do Trung Quốc...' | Views: 6363 | Duration: 94s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Âm mưu báo thù và cuộc chiến t...' | Views: 1 | Duration: 258s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Người anh hùng bắt sống tướng ...' | Views: 441 | Duration: 60s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'World War 2 video film shorts ...' | Views: 0 | Duration: 91s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Chiến tranh bồn cầu p4 #shorts...' | Views: 21 | Duration: 32s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Bạch Khởi - Vị Tướng Tàn Khốc ...' | Views: 320 | Duration: 349s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Tàu chiến Trung Quốc, Nga, Ira...' | Views: 21 | Duration: 52s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Ukraine: những em bé khóc vì c...' | Views: 19570 | Duration: 126s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Chiến tranh bồn cầu p2 #shorts...' | Views: 9 | Duration: 35s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Chiến Tranh Biên Giới Tây Nam ...' | Views: 161040 | Duration: 1180s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Nhân gì dẫn đến chiến tranh? |...' | Views: 503 | Duration: 60s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Trận Điện Biên Phủ (Việt Nam 1...' | Views: 2 | Duration: 136s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Tết cuối cùng ở chiến khu Miền...' | Views: 2 | Duration: 98s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     |    📊 Kiem tra: 'Người tị nạn Ukraine rời Mariu...' | Views: 9073 | Duration: 104s
+2026-04-18 23:50:49 | INFO     |    ❌ Loai: Views < 50000, Duration > 60s
+2026-04-18 23:50:49 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-18 23:50:49 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-19 00:00:20 | INFO     | ============================================================
+2026-04-19 00:00:20 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:00:20 | INFO     | ============================================================
+2026-04-19 00:00:56 | INFO     | ============================================================
+2026-04-19 00:00:56 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:00:56 | INFO     | ============================================================
+2026-04-19 00:00:56 | INFO     | 🔍 Tìm kiếm: 'Video AI về Mèo' trên tiktok, youtube
+2026-04-19 00:00:56 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Video AI về Mèo'...
+2026-04-19 00:00:56 | ERROR    | TikTok Playwright failed: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2026-04-19 00:00:56 | INFO     |   → TikTok: 0 video(s) tim thay
+2026-04-19 00:00:56 | INFO     | 📺 YouTube: Dang tim kiem 'Video AI về Mèo' bang yt-dlp...
+2026-04-19 00:01:08 | ERROR    | YouTube yt-dlp search failed: [0;31mERROR:[0m [youtube] NST4pKg1Zdo: This video is not available
+2026-04-19 00:01:08 | INFO     | ✅ Tim thay 0 video viral dat chuan
+2026-04-19 00:01:08 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-19 00:03:04 | INFO     | ============================================================
+2026-04-19 00:03:04 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:03:04 | INFO     | ============================================================
+2026-04-19 00:03:19 | INFO     | ============================================================
+2026-04-19 00:03:19 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:03:19 | INFO     | ============================================================
+2026-04-19 00:03:19 | INFO     | 🔍 Tìm kiếm: 'Video AI về Mèo' trên tiktok, youtube
+2026-04-19 00:03:19 | INFO     | 📱 TikTok [Browser]: Đang tìm kiếm 'Video AI về Mèo'...
+2026-04-19 00:03:43 | INFO     | 📺 YouTube: Đang tìm kiếm 'Video AI về Mèo'...
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'FULL CHUYỆN GIA ĐÌNH MÈO l Fun...' | Views: 849 | Duration: 1557.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Hành Trình Của Loài Mèo | Khám...' | Views: 89077 | Duration: 1569.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Bé Mèo Siêu Đáng Iu #shorts #t...' | Views: 359 | Duration: 65.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Chị gái dẫn e trai đi cắt tóc ...' | Views: 1 | Duration: 16.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Dẫn em trai đi dạo#shorts #fun...' | Views: 706 | Duration: 16.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Bé Mắng Mèo Vì Khoe Khoang 😤🐱✨...' | Views: 13 | Duration: 16.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: '( Review nhân vật AI ) Đàn mèo...' | Views: 5 | Duration: 80.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Cuộc sống thường nhật của một ...' | Views: 2 | Duration: 16.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Những Chú Mèo Hài Hướ...' | Views: 1353 | Duration: 490.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Mèo bỏ chạy khi xem 'Tom and J...' | Views: 25 | Duration: 27.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Mình Đã Thử Youttube Shorts Tr...' | Views: 243869 | Duration: 545.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Cuộc sống của con mèo tên Xám ...' | Views: 439 | Duration: 209.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Funny cats and dogs ( video về...' | Views: 2 | Duration: 22.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Hai con mèo con đùa giỡn thật ...' | Views: 454 | Duration: 61.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'TOP 3 KINH NGHIỆM Làm Youtube ...' | Views: 48790 | Duration: 381.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Chú MèoTiểu Mi Nghịch...' | Views: 1050 | Duration: 491.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Câu Chuyện Của Chú Mè...' | Views: 1124 | Duration: 522.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Làm Sao Để Hiểu Mèo Của Bạn Hơ...' | Views: 1622647 | Duration: 537.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Siêu mèo chân ngắn và em bé #s...' | Views: 2 | Duration: 61.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Mèo Nhỏ Trong Nắng #nhacthieun...' | Views: 0 | Duration: 147.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'PHẢN ỨNG CỦA MÈO LẦN ĐẦU GẶP C...' | Views: 1554966 | Duration: 261.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'đến giờ ăn rồi gọi ba xuống ăn...' | Views: 38334724 | Duration: 30.0s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Smart Dog Bao Bao Collection P...' | Views: 1698 | Duration: 516.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Cuộc Sống Của Chú Mèo...' | Views: 127 | Duration: 507.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'MÈO RAPPER REMIX | Con Mèo Hát...' | Views: 2857782 | Duration: 59.0s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Những Chú Mèo Hài P2 ...' | Views: 457 | Duration: 604.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: '🎭 Muốn Sinh Con Trai Hay Con G...' | Views: 1392151 | Duration: 703.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Các Bé Mèo Con Đáng Yêu Phần 1...' | Views: 55 | Duration: 101.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Nửa đêm chú mèo kêu 'ÔNG NỘI Ơ...' | Views: 1648402 | Duration: 92.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:03:45 | INFO     |    📊 Kiểm tra: 'Chú Gầu mèo đang làm gì? #shor...' | Views: 0 | Duration: 81.0s
+2026-04-19 00:03:45 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:03:45 | INFO     | ✅ Tìm thấy 2 video viral đạt chuẩn
+2026-04-19 00:03:45 | INFO     | 🚀 Bat dau xu ly 2 video...
+2026-04-19 00:03:45 | INFO     | XU LY #1: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong
+2026-04-19 00:03:45 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=BwiK3MiwYfc
+2026-04-19 00:03:47 | INFO     | ✅ Downloaded: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong → uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:06:25 | INFO     | ============================================================
+2026-04-19 00:06:25 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:06:25 | INFO     | ============================================================
+2026-04-19 00:06:59 | INFO     | ============================================================
+2026-04-19 00:06:59 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:06:59 | INFO     | ============================================================
+2026-04-19 00:07:21 | INFO     | ============================================================
+2026-04-19 00:07:21 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:07:21 | INFO     | ============================================================
+2026-04-19 00:07:21 | INFO     | 🔍 Tìm kiếm: 'Video AI về con mèo' trên tiktok, youtube
+2026-04-19 00:07:21 | INFO     | 📱 TikTok [Browser]: Đang tìm kiếm 'Video AI về con mèo'...
+2026-04-19 00:07:37 | INFO     | 📺 YouTube: Đang tìm kiếm 'Video AI về con mèo'...
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'How to Make AI CAT Videos with...' | Views: 5470 | Duration: 692.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Hướng dẫn tạo video mèo AI của...' | Views: 14421 | Duration: 628.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo con gừng mê phô mai, mẹ mè...' | Views: 1003323 | Duration: 952.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Cách Làm Video MÈO NẤU ĂN bằng...' | Views: 165824 | Duration: 1078.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Cách Làm Video HOẠT HÌNH Mèo C...' | Views: 34085 | Duration: 1707.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Cách Tạo Video Short Viral Bằn...' | Views: 12461 | Duration: 532.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Tạo Video Trend Mèo Nấu Ăn Bằn...' | Views: 2071 | Duration: 705.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo Con Ginger Du Lịch Nhật Bả...' | Views: 1630693 | Duration: 1947.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo Con Ginger Đi Câu Cá Cùng ...' | Views: 8146829 | Duration: 1887.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo con Ginger Gặp Ma Ở Cửa Hà...' | Views: 2006113 | Duration: 1934.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo Con Ginger Gặp Bà Ngoại 💕,...' | Views: 2315676 | Duration: 1803.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Dancing Cat With Motorcycle Ex...' | Views: 1988039 | Duration: 10.0s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Instructions for Creating AI T...' | Views: 98563 | Duration: 1106.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo con gừng và mẹ mèo trúng s...' | Views: 704051 | Duration: 922.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Hai con mèo con đùa giỡn thật ...' | Views: 454 | Duration: 61.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'NGHỈ HÈ VỀ QUÊ NGOẠI「FULL」...' | Views: 1005789 | Duration: 739.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'MÈO RAPPER REMIX | Con Mèo Hát...' | Views: 2857784 | Duration: 59.0s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mèo con gừng tập làm lính cứu ...' | Views: 740214 | Duration: 948.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Con Mèo kêu sao? Hot Trend Tik...' | Views: 168053 | Duration: 33.0s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Chú Mèo Con Ginger Thử Trang Đ...' | Views: 899273 | Duration: 1866.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Capybara Crazy Cat Collection ...' | Views: 1840986 | Duration: 579.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Tạo Video Hoạt Hình Với AI Fre...' | Views: 18346 | Duration: 516.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: '🎭 Muốn Sinh Con Trai Hay Con G...' | Views: 1392161 | Duration: 703.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'đến giờ ăn rồi gọi ba xuống ăn...' | Views: 38334808 | Duration: 30.0s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: '44 Con Mèo | 30 phút cho khoản...' | Views: 11313664 | Duration: 2229.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Mint Vy Đặt Tên Cho Đàn Mèo Co...' | Views: 840621 | Duration: 1447.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: '👍Mèo Vàng Hoàng Tèo😹 Hóa Thân ...' | Views: 292085 | Duration: 596.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'Phim Hoat Hình Vui Nhộn Cho Bé...' | Views: 22041181 | Duration: 1236.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: 'PHONG VÀ VỊT SẼ CHỌN AI TRONG ...' | Views: 1618126 | Duration: 137.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     |    📊 Kiểm tra: '"This Is Cao Cao Cao - This Is...' | Views: 566208 | Duration: 182.0s
+2026-04-19 00:07:39 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:07:39 | INFO     | ✅ Tìm thấy 4 video viral đạt chuẩn
+2026-04-19 00:07:39 | INFO     | 🚀 Bat dau xu ly 3 video...
+2026-04-19 00:07:39 | INFO     | XU LY #1: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong
+2026-04-19 00:07:39 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=BwiK3MiwYfc
+2026-04-19 00:07:41 | INFO     | ✅ Downloaded: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong → uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:07:44 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:07:44 | INFO     | ============================================================
+2026-04-19 00:07:44 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:07:44 | INFO     | ============================================================
+2026-04-19 00:07:44 | INFO     | 📹 Source: uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:07:44 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:07:44 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:07:45 | INFO     | ✅ Video processed: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_6101.mp4
+2026-04-19 00:07:46 | INFO     |    ✅ HOAN TAT: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_6101.mp4
+2026-04-19 00:07:46 | INFO     | XU LY #2: MÈO RAPPER REMIX | Con Mèo Hát nghe cực hay | The Cat sings a great song | The Rapper Cat
+2026-04-19 00:07:46 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=dzCGV3HQ9c0
+2026-04-19 00:07:55 | INFO     | ✅ Downloaded: MÈO RAPPER REMIX | Con Mèo Hát nghe cực hay | The Cat sings a great song | The Rapper Cat → uploads\video\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0.mp4
+2026-04-19 00:07:57 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:07:57 | INFO     | ============================================================
+2026-04-19 00:07:57 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:07:57 | INFO     | ============================================================
+2026-04-19 00:07:57 | INFO     | 📹 Source: uploads\video\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0.mp4
+2026-04-19 00:07:57 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:07:57 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:08:01 | INFO     | ✅ Video processed: uploads\processed\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0_processed_4995.mp4
+2026-04-19 00:08:03 | INFO     |    ✅ HOAN TAT: uploads\processed\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0_processed_4995.mp4
+2026-04-19 00:08:03 | INFO     | XU LY #3: Dancing Cat With Motorcycle Exhaust Sound - Con Mèo Nhảy Múa Với Âm Thanh Pô Xe Máy
+2026-04-19 00:08:03 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=nxhXPiQY8gY
+2026-04-19 00:08:11 | INFO     | ✅ Downloaded: Dancing Cat With Motorcycle Exhaust Sound - Con Mèo Nhảy Múa Với Âm Thanh Pô Xe Máy → uploads\video\Dancing Cat With Motorcycle Exhaust Sound - Con Mèo Nhảy Múa Với Âm Thanh Pô Xe Máy-nxhXPiQY8gY.mp4
+2026-04-19 00:08:15 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:08:15 | INFO     | ============================================================
+2026-04-19 00:08:15 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:08:15 | INFO     | ============================================================
+2026-04-19 00:08:15 | INFO     | 📹 Source: uploads\video\Dancing Cat With Motorcycle Exhaust Sound - Con Mèo Nhảy Múa Với Âm Thanh Pô Xe Máy-nxhXPiQY8gY.mp4
+2026-04-19 00:08:15 | INFO     | ⏱  Trim: 0.0s → 10.0s
+2026-04-19 00:08:15 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:08:17 | INFO     | ✅ Video processed: uploads\processed\Dancing Cat With Motorcycle Exhaust Sound - Con Mèo Nhảy Múa Với Âm Thanh Pô Xe Máy-nxhXPiQY8gY_processed_2238.mp4
+2026-04-19 00:08:18 | INFO     |    ✅ HOAN TAT: uploads\processed\Dancing Cat With Motorcycle Exhaust Sound - Con Mèo Nhảy Múa Với Âm Thanh Pô Xe Máy-nxhXPiQY8gY_processed_2238.mp4
+2026-04-19 00:08:18 | INFO     | ============================================================
+2026-04-19 00:08:18 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 00:08:18 | INFO     | ============================================================
+2026-04-19 00:12:50 | INFO     | ============================================================
+2026-04-19 00:12:50 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:12:50 | INFO     | ============================================================
+2026-04-19 00:13:04 | INFO     | ============================================================
+2026-04-19 00:13:04 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:13:04 | INFO     | ============================================================
+2026-04-19 00:13:04 | INFO     | 🔍 Tìm kiếm: 'Video AI về Mèo' trên tiktok, youtube
+2026-04-19 00:13:04 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Video AI về Mèo'...
+2026-04-19 00:13:06 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Video AI về Mèo
+2026-04-19 00:13:19 | INFO     |    📄 Tieu de trang: 'Find 'Video AI về Mèo' on TikTok | TikTok Search'
+2026-04-19 00:13:19 | INFO     |    🔍 Tim thay 0 the video tren trang.
+2026-04-19 00:13:19 | ERROR    |    ❌ Khong tim thay video nao. Da chup anh man hinh debug tai: logs/tiktok_debug.png
+2026-04-19 00:13:20 | INFO     | 📺 YouTube: Đang tìm kiếm 'Video AI về Mèo'...
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'FULL CHUYỆN GIA ĐÌNH MÈO l Fun...' | Views: 849 | Duration: 1557.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Hành Trình Của Loài Mèo | Khám...' | Views: 89067 | Duration: 1569.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Bé Mèo Siêu Đáng Iu #shorts #t...' | Views: 359 | Duration: 65.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Chị gái dẫn e trai đi cắt tóc ...' | Views: 1 | Duration: 16.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Những Chú Mèo Hài Hướ...' | Views: 1353 | Duration: 490.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Mình Đã Thử Youttube Shorts Tr...' | Views: 243869 | Duration: 545.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Cuộc sống của con mèo tên Xám ...' | Views: 439 | Duration: 209.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Mèo bỏ chạy khi xem 'Tom and J...' | Views: 25 | Duration: 27.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'TOP 3 KINH NGHIỆM Làm Youtube ...' | Views: 48790 | Duration: 381.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Hai con mèo con đùa giỡn thật ...' | Views: 454 | Duration: 61.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Bé Mắng Mèo Vì Khoe Khoang 😤🐱✨...' | Views: 13 | Duration: 16.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'PHẢN ỨNG CỦA MÈO LẦN ĐẦU GẶP C...' | Views: 1554966 | Duration: 261.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Siêu mèo chân ngắn và em bé #s...' | Views: 2 | Duration: 61.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Làm Sao Để Hiểu Mèo Của Bạn Hơ...' | Views: 1622619 | Duration: 537.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Câu Chuyện Của Chú Mè...' | Views: 1124 | Duration: 522.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Làm Shorts Kiếm Tiền YouTube 2...' | Views: 47957 | Duration: 879.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Cuộc Sống Của Chú Mèo...' | Views: 127 | Duration: 507.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Nửa đêm chú mèo kêu 'ÔNG NỘI Ơ...' | Views: 1648402 | Duration: 92.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'MÈO RAPPER REMIX | Con Mèo Hát...' | Views: 2857792 | Duration: 59.0s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Những Chú Mèo Hài P2 ...' | Views: 457 | Duration: 604.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: '( Review nhân vật AI ) Đàn mèo...' | Views: 5 | Duration: 80.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: '🎭 Muốn Sinh Con Trai Hay Con G...' | Views: 1392186 | Duration: 703.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Mèo Nhỏ Trong Nắng #nhacthieun...' | Views: 0 | Duration: 147.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Người mà em thương trước kia đ...' | Views: 3212345 | Duration: 53.0s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Chú Gầu mèo đang làm gì? #shor...' | Views: 0 | Duration: 81.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: '🎭 Khi Tôi Là Chị Đại Trong Lớp...' | Views: 512746 | Duration: 552.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'chó sói hú về đêm #shorts...' | Views: 518357 | Duration: 7.0s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'video này hơi lỏ :))...' | Views: 2673362 | Duration: 49.0s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'Pet Family Compilation Little ...' | Views: 128973 | Duration: 493.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     |    📊 Kiểm tra: 'PHONG VÀ VỊT SẼ CHỌN AI TRONG ...' | Views: 1618126 | Duration: 137.0s
+2026-04-19 00:13:22 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:13:22 | INFO     | ✅ Tìm thấy 4 video viral đạt chuẩn
+2026-04-19 00:13:22 | INFO     | 🚀 Bat dau xu ly 3 video...
+2026-04-19 00:13:22 | INFO     | XU LY #1: Người mà em thương trước kia đâu rồi 🥺🥺🥺🥺
+2026-04-19 00:13:22 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=56EzgHVjd4w
+2026-04-19 00:13:30 | INFO     | ✅ Downloaded: Người mà em thương trước kia đâu rồi 🥺🥺🥺🥺 → uploads\video\Người mà em thương trước kia đâu rồi 🥺🥺🥺🥺-56EzgHVjd4w.mp4
+2026-04-19 00:13:33 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:13:33 | INFO     | ============================================================
+2026-04-19 00:13:33 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:13:33 | INFO     | ============================================================
+2026-04-19 00:13:33 | INFO     | 📹 Source: uploads\video\Người mà em thương trước kia đâu rồi 🥺🥺🥺🥺-56EzgHVjd4w.mp4
+2026-04-19 00:13:33 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:13:33 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:13:37 | INFO     | ✅ Video processed: uploads\processed\Người mà em thương trước kia đâu rồi 🥺🥺🥺🥺-56EzgHVjd4w_processed_7865.mp4
+2026-04-19 00:13:39 | INFO     |    ✅ HOAN TAT: uploads\processed\Người mà em thương trước kia đâu rồi 🥺🥺🥺🥺-56EzgHVjd4w_processed_7865.mp4
+2026-04-19 00:13:39 | INFO     | XU LY #2: MÈO RAPPER REMIX | Con Mèo Hát nghe cực hay | The Cat sings a great song | The Rapper Cat
+2026-04-19 00:13:39 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=dzCGV3HQ9c0
+2026-04-19 00:13:47 | INFO     | ✅ Downloaded: MÈO RAPPER REMIX | Con Mèo Hát nghe cực hay | The Cat sings a great song | The Rapper Cat → uploads\video\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0.mp4
+2026-04-19 00:13:50 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:13:50 | INFO     | ============================================================
+2026-04-19 00:13:50 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:13:50 | INFO     | ============================================================
+2026-04-19 00:13:50 | INFO     | 📹 Source: uploads\video\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0.mp4
+2026-04-19 00:13:50 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:13:50 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:13:54 | INFO     | ✅ Video processed: uploads\processed\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0_processed_5530.mp4
+2026-04-19 00:13:55 | INFO     |    ✅ HOAN TAT: uploads\processed\MÈO RAPPER REMIX ｜ Con Mèo Hát nghe cực hay ｜ The Cat sings a great song ｜ The Rapper Cat-dzCGV3HQ9c0_processed_5530.mp4
+2026-04-19 00:13:55 | INFO     | XU LY #3: video này hơi lỏ :))
+2026-04-19 00:13:55 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=RD0N0CItUBo
+2026-04-19 00:13:58 | INFO     | ✅ Downloaded: video này hơi lỏ :)) → uploads\video\video này hơi lỏ ：))-RD0N0CItUBo.mp4
+2026-04-19 00:14:02 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:14:02 | INFO     | ============================================================
+2026-04-19 00:14:02 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:14:02 | INFO     | ============================================================
+2026-04-19 00:14:02 | INFO     | 📹 Source: uploads\video\video này hơi lỏ ：))-RD0N0CItUBo.mp4
+2026-04-19 00:14:02 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:14:02 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:14:05 | INFO     | ✅ Video processed: uploads\processed\video này hơi lỏ ：))-RD0N0CItUBo_processed_7519.mp4
+2026-04-19 00:14:07 | INFO     |    ✅ HOAN TAT: uploads\processed\video này hơi lỏ ：))-RD0N0CItUBo_processed_7519.mp4
+2026-04-19 00:14:07 | INFO     | ============================================================
+2026-04-19 00:14:07 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 00:14:07 | INFO     | ============================================================
+2026-04-19 00:21:18 | INFO     | ============================================================
+2026-04-19 00:21:18 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:21:18 | INFO     | ============================================================
+2026-04-19 00:21:30 | INFO     | ============================================================
+2026-04-19 00:21:30 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:21:30 | INFO     | ============================================================
+2026-04-19 00:21:30 | INFO     | 🔍 Tìm kiếm: 'Video mèo AI' trên tiktok, youtube
+2026-04-19 00:21:30 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Video mèo AI'...
+2026-04-19 00:21:31 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Video mèo AI
+2026-04-19 00:21:48 | INFO     |    📄 Tieu de trang: 'Find 'Video mèo AI' on TikTok | TikTok Search'
+2026-04-19 00:21:48 | INFO     |    🔍 Tim thay 54 item co the la video.
+2026-04-19 00:21:50 | INFO     | 📺 YouTube: Đang tìm kiếm 'Video mèo AI'...
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'meow family watch and enjoy ai...' | Views: 2302 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'GatoNo #fyp #aicat #funnyvideo...' | Views: 6872 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'mao mao cat ai video #creators...' | Views: 2847 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'AI created this cat story… but...' | Views: 58 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: '😫😫#ai #aicat #aiart #aivideos ...' | Views: 154200 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Con mèo tội nghiệp #videoAI...' | Views: 277 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'ai story video ♥️♥️#cats #aica...' | Views: 27600 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Orange cat in trouble...' | Views: 22100 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Nay mướp được ăn món VIP: cá h...' | Views: 4711 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'He’s just a child #funnyvideos...' | Views: 3600000 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: '#cutecat #kitten #aicat #catvi...' | Views: 383900 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: '#aicat #cat #kitten #orangecat...' | Views: 188500 | Duration: 15s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 25 ...' | Views: 100 | Duration: 206.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 23 ...' | Views: 538 | Duration: 211.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 22 ...' | Views: 139 | Duration: 184.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 10 ...' | Views: 29 | Duration: 145.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 24 ...' | Views: 557 | Duration: 191.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Funny Cat Dance Video 😅 #ai #c...' | Views: 258 | Duration: 131.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 12 ...' | Views: 1 | Duration: 114.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 15 ...' | Views: 21 | Duration: 124.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký - tập 10 ...' | Views: 197 | Duration: 167.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 28 ...' | Views: 98 | Duration: 156.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 27 ...' | Views: 18 | Duration: 161.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 34 ...' | Views: 226 | Duration: 184.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 31 ...' | Views: 216 | Duration: 163.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 11 ...' | Views: 3 | Duration: 143.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'FULL CHUYỆN GIA ĐÌNH MÈO l Fun...' | Views: 849 | Duration: 1557.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo Con Phiêu Lưu Ký | Tập 13 ...' | Views: 226 | Duration: 161.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 16 ...' | Views: 26 | Duration: 124.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Funny Cat Dance Video 😅 #ai #c...' | Views: 1021 | Duration: 261.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 33 ...' | Views: 210 | Duration: 172.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 21 ...' | Views: 254 | Duration: 230.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèm con phiêu lưu ký | Tập 26 ...' | Views: 146 | Duration: 183.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 14 ...' | Views: 21 | Duration: 129.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 30 ...' | Views: 89 | Duration: 182.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 29 ...' | Views: 322 | Duration: 164.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 20 ...' | Views: 222 | Duration: 177.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký - tập 12 ...' | Views: 233 | Duration: 140.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 15 ...' | Views: 223 | Duration: 184.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Tổng Hợp Chú Mèo Dứa Dứa Tinh ...' | Views: 577680 | Duration: 486.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 32 ...' | Views: 287 | Duration: 153.0s
+2026-04-19 00:21:52 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:21:52 | INFO     |    📊 Kiểm tra: 'đến giờ ăn rồi gọi ba xuống ăn...' | Views: 38335110 | Duration: 30.0s
+2026-04-19 00:21:52 | INFO     | ✅ Tìm thấy 5 video viral đạt chuẩn
+2026-04-19 00:21:52 | INFO     | 🚀 Bat dau xu ly 3 video...
+2026-04-19 00:21:52 | INFO     | XU LY #1: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong
+2026-04-19 00:21:52 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=BwiK3MiwYfc
+2026-04-19 00:21:54 | INFO     | ✅ Downloaded: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong → uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:21:57 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:21:57 | INFO     | ============================================================
+2026-04-19 00:21:57 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:21:57 | INFO     | ============================================================
+2026-04-19 00:21:57 | INFO     | 📹 Source: uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:21:57 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:21:57 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:21:59 | INFO     | ✅ Video processed: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_9959.mp4
+2026-04-19 00:22:00 | INFO     |    ✅ HOAN TAT: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_9959.mp4
+2026-04-19 00:22:00 | INFO     | XU LY #2: He’s just a child #funnyvideos #funnycat #aicats #foryou #fyp
+2026-04-19 00:22:00 | INFO     | 📥 Downloading: https://www.tiktok.com/@meowzsystory/video/7524246127814708493
+2026-04-19 00:22:02 | ERROR    | Download failed: ERROR: [TikTok] 7524246127814708493: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-19 00:22:05 | INFO     | XU LY #3: #cutecat #kitten #aicat #catvideo #storycat
+2026-04-19 00:22:05 | INFO     | 📥 Downloading: https://www.tiktok.com/@catstory588/video/7584453872966503702
+2026-04-19 00:22:06 | ERROR    | Download failed: ERROR: [TikTok] 7584453872966503702: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-19 00:22:09 | INFO     | ============================================================
+2026-04-19 00:22:09 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 00:22:09 | INFO     | ============================================================
+2026-04-19 00:29:38 | INFO     | ============================================================
+2026-04-19 00:29:38 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:29:38 | INFO     | ============================================================
+2026-04-19 00:29:56 | INFO     | ============================================================
+2026-04-19 00:29:56 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:29:56 | INFO     | ============================================================
+2026-04-19 00:29:56 | INFO     | 🔍 Tìm kiếm: 'Mèo AI' trên tiktok, youtube
+2026-04-19 00:29:56 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Mèo AI'...
+2026-04-19 00:29:57 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Mèo AI
+2026-04-19 00:30:16 | INFO     |    📄 Tieu de trang: 'Find 'Mèo AI' on TikTok | TikTok Search'
+2026-04-19 00:30:16 | INFO     |    🔍 Tim thay 13 lien ket video tren trang.
+2026-04-19 00:30:16 | INFO     | 📺 YouTube: Đang tìm kiếm 'Mèo AI'...
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Meo AI#Shorts...' | Views: 16 | Duration: 59.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 25 ...' | Views: 100 | Duration: 206.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Ây ai Series #1 | Chuyện mèo b...' | Views: 6 | Duration: 38.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 23 ...' | Views: 538 | Duration: 211.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'a cup of coffee #cat #shorts #...' | Views: 2 | Duration: 9.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Ai mà chả thích mèo #shorts #s...' | Views: 0 | Duration: 6.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Liệu mèo có thắng nổi quái vật...' | Views: 0 | Duration: 6.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 22 ...' | Views: 139 | Duration: 184.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'youtube shorts chú mèo cơ bắp ...' | Views: 16 | Duration: 8.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'đến giờ ăn rồi gọi ba xuống ăn...' | Views: 38335340 | Duration: 30.0s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 21 ...' | Views: 254 | Duration: 230.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Ai bảo mẽo thì không biết hát ...' | Views: 0 | Duration: 27.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: '#shorts có ai thích mèo không...' | Views: 10 | Duration: 21.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Ai là chủ nhân trong nhà : Chó...' | Views: 10 | Duration: 30.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Chú mèo bị ma đuổi #shorts...' | Views: 36 | Duration: 62.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 24 ...' | Views: 557 | Duration: 191.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'FULL CHUYỆN GIA ĐÌNH MÈO l Fun...' | Views: 849 | Duration: 1557.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 12 ...' | Views: 1 | Duration: 114.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Chỉ những ai nuôi Mèo mới hiểu...' | Views: 24 | Duration: 89.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: '#cat #mèo #funny #cats #memes ...' | Views: 24 | Duration: 7.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 10 ...' | Views: 29 | Duration: 145.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 13 ...' | Views: 33 | Duration: 129.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 28 ...' | Views: 98 | Duration: 156.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 27 ...' | Views: 18 | Duration: 161.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 34 ...' | Views: 226 | Duration: 184.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 20 ...' | Views: 222 | Duration: 177.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'interesting A I videos #cat #c...' | Views: 7 | Duration: 61.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'mèo  phù thủ dễ thương #shorts...' | Views: 6 | Duration: 19.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 33 ...' | Views: 210 | Duration: 172.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:30:18 | INFO     |    📊 Kiểm tra: 'Al tắm cho mèo #shorts #videos...' | Views: 5 | Duration: 9.0s
+2026-04-19 00:30:18 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:30:18 | INFO     | ✅ Tìm thấy 1 video viral đạt chuẩn
+2026-04-19 00:30:18 | INFO     | 🚀 Bat dau xu ly 1 video...
+2026-04-19 00:30:18 | INFO     | XU LY #1: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong
+2026-04-19 00:30:18 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=BwiK3MiwYfc
+2026-04-19 00:30:20 | INFO     | ✅ Downloaded: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong → uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:30:23 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:30:23 | INFO     | ============================================================
+2026-04-19 00:30:23 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:30:23 | INFO     | ============================================================
+2026-04-19 00:30:23 | INFO     | 📹 Source: uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:30:23 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:30:23 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:30:24 | INFO     | ✅ Video processed: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_8781.mp4
+2026-04-19 00:30:25 | INFO     |    ✅ HOAN TAT: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_8781.mp4
+2026-04-19 00:30:25 | INFO     | ============================================================
+2026-04-19 00:30:25 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 00:30:25 | INFO     | ============================================================
+2026-04-19 00:37:13 | INFO     | ============================================================
+2026-04-19 00:37:13 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:37:13 | INFO     | ============================================================
+2026-04-19 00:37:30 | INFO     | ============================================================
+2026-04-19 00:37:30 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:37:30 | INFO     | ============================================================
+2026-04-19 00:37:30 | INFO     | 🔍 Tìm kiếm: 'Mèo ai' trên tiktok, youtube
+2026-04-19 00:37:30 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Mèo ai'...
+2026-04-19 00:37:31 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Mèo ai
+2026-04-19 00:37:48 | INFO     |    📄 Tieu de trang: 'Find 'Mèo ai' on TikTok | TikTok Search'
+2026-04-19 00:37:48 | INFO     |    🔍 Tim thay 13 lien ket video tren trang.
+2026-04-19 00:37:48 | INFO     | 📺 YouTube: Đang tìm kiếm 'Mèo ai'...
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Meo AI#Shorts...' | Views: 16 | Duration: 59.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Ây ai Series #1 | Chuyện mèo b...' | Views: 6 | Duration: 38.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 23 ...' | Views: 538 | Duration: 211.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'a cup of coffee #cat #shorts #...' | Views: 2 | Duration: 9.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 25 ...' | Views: 100 | Duration: 206.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Liệu mèo có thắng nổi quái vật...' | Views: 0 | Duration: 6.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'youtube shorts chú mèo cơ bắp ...' | Views: 16 | Duration: 8.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 22 ...' | Views: 139 | Duration: 184.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Ai bảo mẽo thì không biết hát ...' | Views: 0 | Duration: 27.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: '#shorts có ai thích mèo không...' | Views: 10 | Duration: 21.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 24 ...' | Views: 557 | Duration: 191.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | tập 21 ...' | Views: 254 | Duration: 230.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'FULL CHUYỆN GIA ĐÌNH MÈO l Fun...' | Views: 849 | Duration: 1557.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: '#cat #mèo #funny #cats #memes ...' | Views: 24 | Duration: 7.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Chỉ những ai nuôi Mèo mới hiểu...' | Views: 24 | Duration: 89.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 10 ...' | Views: 29 | Duration: 145.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'đến giờ ăn rồi gọi ba xuống ăn...' | Views: 38335489 | Duration: 30.0s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 12 ...' | Views: 1 | Duration: 114.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 13 ...' | Views: 33 | Duration: 129.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 34 ...' | Views: 226 | Duration: 184.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 28 ...' | Views: 98 | Duration: 156.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 20 ...' | Views: 222 | Duration: 177.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'interesting A I videos #cat #c...' | Views: 7 | Duration: 61.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Al tắm cho mèo #shorts #videos...' | Views: 5 | Duration: 9.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo con phiêu lưu ký | Tập 33 ...' | Views: 210 | Duration: 172.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'mèo  phù thủ dễ thương #shorts...' | Views: 6 | Duration: 19.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèo Con Phiêu Lưu Ký | Tập 13 ...' | Views: 226 | Duration: 161.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'chú mèo đảm đang AI #shorts...' | Views: 3 | Duration: 41.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Mèm con phiêu lưu ký | Tập 26 ...' | Views: 146 | Duration: 183.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     |    📊 Kiểm tra: 'Rùa con phiêu lưu ký | Tập 15 ...' | Views: 21 | Duration: 124.0s
+2026-04-19 00:37:50 | INFO     |    ❌ Loại: Views < 50000, Duration > 60s
+2026-04-19 00:37:50 | INFO     | ✅ Tìm thấy 1 video viral đạt chuẩn
+2026-04-19 00:37:50 | INFO     | 🚀 Bat dau xu ly 1 video...
+2026-04-19 00:37:50 | INFO     | XU LY #1: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong
+2026-04-19 00:37:50 | INFO     | 📥 Downloading: https://www.youtube.com/watch?v=BwiK3MiwYfc
+2026-04-19 00:37:52 | INFO     | ✅ Downloaded: đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong → uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:37:56 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:37:56 | INFO     | ============================================================
+2026-04-19 00:37:56 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:37:56 | INFO     | ============================================================
+2026-04-19 00:37:56 | INFO     | 📹 Source: uploads\video\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc.mp4
+2026-04-19 00:37:56 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:37:56 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:37:58 | INFO     | ✅ Video processed: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_3974.mp4
+2026-04-19 00:37:59 | INFO     |    ✅ HOAN TAT: uploads\processed\đến giờ ăn rồi gọi ba xuống ăn cơm#shorts#cheems#xuhuong-BwiK3MiwYfc_processed_3974.mp4
+2026-04-19 00:37:59 | INFO     | ============================================================
+2026-04-19 00:37:59 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 00:37:59 | INFO     | ============================================================
+2026-04-19 00:40:53 | INFO     | ============================================================
+2026-04-19 00:40:53 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:40:53 | INFO     | ============================================================
+2026-04-19 00:41:07 | INFO     | ============================================================
+2026-04-19 00:41:07 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:41:07 | INFO     | ============================================================
+2026-04-19 00:41:07 | INFO     | 🔍 Tìm kiếm: 'Mèo AI' trên tiktok
+2026-04-19 00:41:07 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Mèo AI'...
+2026-04-19 00:41:08 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Mèo AI
+2026-04-19 00:41:21 | INFO     |    📄 Tieu de trang: 'Find 'Mèo AI' on TikTok | TikTok Search'
+2026-04-19 00:41:21 | INFO     |    🔍 Tim thay 13 lien ket video tren trang.
+2026-04-19 00:41:21 | INFO     |    ✅ TikTok: Da trich xuat xong 0 video hop le.
+2026-04-19 00:41:21 | INFO     | ✅ Tìm thấy 0 video viral đạt chuẩn
+2026-04-19 00:41:21 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-19 00:44:58 | INFO     | ============================================================
+2026-04-19 00:44:58 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 00:44:58 | INFO     | ============================================================
+2026-04-19 00:45:06 | INFO     | ============================================================
+2026-04-19 00:45:06 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 00:45:06 | INFO     | ============================================================
+2026-04-19 00:45:06 | INFO     | 🔍 Tìm kiếm: 'Mèo ai' trên tiktok
+2026-04-19 00:45:06 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Mèo ai'...
+2026-04-19 00:45:07 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Mèo ai
+2026-04-19 00:45:21 | INFO     |    📄 Tieu de trang: 'Find 'Mèo ai' on TikTok | TikTok Search'
+2026-04-19 00:45:21 | INFO     |    🔍 Tim thay 13 lien ket video tren trang.
+2026-04-19 00:45:21 | INFO     |    📊 Card #1: Views extracted: '1470' -> Parsed: 1470
+2026-04-19 00:45:22 | INFO     |    📊 Card #2: Views extracted: '230' -> Parsed: 230
+2026-04-19 00:45:22 | INFO     |    📊 Card #3: Views extracted: '223' -> Parsed: 223
+2026-04-19 00:45:22 | INFO     |    📊 Card #4: Views extracted: '4711' -> Parsed: 4711
+2026-04-19 00:45:22 | INFO     |    📊 Card #5: Views extracted: '162' -> Parsed: 162
+2026-04-19 00:45:22 | INFO     |    📊 Card #6: Views extracted: '292' -> Parsed: 292
+2026-04-19 00:45:22 | INFO     |    📊 Card #7: Views extracted: '0' -> Parsed: 0
+2026-04-19 00:45:22 | INFO     |    📊 Card #8: Views extracted: '294' -> Parsed: 294
+2026-04-19 00:45:22 | INFO     |    📊 Card #9: Views extracted: '7416' -> Parsed: 7416
+2026-04-19 00:45:22 | INFO     |    📊 Card #10: Views extracted: '415.2K' -> Parsed: 415200
+2026-04-19 00:45:22 | INFO     |    📊 Card #11: Views extracted: '22.1K' -> Parsed: 22100
+2026-04-19 00:45:22 | INFO     |    📊 Card #12: Views extracted: '467' -> Parsed: 467
+2026-04-19 00:45:22 | INFO     |    📊 Card #13: Views extracted: '68' -> Parsed: 68
+2026-04-19 00:45:22 | INFO     |    ✅ TikTok: Da trich xuat xong 13 video hop le (Chua qua bo loc min_views).
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 1...' | Views: 1470 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 2...' | Views: 230 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 3...' | Views: 223 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 4...' | Views: 4711 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 5...' | Views: 162 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 6...' | Views: 292 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 7...' | Views: 0 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 8...' | Views: 294 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 9...' | Views: 7416 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 10...' | Views: 415200 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 11...' | Views: 22100 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 12...' | Views: 467 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     |    📊 Kiểm tra: 'Mèo ai 13...' | Views: 68 | Duration: 15s
+2026-04-19 00:45:22 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 00:45:22 | INFO     | ✅ Tìm thấy 5 video viral đạt chuẩn
+2026-04-19 00:45:22 | INFO     | 🚀 Bat dau xu ly 3 video...
+2026-04-19 00:45:22 | INFO     | XU LY #1: Mèo ai 10
+2026-04-19 00:45:22 | INFO     | 📥 Downloading: https://www.tiktok.com/@timeleps2/video/7614904256197446932
+2026-04-19 00:45:24 | INFO     | ✅ Downloaded: ￼ #cutecat #cartoons #catstory #aicat @s2  → uploads\video\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932.image
+2026-04-19 00:45:28 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:45:28 | INFO     | ============================================================
+2026-04-19 00:45:28 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:45:28 | INFO     | ============================================================
+2026-04-19 00:45:28 | INFO     | 📹 Source: uploads\video\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932.image
+2026-04-19 00:45:28 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:45:28 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:45:28 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932_processed_3204.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:29 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932_processed_3204.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:29 | INFO     | XU LY #2: Mèo ai 11
+2026-04-19 00:45:29 | INFO     | 📥 Downloading: https://www.tiktok.com/@adorable.orange.cat/video/7617474301192719637
+2026-04-19 00:45:31 | INFO     | ✅ Downloaded: Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart... → uploads\video\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637.image
+2026-04-19 00:45:35 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:45:35 | INFO     | ============================================================
+2026-04-19 00:45:35 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:45:35 | INFO     | ============================================================
+2026-04-19 00:45:35 | INFO     | 📹 Source: uploads\video\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637.image
+2026-04-19 00:45:35 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:45:35 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:45:35 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637_processed_9630.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:37 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637_processed_9630.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:37 | INFO     | XU LY #3: Mèo ai 9
+2026-04-19 00:45:37 | INFO     | 📥 Downloading: https://www.tiktok.com/@meogenius/video/7611690305561054465
+2026-04-19 00:45:38 | INFO     | ✅ Downloaded: "What just happened to our little kitten? #kitten #animation #foryou ... → uploads\video\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465.image
+2026-04-19 00:45:41 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 00:45:41 | INFO     | ============================================================
+2026-04-19 00:45:41 | INFO     |   VIDEO PROCESSING
+2026-04-19 00:45:41 | INFO     | ============================================================
+2026-04-19 00:45:41 | INFO     | 📹 Source: uploads\video\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465.image
+2026-04-19 00:45:41 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 00:45:41 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 00:45:41 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465_processed_4163.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:43 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465_processed_4163.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:43 | INFO     | ============================================================
+2026-04-19 00:45:43 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 00:45:43 | INFO     | ============================================================
+2026-04-19 14:59:34 | INFO     | ============================================================
+2026-04-19 14:59:34 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 14:59:34 | INFO     | ============================================================
+2026-04-19 15:00:03 | INFO     | ============================================================
+2026-04-19 15:00:03 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 15:00:03 | INFO     | ============================================================
+2026-04-19 15:00:03 | INFO     | 🔍 Tìm kiếm: 'Video gái xinh nhảy múa' trên tiktok
+2026-04-19 15:00:03 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Video gái xinh nhảy múa'...
+2026-04-19 15:00:05 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Video gái xinh nhảy múa
+2026-04-19 15:00:20 | INFO     |    📄 Tieu de trang: 'Find 'Video gái xinh nhảy múa' on TikTok | TikTok Search'
+2026-04-19 15:00:20 | INFO     |    🔍 Tim thay 12 lien ket video tren trang.
+2026-04-19 15:00:20 | INFO     |    📊 Card #1: Views extracted: '46' -> Parsed: 46
+2026-04-19 15:00:20 | INFO     |    📊 Card #2: Views extracted: '29' -> Parsed: 29
+2026-04-19 15:00:20 | INFO     |    📊 Card #3: Views extracted: '49' -> Parsed: 49
+2026-04-19 15:00:20 | INFO     |    📊 Card #4: Views extracted: '63' -> Parsed: 63
+2026-04-19 15:00:20 | INFO     |    📊 Card #5: Views extracted: '2249' -> Parsed: 2249
+2026-04-19 15:00:20 | INFO     |    📊 Card #6: Views extracted: '63' -> Parsed: 63
+2026-04-19 15:00:20 | INFO     |    📊 Card #7: Views extracted: '68' -> Parsed: 68
+2026-04-19 15:00:20 | INFO     |    📊 Card #8: Views extracted: '20' -> Parsed: 20
+2026-04-19 15:00:20 | INFO     |    📊 Card #9: Views extracted: '56' -> Parsed: 56
+2026-04-19 15:00:20 | INFO     |    📊 Card #10: Views extracted: '33' -> Parsed: 33
+2026-04-19 15:00:20 | INFO     |    📊 Card #11: Views extracted: '3' -> Parsed: 3
+2026-04-19 15:00:20 | INFO     |    📊 Card #12: Views extracted: '67' -> Parsed: 67
+2026-04-19 15:00:20 | INFO     |    ✅ TikTok: Da trich xuat xong 12 video hop le (Chua qua bo loc min_views).
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 1...' | Views: 46 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 2...' | Views: 29 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 3...' | Views: 49 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 4...' | Views: 63 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 5...' | Views: 2249 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 6...' | Views: 63 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 7...' | Views: 68 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 8...' | Views: 20 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 9...' | Views: 56 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 10...' | Views: 33 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 11...' | Views: 3 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy múa 12...' | Views: 67 | Duration: 15s
+2026-04-19 15:00:20 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:00:20 | INFO     | ✅ Tìm thấy 1 video viral đạt chuẩn
+2026-04-19 15:00:20 | INFO     | 🚀 Bat dau xu ly 1 video...
+2026-04-19 15:00:20 | INFO     | XU LY #1: Video gái xinh nhảy múa 5
+2026-04-19 15:00:21 | INFO     | 📥 Downloading: https://www.tiktok.com/@qanh...298/video/7628798736977677586
+2026-04-19 15:00:23 | INFO     | ✅ Downloaded: Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video... → uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image
+2026-04-19 15:00:26 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 15:00:26 | INFO     | ============================================================
+2026-04-19 15:00:26 | INFO     |   VIDEO PROCESSING
+2026-04-19 15:00:26 | INFO     | ============================================================
+2026-04-19 15:00:26 | INFO     | 📹 Source: uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image
+2026-04-19 15:00:26 | INFO     | ⏱  Trim: 0.0s → 15.0s
+2026-04-19 15:00:26 | INFO     | 📐 Target: 9:16 vertical
+2026-04-19 15:00:27 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586_processed_2051.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 15:00:28 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586_processed_2051.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 15:00:28 | INFO     | ============================================================
+2026-04-19 15:00:28 | INFO     |   DA XU LY XONG. VIDEO DA SAN SANG DE DANG!
+2026-04-19 15:00:28 | INFO     | ============================================================
+2026-04-19 15:21:53 | INFO     | ============================================================
+2026-04-19 15:21:53 | INFO     |   VIRAL MACHINE 2.0 - SMART COLLECTOR
+2026-04-19 15:21:53 | INFO     | ============================================================
+2026-04-19 15:22:16 | INFO     | ============================================================
+2026-04-19 15:22:16 | INFO     |   VIRAL VIDEO SCRAPER
+2026-04-19 15:22:16 | INFO     | ============================================================
+2026-04-19 15:22:16 | INFO     | 🔍 Tìm kiếm: 'Video gái xinh nhảy' trên tiktok
+2026-04-19 15:22:16 | INFO     | 📱 TikTok [Browser]: Dang tim kiem 'Video gái xinh nhảy'...
+2026-04-19 15:22:17 | INFO     |    🌐 Dang truy cap: https://www.tiktok.com/search?q=Video gái xinh nhảy
+2026-04-19 15:22:33 | INFO     |    📄 Tieu de trang: 'Find 'Video gái xinh nhảy' on TikTok | TikTok Search'
+2026-04-19 15:22:33 | INFO     |    🔍 Tim thay 12 lien ket video tren trang.
+2026-04-19 15:22:33 | INFO     |    📊 Card #1: Views extracted: '49' -> Parsed: 49
+2026-04-19 15:22:33 | INFO     |    📊 Card #2: Views extracted: '87' -> Parsed: 87
+2026-04-19 15:22:33 | INFO     |    📊 Card #3: Views extracted: '193' -> Parsed: 193
+2026-04-19 15:22:33 | INFO     |    📊 Card #4: Views extracted: '2262' -> Parsed: 2262
+2026-04-19 15:22:33 | INFO     |    📊 Card #5: Views extracted: '63' -> Parsed: 63
+2026-04-19 15:22:33 | INFO     |    📊 Card #6: Views extracted: '975' -> Parsed: 975
+2026-04-19 15:22:33 | INFO     |    📊 Card #7: Views extracted: '1163' -> Parsed: 1163
+2026-04-19 15:22:33 | INFO     |    📊 Card #8: Views extracted: '130' -> Parsed: 130
+2026-04-19 15:22:33 | INFO     |    📊 Card #9: Views extracted: '200' -> Parsed: 200
+2026-04-19 15:22:33 | INFO     |    📊 Card #10: Views extracted: '60' -> Parsed: 60
+2026-04-19 15:22:33 | INFO     |    📊 Card #11: Views extracted: '534' -> Parsed: 534
+2026-04-19 15:22:33 | INFO     |    📊 Card #12: Views extracted: '144' -> Parsed: 144
+2026-04-19 15:22:33 | INFO     |    ✅ TikTok: Da trich xuat xong 12 video hop le (Chua qua bo loc min_views).
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 1...' | Views: 49 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 2...' | Views: 87 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 3...' | Views: 193 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 4...' | Views: 2262 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 5...' | Views: 63 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 6...' | Views: 975 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 7...' | Views: 1163 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 8...' | Views: 130 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 9...' | Views: 200 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 10...' | Views: 60 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 11...' | Views: 534 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     |    📊 Kiểm tra: 'Video gái xinh nhảy 12...' | Views: 144 | Duration: 15s
+2026-04-19 15:22:33 | INFO     |    ❌ Loại: Views < 1000
+2026-04-19 15:22:33 | INFO     | ✅ Tìm thấy 2 video viral đạt chuẩn
+2026-04-19 15:22:33 | INFO     | 🚀 Bat dau xu ly 2 video...
+2026-04-19 15:22:33 | INFO     | XU LY #1: Video gái xinh nhảy 4
+2026-04-19 15:22:33 | INFO     | 📥 Downloading: https://www.tiktok.com/@qanh...298/video/7628798736977677586
+2026-04-19 15:22:36 | INFO     | ✅ Downloaded: Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video... → uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image
+2026-04-19 15:22:39 | INFO     |    🎭 Dang 'AI Re-Edit' de tranh ban quyen...
+2026-04-19 15:22:39 | INFO     | ============================================================
+2026-04-19 15:22:39 | INFO     |   VIDEO PROCESSING
+2026-04-19 15:22:39 | INFO     | ============================================================

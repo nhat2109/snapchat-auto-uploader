@@ -15,3 +15,167 @@
 2026-04-18 22:33:23 | ERROR    | ❌ Khong tim thay video nao phu hop.
 2026-04-18 22:35:25 | ERROR    | ❌ Khong tim thay video nao phu hop.
 2026-04-18 22:44:22 | ERROR    | ❌ Khong tim thay video nao phu hop.
+2026-04-18 23:47:06 | ERROR    | TikTok yt-dlp search failed: [0;31mERROR:[0m Unsupported URL: https://www.tiktok.com/search?q=War
+2026-04-18 23:47:30 | ERROR    | YouTube yt-dlp search failed: [0;31mERROR:[0m [youtube] zRD4-cl9_OU: This video is not available
+2026-04-18 23:47:30 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-18 23:50:49 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-19 00:00:56 | ERROR    | TikTok Playwright failed: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+2026-04-19 00:01:08 | ERROR    | YouTube yt-dlp search failed: [0;31mERROR:[0m [youtube] NST4pKg1Zdo: This video is not available
+2026-04-19 00:01:08 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-19 00:13:19 | ERROR    |    ❌ Khong tim thay video nao. Da chup anh man hinh debug tai: logs/tiktok_debug.png
+2026-04-19 00:22:02 | ERROR    | Download failed: ERROR: [TikTok] 7524246127814708493: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-19 00:22:06 | ERROR    | Download failed: ERROR: [TikTok] 7584453872966503702: Requested format is not available. Use --list-formats for a list of available formats
+2026-04-19 00:41:21 | ERROR    | ❌ Khong tim thay video nao dat chuẩn viral.
+2026-04-19 00:45:28 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932_processed_3204.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:29 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\￼ #cutecat #cartoons #catstory #aicat @s2 -7614904256197446932_processed_3204.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:35 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637_processed_9630.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:37 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Orange cat in trouble  #funnyvideo #aicat #animation #orangecat #cart...-7617474301192719637_processed_9630.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:41 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465_processed_4163.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 00:45:43 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960 [SAR 1:1 DAR 9:16], 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\＂What just happened to our little kitten？ #kitten #animation #foryou ...-7611690305561054465_processed_4163.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 15:00:27 | ERROR    | FFmpeg failed: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586_processed_2051.mp4.
+Error opening output files: Invalid argument
+
+2026-04-19 15:00:28 | ERROR    |    ❌ Edit that bai: ffmpeg version 8.0.1-essentials_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-openal --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+Input #0, jpeg_pipe, from 'uploads\video\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586.image':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mjpeg (Baseline), yuvj420p(pc, bt470bg/unknown/unknown), 540x960, 25 fps, 25 tbr, 25 tbn
+Stream map '' matches no streams.
+To ignore this, add a trailing '?' to the map.
+Failed to set value '0:a' for option 'map': Invalid argument
+Error parsing options for output file uploads\processed\Điệu nhảy siêu cuốn🤭😍🥰#gaixinh #xuhuong #thinhhanh #nhaytiktok #video...-7628798736977677586_processed_2051.mp4.
+Error opening output files: Invalid argument
+

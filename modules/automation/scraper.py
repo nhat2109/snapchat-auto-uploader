@@ -1,26 +1,33 @@
 """
 modules/automation/scraper.py
-Viral Video Scraper - Tìm và thu thập video viral từ YouTube, TikTok, Douyin
+Viral Video Scraper - Tìm và thu thập video viral từ nhiều nguồn.
 Theo hethong.txt - Section 2.1
 """
 
 import re
 import asyncio
 import random
+import os
 from typing import Optional, List, Dict, Any
 from urllib.parse import urlparse
 
 from loguru import logger
+import requests
+from bs4 import BeautifulSoup
+
+try:
+    from playwright.async_api import async_playwright
+except ImportError:
+    pass
 
 from modules.utils.logger import PipelineLogger
 from modules.utils.retry import retry_on_failure, async_random_delay
-from modules.utils.retry import random_delay
 
 
 class ViralVideoScraper:
     """
     Scraper tìm video viral từ nhiều nguồn.
-    Sources: YouTube Shorts, TikTok, Douyin, Instagram Reels (optional)
+    Sources: YouTube Shorts, TikTok, Facebook Reels
     """
 
     YOUTUBE_SHORTS_URL = "https://www.youtube.com/shorts/{}"
@@ -44,18 +51,18 @@ class ViralVideoScraper:
             min_views       : Lọc views tối thiểu
             max_duration_sec: Giới hạn thời lượng (giây)
             max_results     : Tối đa bao nhiêu video mỗi keyword
-            sources         : Nguồn scrape ['youtube', 'tiktok', 'douyin']
+            sources         : Nguồn scrape ['youtube', 'tiktok', 'facebook']
             pipeline_logger : Logger để cập nhật GUI
         """
         self._log = pipeline_logger or PipelineLogger()
         self._log.section("VIRAL VIDEO SCRAPER")
 
         if sources is None:
-            sources = ["youtube", "tiktok", "douyin"]
+            sources = ["youtube", "tiktok", "facebook"]
 
         all_videos = []
         for kw in keywords:
-            self._log.info(f"🔍 Tìm kiếm: '{kw}'")
+            self._log.info(f"🔍 Tìm kiếm: '{kw}' trên {', '.join(sources)}")
             for source in sources:
                 videos = await self._scrape_keyword(kw, source, max_results)
                 all_videos.extend(videos)
@@ -64,10 +71,9 @@ class ViralVideoScraper:
         filtered = []
         for v in all_videos:
             views = v.get("views") or 0
-            duration = v.get("duration") or 59 # Mac dinh 59s neu thieu
+            duration = v.get("duration") or 59
             
-            # Debug: In ra chi so cua tung video de kiem tra
-            self._log.info(f"   📊 Kiem tra: '{v['title'][:30]}...' | Views: {views} | Duration: {duration}s")
+            self._log.info(f"   📊 Kiểm tra: '{v['title'][:30]}...' | Views: {views} | Duration: {duration}s")
             
             is_viral = views >= min_views
             is_short = duration <= max_duration_sec
@@ -78,9 +84,9 @@ class ViralVideoScraper:
                 reasons = []
                 if not is_viral: reasons.append(f"Views < {min_views}")
                 if not is_short: reasons.append(f"Duration > {max_duration_sec}s")
-                self._log.warn(f"   ❌ Loai: {', '.join(reasons)}")
+                self._log.warn(f"   ❌ Loại: {', '.join(reasons)}")
 
-        self._log.info(f"✅ Tim thay {len(filtered)} video viral dat chuan")
+        self._log.info(f"✅ Tìm thấy {len(filtered)} video viral đạt chuẩn")
         return filtered
 
     async def _scrape_keyword(self, keyword: str,
@@ -90,150 +96,186 @@ class ViralVideoScraper:
         if source == "youtube":
             return await self._scrape_youtube(keyword, max_results)
         elif source == "tiktok":
-            return await self._scrape_tiktok(keyword, max_results)
+            return await self._scrape_tiktok_playwright(keyword, max_results)
+        elif source == "facebook":
+            return await self._scrape_facebook_playwright(keyword, max_results)
         elif source == "douyin":
             return await self._scrape_douyin(keyword, max_results)
         return []
 
     # ─────────────────────────────────────────────────────────────────────
-    #  YouTube Shorts Scraper (Using yt-dlp search - much more reliable)
+    #  YouTube Shorts Scraper
     # ─────────────────────────────────────────────────────────────────────
-    async def _scrape_youtube(self, keyword: str,
-                               max_results: int) -> List[Dict[str, Any]]:
-        """Scrape YouTube search results bang yt-dlp."""
-        self._log.info(f"📺 YouTube: Dang tim kiem '{keyword}' bang yt-dlp...")
-
+    async def _scrape_youtube(self, keyword: str, max_results: int) -> List[Dict[str, Any]]:
+        self._log.info(f"📺 YouTube: Đang tìm kiếm '{keyword}'...")
         try:
             import yt_dlp
-            
-            # Them suffix 'shorts' de tim Shorts
-            search_query = f"ytsearch{max_results * 3}:{keyword} shorts"
-            
-            ydl_opts = {
-                "quiet": True,
-                "extract_flat": False, # Doc ky thong tin (slower but accurate)
-                "force_generic_extractor": False,
-            }
+            search_query = f"ytsearch{max_results * 2}:{keyword} shorts"
+            ydl_opts = {"quiet": True, "extract_flat": True}
 
-            def _get_search_results():
+            def _get_results():
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     return ydl.extract_info(search_query, download=False)
 
-            # Chay trong thread pool de khong block
-            results = await asyncio.get_event_loop().run_in_executor(None, _get_search_results)
+            results = await asyncio.get_event_loop().run_in_executor(None, _get_results)
             
             videos = []
             if "entries" in results:
                 for entry in results["entries"]:
                     if not entry: continue
-                    
-                    video_id = entry.get("id")
-                    url = f"https://www.youtube.com/watch?v={video_id}"
-                    
                     videos.append({
-                        "source_url": url,
-                        "title":      entry.get("title", "Viral Video"),
-                        "source":     "youtube",
-                        "video_id":   video_id,
-                        "views":      entry.get("view_count", random.randint(100000, 500000)),
-                        "duration":   entry.get("duration", 59),
-                        "keyword":    keyword,
+                        "source_url": f"https://www.youtube.com/watch?v={entry.get('id')}",
+                        "title": entry.get("title", "YouTube Viral"),
+                        "source": "youtube",
+                        "views": entry.get("view_count", random.randint(100000, 500000)),
+                        "duration": entry.get("duration", 59),
+                        "keyword": keyword,
                     })
-
-            self._log.info(f"  → YouTube: {len(videos)} video(s) tim thay")
             return videos
-
         except Exception as e:
-            self._log.error(f"YouTube yt-dlp search failed: {e}")
+            self._log.error(f"YouTube search failed: {e}")
             return []
 
-    def _parse_views(self, text: str) -> int:
-        """Parse view count từ text: '1.2M views' → 1200000"""
-        text = text.lower().replace(",", "").replace(" ", "")
-        if "k" in text:
-            try:
-                return int(float(text.replace("k", "").replace("views", "")) * 1000)
-            except Exception:
-                return 0
-        if "m" in text:
-            try:
-                return int(float(text.replace("m", "").replace("views", "")) * 1_000_000)
-            except Exception:
-                return 0
-        try:
-            return int(re.sub(r"[^\d]", "", text))
-        except Exception:
-            return 0
-
     # ─────────────────────────────────────────────────────────────────────
-    #  TikTok Scraper (Using yt-dlp search - Very Reliable)
+    #  TikTok Playwright Scraper
     # ─────────────────────────────────────────────────────────────────────
-    async def _scrape_tiktok(self, keyword: str,
-                               max_results: int) -> List[Dict[str, Any]]:
-        """Scrape TikTok search results bang yt-dlp."""
-        self._log.info(f"📱 TikTok: Dang tim kiem '{keyword}' bang yt-dlp...")
-
+    async def _scrape_tiktok_playwright(self, keyword: str, max_results: int) -> List[Dict[str, Any]]:
+        self._log.info(f"📱 TikTok [Browser]: Dang tim kiem '{keyword}'...")
+        videos = []
+        # Tao thu muc logs neu chua co
+        os.makedirs("logs", exist_ok=True)
+        
         try:
-            import yt_dlp
-            
-            # TikTok search query cho yt-dlp
-            search_query = f"https://www.tiktok.com/search?q={keyword}"
-            
-            ydl_opts = {
-                "quiet": True,
-                "extract_flat": True, # TikTok search tra ve nhieu metadata san
-                "playlist_items": f"1-{max_results}",
-            }
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                context = await browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    viewport={'width': 1280, 'height': 720}
+                )
+                page = await context.new_page()
+                
+                search_url = f"https://www.tiktok.com/search?q={keyword}"
+                self._log.info(f"   🌐 Dang truy cap: {search_url}")
+                
+                await page.goto(search_url, wait_until="networkidle", timeout=60000)
+                await page.wait_for_timeout(3000)
+                
+                title = await page.title()
+                self._log.info(f"   📄 Tieu de trang: '{title}'")
+                
+                # Kiem tra xem co bi kẹt Captcha hay Login khong
+                if "Verify" in title or "Login" in title or "Captcha" in title:
+                    self._log.warn("   ⚠️ TikTok dang yeu cau xac minh (Captcha) hoac Dang nhap!")
+                
+                # Quet cac video links - Cach tiep can truc tiep va manh me nhat
+                # Tim tat ca cac link co format /video/
+                video_links = await page.query_selector_all("a[href*='/video/']")
+                self._log.info(f"   🔍 Tim thay {len(video_links)} lien ket video tren trang.")
+                
+                if len(video_links) == 0:
+                    debug_path = "logs/tiktok_debug.png"
+                    await page.screenshot(path=debug_path)
+                    self._log.error(f"   ❌ Khong thay link video. TikTok co the da thay doi cau truc.")
+                    content = await page.content()
+                    with open("logs/tiktok_html_debug.txt", "w", encoding="utf-8") as f:
+                        f.write(content[:20000])
 
-            def _get_search_results():
-                with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                    return ydl.extract_info(search_query, download=False)
+                # Trich xuat thong tin tu cac links tim thay
+                for idx, link_el in enumerate(video_links):
+                    try:
+                        url = await link_el.get_attribute("href")
+                        if not url or "/video/" not in url: 
+                            if url and "/photo/" in url:
+                                self._log.info(f"   ⏩ Bo qua bai dang anh (Photo): {url}")
+                            continue
+                        
+                        if not url.startswith("http"): url = f"https://www.tiktok.com{url}"
+                        
+                        # Tranh lay trung
+                        if any(v["source_url"] == url for v in videos): continue
 
-            results = await asyncio.get_event_loop().run_in_executor(None, _get_search_results)
-            
-            videos = []
-            if "entries" in results:
-                for entry in results["entries"]:
-                    if not entry: continue
-                    
-                    url = entry.get("url") or entry.get("webpage_url")
-                    if not url: continue
-                    
-                    videos.append({
-                        "source_url": url,
-                        "title":      entry.get("title") or entry.get("description") or "TikTok Viral",
-                        "source":     "tiktok",
-                        "video_id":   entry.get("id"),
-                        "views":      entry.get("view_count", random.randint(50000, 200000)),
-                        "duration":   entry.get("duration", 15),
-                        "keyword":    keyword,
-                    })
+                        # Tu the 'a', ta tim len the cha - Su dung selector CSS don gian hon cho evaluate
+                        card = await page.evaluate_handle("(el) => el.closest('div') || el.parentElement", link_el)
+                        
+                        v_title = f"{keyword} {idx+1}"
+                        v_views = "0"
+                        
+                        if card:
+                            card_el = card.as_element()
+                            # Tim nhieu loai selector cho Views
+                            views_el = await card_el.query_selector("strong[data-e2e*='views'], [class*='Views'], [class*='StrongCount']")
+                            title_el = await card_el.query_selector("[class*='Caption'], [class*='Title'], [data-e2e*='caption']")
+                            
+                            if views_el: v_views = await views_el.inner_text()
+                            if title_el: v_title = await title_el.inner_text()
 
-            self._log.info(f"  → TikTok: {len(videos)} video(s) tim thay")
-            return videos
+                        parsed_views = self._parse_views(v_views)
+                        
+                        # LOG DEBUG: Cho nay Rat quan trong
+                        self._log.info(f"   📊 Card #{idx+1}: Views extracted: '{v_views}' -> Parsed: {parsed_views}")
 
+                        videos.append({
+                            "source_url": url,
+                            "title": v_title,
+                            "source": "tiktok",
+                            "views": parsed_views,
+                            "duration": 15,
+                            "keyword": keyword
+                        })
+                        
+                        if len(videos) >= max_results: break
+                    except Exception as e:
+                        self._log.warn(f"   ⚠️ Loi khi bóc tach card #{idx+1}: {e}")
+                        continue
+                        
+                self._log.info(f"   ✅ TikTok: Da trich xuat xong {len(videos)} video hop le (Chua qua bo loc min_views).")
+                await browser.close()
         except Exception as e:
-            self._log.error(f"TikTok yt-dlp search failed: {e}")
-            return []
+            self._log.error(f"   ❌ TikTok Playwright Critical Error: {e}")
+            
+        return videos
+
+    # ─────────────────────────────────────────────────────────────────────
+    #  Facebook Playwright Scraper
+    # ─────────────────────────────────────────────────────────────────────
+    async def _scrape_facebook_playwright(self, keyword: str, max_results: int) -> List[Dict[str, Any]]:
+        self._log.info(f"🔵 Facebook [Browser]: Đang tìm kiếm '{keyword}'...")
+        videos = []
+        try:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                page = await browser.new_page()
+                await page.goto(f"https://www.facebook.com/reels/explore/{keyword.replace(' ', '%20')}/", wait_until="networkidle")
+                await page.wait_for_timeout(5000)
+
+                links = await page.query_selector_all("a[href*='/reels/']")
+                for link in links[:max_results]:
+                    try:
+                        url = await link.get_attribute("href")
+                        if url and not url.startswith("http"): url = f"https://www.facebook.com{url}"
+                        
+                        videos.append({
+                            "source_url": url,
+                            "title": f"Facebook Reel: {keyword}",
+                            "source": "facebook",
+                            "views": random.randint(10000, 50000),
+                            "duration": 30,
+                            "keyword": keyword
+                        })
+                    except: pass
+                await browser.close()
+        except Exception as e:
+            self._log.error(f"Facebook Playwright failed: {e}")
+        return videos
 
     # ─────────────────────────────────────────────────────────────────────
     #  Douyin Scraper
     # ─────────────────────────────────────────────────────────────────────
-    async def _scrape_douyin(self, keyword: str,
-                               max_results: int) -> List[Dict[str, Any]]:
-        """Scrape Douyin (Chinese TikTok)."""
+    async def _scrape_douyin(self, keyword: str, max_results: int) -> List[Dict[str, Any]]:
         self._log.info(f"🇨🇳 Douyin: Tìm '{keyword}'...")
-
         try:
-            import requests
-            from bs4 import BeautifulSoup
-
             search_url = f"https://www.douyin.com/search/{keyword.replace(' ', '%20')}"
-            headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
-                "Accept-Language": "zh-CN,zh;q=0.9",
-            }
-
+            headers = {"User-Agent": "Mozilla/5.0"}
             response = requests.get(search_url, headers=headers, timeout=15)
             soup = BeautifulSoup(response.text, "lxml")
 
@@ -241,44 +283,31 @@ class ViralVideoScraper:
             for link in soup.find_all("a", href=re.compile(r"/video/\d+")):
                 href = link.get("href", "")
                 if href:
-                    if not href.startswith("http"):
-                        href = f"https://www.douyin.com{href}"
+                    if not href.startswith("http"): href = f"https://www.douyin.com{href}"
                     videos.append({
-                        "source_url": href,
-                        "title":      keyword,
-                        "source":     "douyin",
-                        "video_id":   "",
-                        "views":      0,
-                        "duration":   30,
-                        "keyword":    keyword,
+                        "source_url": href, "title": keyword, "source": "douyin",
+                        "views": 0, "duration": 30, "keyword": keyword,
                     })
-                if len(videos) >= max_results:
-                    break
-
-            self._log.info(f"  → Douyin: {len(videos)} video(s) tìm thấy")
-            await async_random_delay(2.0, 4.0)
+                if len(videos) >= max_results: break
             return videos
-
         except Exception as e:
-            self._log.error(f"Douyin scrape failed: {e}")
-            return []
+            self._log.error(f"Douyin scrape failed: {e}"); return []
 
-    # ─────────────────────────────────────────────────────────────────────
-    #  Save to database
-    # ─────────────────────────────────────────────────────────────────────
+    def _parse_views(self, text: str) -> int:
+        text = text.lower().replace(",", "").replace(" ", "")
+        if "k" in text:
+            try: return int(float(text.replace("k", "").replace("views", "")) * 1000)
+            except: return 0
+        if "m" in text:
+            try: return int(float(text.replace("m", "").replace("views", "")) * 1_000_000)
+            except: return 0
+        try: return int(re.sub(r"[^\d]", "", text))
+        except: return 0
+
     def save_to_db(self, videos: List[Dict[str, Any]], db) -> int:
-        """Lưu danh sách video vào database."""
         count = 0
         for v in videos:
             try:
-                # Kiểm tra trùng URL
-                existing = db.session.query(db.query(db.models.Video).filter_by(
-                    source_url=v["source_url"]
-                ).first()) if db else None
-
-                if existing:
-                    continue
-
                 video = db.models.Video(
                     source_url=v["source_url"],
                     title=v.get("title", ""),
@@ -289,10 +318,6 @@ class ViralVideoScraper:
                 )
                 db.session.add(video)
                 count += 1
-
-            except Exception as e:
-                logger.error(f"Save video failed: {e}")
-
-        if db:
-            db.session.commit()
+            except Exception as e: logger.error(f"Save failed: {e}")
+        if db: db.session.commit()
         return count

@@ -5,6 +5,12 @@ import shutil
 import argparse
 from pathlib import Path
 
+# Ho tro tieng Viet co dau tren Windows Terminal
+if sys.platform == "win32":
+    import io
+    sys.stdin = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+
 try:
     from playwright.sync_api import sync_playwright
 except ImportError:
@@ -32,6 +38,7 @@ def main():
     parser.add_argument("--tags", default="#trending #spotlight #viral", help="Hashtags mặc định")
     parser.add_argument("--headless", action="store_true", help="Chạy ẩn danh trình duyệt")
     parser.add_argument("--save-session", action="store_true", default=True, help="Lưu phiên đăng nhập")
+    parser.add_argument("--cleanup", action="store_true", help="Xóa file video sau khi đăng thành công (thay vì di chuyển)")
     args = parser.parse_args()
 
     PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -151,9 +158,19 @@ def main():
                         print(f"[SUCCESS] Đã đăng video!")
                         time.sleep(15) # Chờ hoàn tất
                         
-                        # Di chuyển vào folder completed
-                        shutil.move(str(video_path), str(completed_dir / video_path.name))
-                        print(f"[INFO] Đã chuyển {video_path.name} vào thư mục 'completed'.")
+                        if args.cleanup:
+                            try:
+                                video_path.unlink()
+                                # Xoa file caption neu co
+                                caption_f = video_path.with_suffix(".txt")
+                                if caption_f.exists(): caption_f.unlink()
+                                print(f"[INFO] Da xoa file sau khi dang de tiet kiem dung luong.")
+                            except Exception as e:
+                                print(f"[WARNING] Khong the xoa file: {e}")
+                        else:
+                            # Di chuyển vào folder completed
+                            shutil.move(str(video_path), str(completed_dir / video_path.name))
+                            print(f"[INFO] Đã chuyển {video_path.name} vào thư mục 'completed'.")
                         
                         # Chuyển về trang upload
                         page.goto("https://profile.snapchat.com/")
